@@ -1,0 +1,26 @@
+# Notebook guide
+
+Two analysis notebooks, mirroring the two complement notebooks in OligoC4b. Both import the gene panel and helpers from `scripts/oligometab.py`; findings are collected in [`metabolism_findings.md`](metabolism_findings.md), the panel in [`gene_panel.md`](gene_panel.md), the datasets in [`public_datasets.md`](public_datasets.md). Sources are in `notebooks/src/` (percent format) and are converted with `scripts/nb_from_py.py`; executed copies with outputs live in `notebooks/analysis/`.
+
+## `analysis_spatial_metabolism.ipynb` — in-house Xenium AD, Xenium EAE, Visium aging, Falcão scRNA-seq
+
+1. **Xenium AD** (347-gene panel). Panel content first: only Apoe, Apod and Acsbg1 of the 183 metabolic genes are present, so this section is short: the three genes by cell type, over the TgCRND8 time course, and their co-expression / rank with C4b inside oligodendrocytes.
+2. **Xenium EAE** (5K panel, 100 metabolic genes, 107 samples). Pathway scores and focus genes by cell type; EAE vs control per cell type by pseudobulk per sample (genes and pathway scores); pathway scores along the lesion-distance bins in oligodendrocyte-lineage, myeloid and astrocyte populations; co-expression of every metabolic gene with C4b inside DA oligodendrocytes with the rank among the ~5,000 panel genes and a pathway-level rank-enrichment test; DA vs homeostatic oligodendrocytes and C4b-high vs C4b-negative cells, paired per sample; spatial neighbourhood tests (30 µm) asking whether Hcar2⁺ (ketone receptor), Slc16a3⁺ (MCT4) astrocytes, Hk2⁺, Pdk1⁺, Plin2⁺ and Slc2a1⁺ cells are enriched around C4b-high oligodendrocytes, with the lesion-distance-matched and non-lesion controls from OligoC4b; the mean pathway score of the non-oligodendrocyte neighbours of C4b-high vs C4b-negative oligodendrocytes; spatial maps.
+3. **Visium aging** (whole transcriptome, 6 sections). Focus genes and pathway scores by age group; linear age trend per section for every panel gene and pathway, in all spots and in white-matter-rich spots; correlation with C4b across spots, genome-wide rank and pathway enrichment; pathway scores in C4b-high vs C4b-negative white-matter spots; maps.
+4. **Falcão 2018** (sorted single cells). Pathway scores across the lineage clusters (OPC → COP → NFOL → MOL, EAE-MOL clusters, microglia); EAE vs control MOL clusters gene- and pathway-wise; C4b co-expression, rank and pathway enrichment in MOL. Cells are the replicates here, so p-values are descriptive.
+5. Cross-dataset availability table by pathway, then the written interpretation.
+
+Summary tables are written to `results/` (`xenium_eae_*.csv`, `visium_aging_*.csv`, `falcao_*.csv`, `inhouse_panel_availability.csv`).
+
+## `analysis_public_datasets_metabolism.ipynb` — the sixteen public datasets
+
+One pass per dataset (loaded one at a time): panel-gene availability; pathway scores for every cell; detection of the focus genes and mean pathway score by coarse cell type; pseudobulk disease / age / demyelination contrasts for oligodendrocytes, OPCs, microglia and astrocytes, gene-wise (log2FC, Mann–Whitney across samples) and pathway-wise (score difference); inside oligodendrocytes of the mouse datasets, the co-expression of every metabolic gene with C4b, its genome-wide rank, the pathway-level rank enrichment and the pathway scores of C4b-high vs C4b-negative cells with a per-sample paired test; by-condition tables (lesion type, Braak stage) for the human datasets; spot-level means, pathway scores, C4b correlation and maps for the spatial datasets. Cross-dataset sections then show: pathway score by cell type averaged over the mouse datasets; detection heatmaps; pathway-score and gene-level fold-change heatmaps per contrast; a consistency table (how many contrasts move each gene up or down in oligodendrocytes); the C4b correlation and pathway-enrichment heatmaps; the C4b-high vs C4b-negative pathway-score heatmap; human by-condition heatmaps; and a summary. Tables go to `results/public_*.csv`.
+
+## Statistics used
+
+- **Pseudobulk**: mean log-expression (or mean pathway score) per sample × cell type, samples with ≥20 cells of that type; two-sided Mann–Whitney between groups when both have ≥3 samples, otherwise descriptive.
+- **Pathway scores**: `scanpy.tl.score_genes` (set mean minus size-matched control set), compared by difference.
+- **Co-expression with C4b**: Spearman correlation across cells, Fisher test on detection in C4b⁺ vs C4b⁻ cells, and the rank of each gene among all detected genes ranked by Spearman correlation with C4b (subsampled to 40,000 cells).
+- **Pathway rank enrichment**: Mann–Whitney of the pathway genes' Spearman rho against all other ranked genes.
+- **Paired comparisons** (DA vs homeostatic, C4b-high vs C4b-negative, neighbourhood ratios): per-sample means, paired Wilcoxon across samples.
+- **Neighbourhoods**: all cells within 30 µm of a source cell (KD-tree per sample); fraction of target cells around C4b-high vs C4b-negative oligodendrocytes; lesion-distance-matched version stratifies sources by `lesion_distance_bin`.

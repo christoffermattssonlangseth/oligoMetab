@@ -1,0 +1,19 @@
+name: oligometab
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - jupyterlab
+  - nbconvert
+  - ipykernel
+  - numpy
+  - pandas
+  - scipy
+  - h5py
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - scanpy
+  - anndata
+  - python-dotenv
+  - pip
