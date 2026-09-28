@@ -21,6 +21,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 SPATIAL = ROOT / "notebooks/analysis/analysis_spatial_metabolism.ipynb"
 PUBLIC = ROOT / "notebooks/analysis/analysis_public_datasets_metabolism.ipynb"
 KETONE = ROOT / "notebooks/analysis/analysis_ketone_metabolism.ipynb"
+EAEK = ROOT / "notebooks/analysis/analysis_xenium_eae_ketone.ipynb"
 
 FIGURES = {
     # in-house spatial notebook
@@ -52,6 +53,15 @@ FIGURES = {
     "ketone_astro_genes_de.png": (KETONE, 'for ct in [c for c in CTS_TEST + ["spot"] if c in DE.cell_type.unique()]:', 3),
     "ketone_falcao_dotplot.png": (KETONE, "sc.pl.dotplot(ad_f, var_names=[r[g] for g in kg_f]", 0),
     "ketone_eae_lesion_distance.png": (KETONE, 'g = sns.relplot(data=tidy, x="bin", y="mean_expr", hue="population"', 2),
+    # EAE ketone notebook
+    "eae5k_ctrl_detection.png": (EAEK, "det_ctrl = om.detection_table", 2),
+    "eae5k_eae_vs_control.png": (EAEK, 'de, pb = pseudobulk_test(ad, KG, "sample_name", "condition"', 0),
+    "eae5k_bdh1_lesion.png": (EAEK, "ct_bin.index.names = [\"cell_type\", \"bin\"]", 0),
+    "eae5k_paired.png": (EAEK, "fig, axes = plt.subplots(1, 4, figsize=(20, 5), sharey=True)", 0),
+    "eae5k_bdh1_company.png": (EAEK, 'BDH = pd.concat(rows, ignore_index=True); save("Bdh1_company", BDH)', 3),
+    "eae5k_myeloid_fc.png": (EAEK, 'save("myeloid_EAE_vs_control", de_my)', 1),
+    "eae5k_neighbourhoods.png": (EAEK, 'NB = pd.DataFrame(rows); save("neighbourhoods", NB)', 0),
+    "eae5k_map_peak.png": (EAEK, 'sc.pl.spatial(sub, color=genes, spot_size=20, cmap="magma", vmax="p99", ncols=4', 0),
 }
 
 

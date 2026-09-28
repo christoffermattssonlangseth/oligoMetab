@@ -55,6 +55,7 @@ python scripts/check_notebooks.py                                     # before c
 | `analysis/analysis_spatial_metabolism.ipynb` | Panel content, cell-type expression, disease / age / lesion-distance effects, relation to the *C4b*⁺ state and spatial neighbourhoods in Xenium AD, Xenium EAE, Visium aging and Falcão |
 | `analysis/analysis_public_datasets_metabolism.ipynb` | The same questions across the sixteen public datasets, including human MS and AD by lesion type / Braak stage |
 | `analysis/analysis_ketone_metabolism.ipynb` | Ketone-body metabolism gene by gene (synthesis, utilisation, transport, receptors, fatty-acid supply) in every cell type across all datasets |
+| `analysis/analysis_xenium_eae_ketone.ipynb` | The collaborators' question: ketone handling in Xenium EAE using the genes the 5K panel carries (*Bdh1*, MCT1 / MCT4, *Hcar2* / *Nlrp3*, β-oxidation supply, PPARα axis), all cell types, lesion distance, DA states, neighbourhoods |
 
 Plain-language summaries and the statistics used are in [`docs/notebooks.md`](docs/notebooks.md); the gene panel in [`docs/gene_panel.md`](docs/gene_panel.md).
 

@@ -117,6 +117,35 @@ Brain ketogenesis is vascular and marginally astrocytic: *Hmgcs2* is detected in
 <figcaption>Public datasets, microglia: the same. *Hcar2* rises in nearly every disease contrast.</figcaption>
 </figure>
 
+## 6c. The collaborators' question: ketone handling in Xenium EAE with the genes the 5K panel carries
+
+The panel has no committed ketone enzyme, so this rests on *Bdh1*, the MCT transporters, the BHB sensors and the β-oxidation chain in 107 samples and 27 cell types. Ketogenic competence (*Bdh1* + β-oxidation + PPARα / PGC1α) is astrocytic at baseline, and *Bdh1*⁺ cells of every type are enriched for β-oxidation genes, placing *Bdh1* on the ketogenic side. EAE does not induce this program: *Bdh1* falls toward lesions in every cell type, *Acss2*, *Ppargc1a* and *Ppara* fall broadly, and only oligodendrocytes gain a little *Bdh1*. What EAE turns on is monocarboxylate transport, MCT4 in 14 cell types and MCT1 in astrocytes, where it tracks lesion burden (ρ 0.68) and the RR disease course. Within a sample, DA oligodendrocytes have less *Bdh1*, MCT1 and β-oxidation than homeostatic ones and more MCT4, whereas newly formed oligodendrocytes have the most *Bdh1* and *Cpt1a* of the lineage. BHB sensing is myeloid: microglial *Hcar2* rises four-fold at onset and peak, *Hcar2*⁺ cells are *Nlrp3*⁺ *Cd36*⁺ phagocytes, and *Hcar2*⁺ / *Nlrp3*⁺ myeloid cells and MCT4⁺ astrocytes, not ketogenic astrocytes, are enriched around DA and *C4b*-high oligodendrocytes after lesion-distance matching. Local ketone production is therefore not up-regulated in EAE; if BHB helps, the route is exogenous supply and the cellular targets are the myeloid sensors and the MCT1-gaining glia.
+
+<figure markdown="1">
+![](figures/eae5k_ctrl_detection.png)
+<figcaption>Xenium EAE, control samples: fraction of cells detecting each ketone-related gene on the 5K panel, by cell type.</figcaption>
+</figure>
+
+<figure markdown="1">
+![](figures/eae5k_eae_vs_control.png)
+<figcaption>Xenium EAE: pseudobulk log2 fold change EAE vs CONTROL per cell type; * Mann–Whitney p < 0.05 across samples.</figcaption>
+</figure>
+
+<figure markdown="1">
+![](figures/eae5k_bdh1_lesion.png)
+<figcaption>*Bdh1* by cell type and lesion distance, relative to each cell type's value beyond 500 µm.</figcaption>
+</figure>
+
+<figure markdown="1">
+![](figures/eae5k_paired.png)
+<figcaption>Paired within sample: DA vs homeostatic oligodendrocytes, *C4b*-high vs *C4b*-negative, DA vs homeostatic astrocytes, newly formed vs mature oligodendrocytes; red = Wilcoxon p < 0.05.</figcaption>
+</figure>
+
+<figure markdown="1">
+![](figures/eae5k_neighbourhoods.png)
+<figcaption>Neighbour-fraction ratios (30 µm) around DA vs homeostatic and *C4b*-high vs *C4b*-negative oligodendrocytes for ketogenic-competent astrocytes, MCT4⁺ astrocytes, *Hcar2*⁺ / *Nlrp3*⁺ myeloid cells and MCT1⁺ endothelium.</figcaption>
+</figure>
+
 ## 7. Spatial partners of *C4b*-high oligodendrocytes (Xenium EAE)
 
 *Hcar2*⁺ cells (median ratio 1.7), *Hcar2*⁺ myeloid cells (1.8), *Slc16a3*⁺ astrocytes (2.3), *Hk2*⁺ (1.8), *Pdk1*⁺ (1.3) and *Plin2*⁺ (1.4) cells are enriched within 30 µm of *C4b*-high compared with *C4b*-negative oligodendrocytes in 87 samples (paired Wilcoxon p < 10⁻⁵); *Slc2a1*⁺ cells are not. The enrichment survives matching for lesion distance (1.2–1.75) and restriction to non-lesion tissue (1.3–2.2).
@@ -164,4 +193,4 @@ Whole-section glycolysis, TCA and OXPHOS scores rise slightly with age (p ≈ 0.
 
 ## 11. Where everything lives
 
-Repository `oligoMetab` (GitHub, `christoffermattssonlangseth/oligoMetab`): executed notebooks (spatial, public, ketone) under `notebooks/analysis/`, sources under `notebooks/src/`, the gene panel and helpers in `scripts/oligometab.py`, summary tables in `results/`, and plain-language documentation in `docs/` (`metabolism_findings.md`, `gene_panel.md`, `notebooks.md`, `public_datasets.md`). Data are the OligoC4b objects on the group's analysis machine.
+Repository `oligoMetab` (GitHub, `christoffermattssonlangseth/oligoMetab`): executed notebooks (spatial, public, ketone, EAE ketone) under `notebooks/analysis/`, sources under `notebooks/src/`, the gene panel and helpers in `scripts/oligometab.py`, summary tables in `results/`, and plain-language documentation in `docs/` (`metabolism_findings.md`, `gene_panel.md`, `notebooks.md`, `public_datasets.md`). Data are the OligoC4b objects on the group's analysis machine.

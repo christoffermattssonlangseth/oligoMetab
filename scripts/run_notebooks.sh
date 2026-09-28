@@ -10,5 +10,6 @@ for nb in $NBS; do
   name=$(basename "$nb" .ipynb)
   echo "[$(date '+%F %T')] start $name" | tee -a logs/run.log
   ( cd "$(dirname "$nb")" && "$PY/jupyter" nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=-1 --ExecutePreprocessor.kernel_name=sc "$(basename "$nb")" ) > "logs/$name.log" 2>&1
-  echo "[$(date '+%F %T')] end $name (exit $?)" | tee -a logs/run.log
+  rc=$?
+  echo "[$(date '+%F %T')] end $name (exit $rc)" | tee -a logs/run.log
 done

@@ -108,12 +108,23 @@ SCORE_SETS: Dict[str, List[str]] = {
 }
 
 # ketone-body metabolism in depth (used by analysis_ketone_metabolism.ipynb); a superset of the two ketone pathway groups above
+# the genes of this set that are on the Xenium EAE 5K panel (used by analysis_xenium_eae_ketone.ipynb)
+EAE5K_KETONE: Dict[str, List[str]] = {
+    "Ketone enzyme on the panel":     ["Bdh1"],
+    "Transport":                      ["Slc16a1", "Slc16a3", "Slc5a12"],
+    "Sensing":                        ["Hcar2", "Ffar3", "Ffar2", "Nlrp3"],
+    "Fatty-acid supply":              ["Cpt1a", "Cpt1c", "Cpt2", "Slc25a20", "Hadhb", "Hadh", "Echs1", "Acaa2"],
+    "Regulators":                     ["Ppara", "Ppargc1a", "Pdk4", "Fgf21", "Klb"],
+    "Acetate activation":             ["Acss1", "Acss2"],
+}
+EAE5K_KETONE_GENES: List[str] = [g for gs in EAE5K_KETONE.values() for g in gs]
+
 KETONE: Dict[str, List[str]] = {
     "Synthesis (ketogenesis)":        ["Hmgcs2", "Hmgcl", "Hmgcll1", "Bdh1", "Bdh2"],          # Hmgcs2 is rate-limiting; Bdh1 interconverts AcAc <-> BHB (both directions)
-    "Utilisation (ketolysis)":        ["Oxct1", "Acat1", "Bdh1"],                              # Oxct1 (SCOT) is the committed ketolytic step, absent from liver
+    "Utilisation (ketolysis)":        ["Oxct1", "Acat1", "Bdh1", "Aacs"],                      # Oxct1 (SCOT) is the committed ketolytic step; Aacs feeds acetoacetate into cytosolic lipid synthesis
     "Acetate activation":             ["Acss1", "Acss2"],
-    "Ketone / lactate transport":     ["Slc16a1", "Slc16a7", "Slc16a3", "Slc16a6", "Slc5a8", "Bsg"],   # MCT1 (oligodendrocytes, endothelium), MCT2 (neurons), MCT4 (astrocytes), MCT7, SMCT1
-    "Receptors":                      ["Hcar2", "Ffar3", "Ffar2"],                             # BHB agonist Hcar2 (GPR109A); Ffar3 (GPR41) is antagonised by BHB
+    "Ketone / lactate transport":     ["Slc16a1", "Slc16a7", "Slc16a3", "Slc16a6", "Slc5a8", "Slc5a12", "Bsg"],   # MCT1 (oligodendrocytes, endothelium), MCT2 (neurons), MCT4 (astrocytes), MCT7, SMCT1, SMCT2
+    "Receptors":                      ["Hcar2", "Ffar3", "Ffar2", "Nlrp3"],                    # BHB agonist Hcar2 (GPR109A); Ffar3 (GPR41) is antagonised by BHB; Nlrp3 inflammasome is inhibited by BHB
     "Fatty-acid supply / regulators": ["Cpt1a", "Cpt2", "Acadm", "Hadha", "Acaa2", "Ppara", "Ppargc1a", "Fgf21"],
 }
 KETONE_GENES: List[str] = list(dict.fromkeys(g for gs in KETONE.values() for g in gs))
@@ -122,7 +133,7 @@ KETONE_SCORE_SETS: Dict[str, List[str]] = {
     "Ketolysis": ["Oxct1", "Acat1", "Bdh1", "Slc16a1", "Slc16a7"],
     "FA supply for ketogenesis": ["Cpt1a", "Cpt2", "Acadm", "Hadha", "Acaa2", "Ppara"],
 }
-for _g in ["Hmgcll1", "Slc5a8", "Fgf21"]:
+for _g in ["Hmgcll1", "Slc5a8", "Slc5a12", "Fgf21", "Aacs", "Nlrp3"]:
     PATHWAY_OF.setdefault(_g, "ketone extras")
 
 # context genes used to check cell identity and to anchor on the C4b program described in OligoC4b
