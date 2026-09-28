@@ -6,7 +6,7 @@
 # sixteen public datasets harmonised by OligoC4b: mouse AD (Park 2023, Zhou 2020 5XFAD), mouse aging (aging snRNA-seq HIP+CP, Ximerakis 2019,
 # Kaya 2022 aged WM vs GM), toxic demyelination (LPC + cuprizone, *Serpina3n*-cKO cuprizone), mouse spatial AD (Chen 2020), human AD
 # (Leng 2021, Sadick 2022), human MS single-nucleus (Jäkel 2019, Absinta 2021, Schirmer 2019, Lerma-Martin 2024) and human MS Visium
-# (Lerma-Martin 2024, senescent-glia 2025). All are whole-transcriptome, so every panel gene is measurable, and, unlike *C4A*/C4B, the metabolic
+# (Lerma-Martin 2024, senescent-glia 2025). All are whole-transcriptome, so every panel gene is measurable, and, unlike *C4A*/*C4B*, the metabolic
 # genes are quantifiable in the human data.
 #
 # **Gene panel** (`scripts/oligometab.py`, mouse symbols, 183 genes in 21 pathway groups): ketone-body synthesis (*Hmgcs2*, *Hmgcl*, *Bdh1*) and
@@ -393,7 +393,7 @@ if len(DE):
 # ## 4. Human datasets by the authors' condition labels
 #
 # Pathway scores and focus-gene detection in oligodendrocytes and microglia by lesion type (MS) or Braak stage / diagnosis (AD). The metabolic genes are
-# quantifiable in human nuclei (unlike *C4A*/C4B), so these are direct read-outs.
+# quantifiable in human nuclei (unlike *C4A*/*C4B*), so these are direct read-outs.
 
 # %%
 for (name, ct), s in COND_SCORE.items():

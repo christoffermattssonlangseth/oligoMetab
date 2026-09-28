@@ -201,8 +201,8 @@ if ad_ad is not None and genes_ad:
 # ---
 # ## 2. Xenium mouse EAE (5K pan-tissue panel; RR-EAE and chronic EAE, 107 samples)
 #
-# The 5K panel carries about 100 of the 183 panel genes, including *Slc16a1* (MCT1), *Slc16a3* (MCT4), *Hk1*/Hk2, *Pfkp*, *Pkm*, *Ldha*/Ldhb, *Pdk1*, *Bdh1*, *Hcar2*, *Cpt1a*,
-# *Fasn*, *Hmgcr*, *Srebf1*/2, *Plin2* and the regulators. Missing are ketogenesis (*Hmgcs2*, *Hmgcl*), *Oxct1*/Acat1, most OXPHOS subunits, *Apoe* and most of the
+# The 5K panel carries about 100 of the 183 panel genes, including *Slc16a1* (MCT1), *Slc16a3* (MCT4), *Hk1*/*Hk2*, *Pfkp*, *Pkm*, *Ldha*/*Ldhb*, *Pdk1*, *Bdh1*, *Hcar2*, *Cpt1a*,
+# *Fasn*, *Hmgcr*, *Srebf1*/2, *Plin2* and the regulators. Missing are ketogenesis (*Hmgcs2*, *Hmgcl*), *Oxct1*/*Acat1*, most OXPHOS subunits, *Apoe* and most of the
 # cholesterol pathway. The matrix is raw counts and is normalised (`target_sum=1e4`) and log1p-transformed here as in OligoC4b; the sparse matrix is read with
 # `h5py` to skip the neighbour graphs.
 
@@ -688,7 +688,7 @@ if "Xenium AD" in results and "coexpr_oligo" in results["Xenium AD"]:
 # %% [markdown]
 # ### Interpretation
 #
-# **Panel content first.** The 347-gene Xenium AD panel carries three metabolic genes (*Apoe*, *Apod*, *Acsbg1*), so metabolism cannot be read from that dataset; *Apod* is the only one that tracks *C4b* in oligodendrocytes (rank 7 of 341 panel genes, in line with OligoC4b). The 5K EAE panel has 100 of 183 panel genes (no ketogenesis enzymes, no *Oxct1*/Acat1, two OXPHOS subunits, three cholesterol-synthesis genes), Visium and Falcão have everything.
+# **Panel content first.** The 347-gene Xenium AD panel carries three metabolic genes (*Apoe*, *Apod*, *Acsbg1*), so metabolism cannot be read from that dataset; *Apod* is the only one that tracks *C4b* in oligodendrocytes (rank 7 of 341 panel genes, in line with OligoC4b). The 5K EAE panel has 100 of 183 panel genes (no ketogenesis enzymes, no *Oxct1*/*Acat1*, two OXPHOS subunits, three cholesterol-synthesis genes), Visium and Falcão have everything.
 #
 # **Baseline division of labour (Xenium EAE, 27 cell types; Falcão lineage stages).** Astrocytes and neurons carry the highest glycolysis and TCA scores; homeostatic oligodendrocytes the highest lipid-synthesis score and newly formed oligodendrocytes the highest cholesterol-synthesis score; microglia, macrophages and especially foamy myeloid cells the highest lipid-transport / storage score together with the lowest cholesterol synthesis. In sorted cells, OPC/COP/NFOL have the highest ketone-utilisation and TCA scores of the lineage, mature oligodendrocytes the highest cholesterol- and myelin-lipid synthesis, microglia the highest glycolysis and pentose-phosphate scores.
 #

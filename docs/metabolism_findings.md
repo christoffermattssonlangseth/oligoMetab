@@ -10,7 +10,7 @@ Notebooks: `notebooks/analysis/analysis_spatial_metabolism.ipynb` (Xenium AD, Xe
 | --- | --- |
 | Xenium mouse AD (347 genes) | 3 of 183: *Apoe*, *Apod*, *Acsbg1*. Metabolism cannot be read from this dataset. |
 | Xenium mouse EAE (5K panel) | 100 of 183. Missing: ketogenesis (*Hmgcs2*, *Hmgcl*), *Oxct1* / *Acat1*, 13 of 15 OXPHOS subunits, 9 of 12 cholesterol-synthesis genes, *Apoe*. Ketone scores are therefore not computable there. |
-| Visium aging, Falcão, all public datasets | 177–183 of 183 (whole transcriptome; losses are lowly expressed genes filtered at build time). Unlike *C4A*/C4B, every metabolic gene is quantifiable in the human data. |
+| Visium aging, Falcão, all public datasets | 177–183 of 183 (whole transcriptome; losses are lowly expressed genes filtered at build time). Unlike *C4A*/*C4B*, every metabolic gene is quantifiable in the human data. |
 
 ## 1. Division of labour between cell types (in-house)
 

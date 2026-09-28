@@ -16,7 +16,7 @@ Datasets are those of OligoC4b: Xenium mouse AD (347-gene panel, one section per
 | --- | --- |
 | Xenium mouse AD | 3 of 183 (*Apoe*, *Apod*, *Acsbg1*): metabolism is not measurable |
 | Xenium mouse EAE (5K) | 100 of 183; no ketogenesis / ketolysis enzymes, 2 of 15 OXPHOS, 3 of 12 cholesterol-synthesis genes |
-| Visium, Falcão, public | 177–183 of 183; metabolic genes are quantifiable in human data, unlike *C4A*/C4B |
+| Visium, Falcão, public | 177–183 of 183; metabolic genes are quantifiable in human data, unlike *C4A*/*C4B* |
 
 ## 2. Division of labour between cell types
 
@@ -135,7 +135,7 @@ Whole-section glycolysis, TCA and OXPHOS scores rise slightly with age (p ≈ 0.
 
 - Lipid-droplet staining (PLIN2 / PLIN4, BODIPY) and cholesterol-synthesis readouts (HMGCS1, SQLE) in *C4b*⁺ oligodendrocytes in EAE and aged white matter, the one metabolic feature that travels with the state in every dataset.
 - MCT1 protein in DA oligodendrocytes and the lactate supply to axons near lesions (*Slc16a1* down, *Slc16a3*⁺ astrocytes and *Hcar2*⁺ myeloid cells enriched in the niche).
-- Re-quantify human *C4A*/C4B (OligoC4b) so the *C4b* axis can be tested in the human MS sets where cholesterol synthesis moves the other way.
+- Re-quantify human *C4A*/*C4B* (OligoC4b) so the *C4b* axis can be tested in the human MS sets where cholesterol synthesis moves the other way.
 - Metabolic flux (Seahorse or ¹³C tracing) on sorted DA versus homeostatic oligodendrocytes to resolve the glycolysis / TCA direction that the two RNA read-outs disagree on.
 
 ## 11. Where everything lives

@@ -25,7 +25,7 @@ Both notebooks were executed on the group's analysis machine (kernel `sc`, scanp
 
 - Xenium mouse AD (347 genes): 3 of 183 panel genes (*Apoe*, *Apod*, *Acsbg1*). Metabolism is not measurable there.
 - Xenium mouse EAE (5K): 100 of 183; no ketogenesis / ketolysis enzymes, 2 of 15 OXPHOS, 3 of 12 cholesterol-synthesis genes.
-- Visium, Falcão and all public data: 177–183 of 183. Unlike *C4A*/C4B, the metabolic genes are quantifiable in human data.
+- Visium, Falcão and all public data: 177–183 of 183. Unlike *C4A*/*C4B*, the metabolic genes are quantifiable in human data.
 
 ## Findings
 
@@ -44,7 +44,7 @@ Xenium AD: one section per genotype × age and three genes. EAE 5K panel: ketone
 
 ## Suggested next steps
 
-Lipid-droplet (PLIN2 / PLIN4) and cholesterol-synthesis readouts in *C4b*⁺ oligodendrocytes; MCT1 protein and lactate supply near lesions; human *C4A*/C4B re-quantification so the *C4b* axis can be tested in MS; flux measurements on sorted DA vs homeostatic oligodendrocytes to settle the glycolysis / TCA direction.
+Lipid-droplet (PLIN2 / PLIN4) and cholesterol-synthesis readouts in *C4b*⁺ oligodendrocytes; MCT1 protein and lactate supply near lesions; human *C4A*/*C4B* re-quantification so the *C4b* axis can be tested in MS; flux measurements on sorted DA vs homeostatic oligodendrocytes to settle the glycolysis / TCA direction.
 
 ## How to re-run
 

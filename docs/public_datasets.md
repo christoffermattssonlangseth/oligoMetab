@@ -24,6 +24,6 @@ Every object has raw counts in `layers["counts"]`, log-normalised `X` and the ha
 
 ## What changes for metabolism compared with complement
 
-- All panel genes are quantifiable in human data (the *C4A*/C4B multi-mapping problem does not apply), so the human MS and AD datasets contribute real disease contrasts, not just detection tables.
+- All panel genes are quantifiable in human data (the *C4A*/*C4B* multi-mapping problem does not apply), so the human MS and AD datasets contribute real disease contrasts, not just detection tables.
 - The *C4b*-anchored analyses (co-expression, genome-wide rank, *C4b*-high vs *C4b*-negative) are still mouse-only, for the same reason as in OligoC4b.
 - The caveats on the marker-based coarse annotation, on ambient microglial RNA in demyelinating-lesion nuclei (LPC, cuprizone), on the Kaya comparison being WM vs GM in aged brain, and on underpowered pseudobulk tests (Park, human sets with 1–2 control donors) carry over unchanged.
