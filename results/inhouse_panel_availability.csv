@@ -1,0 +1,184 @@
+gene,pathway,Xenium AD,Xenium EAE,Visium aging,Falcão EAE sc
+Hmgcs2,Ketone body synthesis,False,False,True,True
+Hmgcl,Ketone body synthesis,False,False,True,True
+Bdh1,Ketone body synthesis,False,True,True,True
+Bdh2,Ketone body synthesis,False,False,True,True
+Oxct1,Ketone body utilisation,False,False,True,True
+Acat1,Ketone body utilisation,False,False,True,True
+Acat2,Ketone body utilisation,False,False,True,True
+Acss1,Ketone body utilisation,False,True,True,True
+Acss2,Ketone body utilisation,False,True,True,True
+Hcar2,Ketone / SCFA receptors,False,True,True,True
+Ffar3,Ketone / SCFA receptors,False,True,True,True
+Ffar2,Ketone / SCFA receptors,False,True,True,True
+Slc16a1,Monocarboxylate transporters,False,True,True,True
+Slc16a7,Monocarboxylate transporters,False,False,True,True
+Slc16a3,Monocarboxylate transporters,False,True,True,True
+Slc16a6,Monocarboxylate transporters,False,False,True,True
+Bsg,Monocarboxylate transporters,False,False,True,True
+Slc2a1,Glucose transporters,False,True,True,True
+Slc2a3,Glucose transporters,False,True,True,True
+Slc2a4,Glucose transporters,False,True,True,True
+Slc2a8,Glucose transporters,False,False,True,True
+Hk1,Glycolysis,False,True,True,True
+Hk2,Glycolysis,False,True,True,True
+Hk3,Glycolysis,False,False,True,True
+Gpi1,Glycolysis,False,True,True,True
+Pfkl,Glycolysis,False,True,True,True
+Pfkm,Glycolysis,False,False,True,True
+Pfkp,Glycolysis,False,True,True,True
+Pfkfb2,Glycolysis,False,True,True,True
+Pfkfb3,Glycolysis,False,False,True,True
+Aldoa,Glycolysis,False,True,True,True
+Aldoc,Glycolysis,False,True,True,True
+Tpi1,Glycolysis,False,True,True,True
+Gapdh,Glycolysis,False,False,True,True
+Pgk1,Glycolysis,False,True,True,True
+Pgam1,Glycolysis,False,False,True,True
+Eno1,Glycolysis,False,True,True,True
+Eno2,Glycolysis,False,True,True,True
+Pkm,Glycolysis,False,True,True,True
+Ldha,Glycolysis,False,True,True,True
+Ldhb,Glycolysis,False,True,True,True
+Pdha1,Pyruvate fate,False,False,True,True
+Pdhb,Pyruvate fate,False,False,True,True
+Pdk1,Pyruvate fate,False,True,True,True
+Pdk2,Pyruvate fate,False,False,True,True
+Pdk3,Pyruvate fate,False,False,True,True
+Pdk4,Pyruvate fate,False,True,True,True
+Pdp1,Pyruvate fate,False,False,True,True
+Mpc1,Pyruvate fate,False,True,True,True
+Mpc2,Pyruvate fate,False,True,True,True
+Pcx,Pyruvate fate,False,True,True,True
+Pck2,Pyruvate fate,False,False,True,True
+G6pdx,Pentose phosphate pathway,False,True,True,True
+Pgd,Pentose phosphate pathway,False,False,True,True
+Tkt,Pentose phosphate pathway,False,False,True,True
+Taldo1,Pentose phosphate pathway,False,False,True,True
+Gys1,Glycogen,False,False,True,True
+Pygb,Glycogen,False,True,True,True
+Gbe1,Glycogen,False,False,True,True
+Agl,Glycogen,False,True,True,True
+Cs,TCA cycle,False,True,True,True
+Aco2,TCA cycle,False,False,True,True
+Idh2,TCA cycle,False,True,True,True
+Idh3a,TCA cycle,False,False,True,True
+Ogdh,TCA cycle,False,True,True,True
+Dlst,TCA cycle,False,False,True,True
+Sucla2,TCA cycle,False,False,True,True
+Suclg1,TCA cycle,False,False,True,True
+Sdha,TCA cycle,False,True,True,True
+Sdhb,TCA cycle,False,True,True,True
+Fh1,TCA cycle,False,True,True,True
+Mdh1,TCA cycle,False,False,True,True
+Mdh2,TCA cycle,False,False,True,True
+Got1,Anaplerosis / amino acids,False,False,True,True
+Got2,Anaplerosis / amino acids,False,True,True,True
+Glud1,Anaplerosis / amino acids,False,True,True,True
+Gls,Anaplerosis / amino acids,False,False,True,True
+Glul,Anaplerosis / amino acids,False,False,True,True
+Idh1,Anaplerosis / amino acids,False,True,True,True
+Slc25a1,Anaplerosis / amino acids,False,False,True,True
+Slc25a11,Anaplerosis / amino acids,False,False,True,True
+Ndufa4,Oxidative phosphorylation,False,False,True,True
+Ndufs1,Oxidative phosphorylation,False,True,True,True
+Ndufv1,Oxidative phosphorylation,False,False,True,True
+Ndufb8,Oxidative phosphorylation,False,False,True,True
+Uqcrc1,Oxidative phosphorylation,False,False,True,True
+Uqcrc2,Oxidative phosphorylation,False,False,True,True
+Uqcrfs1,Oxidative phosphorylation,False,False,True,True
+Cycs,Oxidative phosphorylation,False,False,True,True
+Cox4i1,Oxidative phosphorylation,False,False,True,True
+Cox5a,Oxidative phosphorylation,False,False,True,True
+Cox6c,Oxidative phosphorylation,False,False,True,True
+Cox7c,Oxidative phosphorylation,False,False,True,True
+Atp5a1,Oxidative phosphorylation,False,False,True,True
+Atp5b,Oxidative phosphorylation,False,False,True,True
+Atp5o,Oxidative phosphorylation,False,True,True,True
+Ppargc1a,Mitochondrial biogenesis / dynamics,False,True,True,True
+Tfam,Mitochondrial biogenesis / dynamics,False,True,True,True
+Nrf1,Mitochondrial biogenesis / dynamics,False,True,True,True
+Opa1,Mitochondrial biogenesis / dynamics,False,True,True,True
+Mfn2,Mitochondrial biogenesis / dynamics,False,True,True,True
+Dnm1l,Mitochondrial biogenesis / dynamics,False,True,True,True
+Pink1,Mitochondrial biogenesis / dynamics,False,True,True,True
+Prkn,Mitochondrial biogenesis / dynamics,False,True,True,False
+Cd36,Fatty acid uptake / activation,False,True,True,True
+Slc27a1,Fatty acid uptake / activation,False,False,True,True
+Fabp5,Fatty acid uptake / activation,False,False,True,True
+Fabp7,Fatty acid uptake / activation,False,True,True,True
+Acsl1,Fatty acid uptake / activation,False,True,True,True
+Acsl3,Fatty acid uptake / activation,False,False,True,True
+Acsl6,Fatty acid uptake / activation,False,True,True,True
+Acsbg1,Fatty acid uptake / activation,True,False,True,True
+Cpt1a,Fatty acid beta-oxidation,False,True,True,True
+Cpt1c,Fatty acid beta-oxidation,False,True,True,True
+Cpt2,Fatty acid beta-oxidation,False,True,True,True
+Slc25a20,Fatty acid beta-oxidation,False,True,True,True
+Acadm,Fatty acid beta-oxidation,False,False,True,True
+Acadl,Fatty acid beta-oxidation,False,False,True,True
+Acadvl,Fatty acid beta-oxidation,False,False,True,True
+Acads,Fatty acid beta-oxidation,False,False,True,True
+Hadha,Fatty acid beta-oxidation,False,False,True,True
+Hadhb,Fatty acid beta-oxidation,False,True,True,True
+Echs1,Fatty acid beta-oxidation,False,True,True,True
+Acaa2,Fatty acid beta-oxidation,False,True,True,True
+Decr1,Fatty acid beta-oxidation,False,True,True,True
+Eci1,Fatty acid beta-oxidation,False,False,True,True
+Acox1,Fatty acid beta-oxidation,False,True,True,True
+Ehhadh,Fatty acid beta-oxidation,False,True,True,True
+Acly,Lipid synthesis,False,True,True,True
+Acaca,Lipid synthesis,False,True,True,True
+Fasn,Lipid synthesis,False,True,True,True
+Elovl1,Lipid synthesis,False,True,True,True
+Elovl5,Lipid synthesis,False,False,True,True
+Elovl6,Lipid synthesis,False,False,True,True
+Scd1,Lipid synthesis,False,False,True,True
+Scd2,Lipid synthesis,False,False,True,True
+Srebf1,Lipid synthesis,False,True,True,True
+Mlxipl,Lipid synthesis,False,True,True,True
+Hmgcs1,Cholesterol synthesis,False,False,True,True
+Hmgcr,Cholesterol synthesis,False,True,True,True
+Mvk,Cholesterol synthesis,False,False,True,True
+Fdps,Cholesterol synthesis,False,False,True,True
+Fdft1,Cholesterol synthesis,False,False,True,True
+Sqle,Cholesterol synthesis,False,False,True,True
+Lss,Cholesterol synthesis,False,True,True,True
+Cyp51,Cholesterol synthesis,False,False,True,True
+Dhcr24,Cholesterol synthesis,False,False,True,True
+Dhcr7,Cholesterol synthesis,False,False,True,True
+Srebf2,Cholesterol synthesis,False,True,True,True
+Insig1,Cholesterol synthesis,False,False,True,True
+Ldlr,Cholesterol / lipid transport,False,True,True,True
+Abca1,Cholesterol / lipid transport,False,True,True,True
+Abca2,Cholesterol / lipid transport,False,False,True,True
+Abcg1,Cholesterol / lipid transport,False,False,True,True
+Apoe,Cholesterol / lipid transport,True,False,True,True
+Apod,Cholesterol / lipid transport,True,True,True,True
+Lpl,Cholesterol / lipid transport,False,True,True,True
+Nr1h2,Cholesterol / lipid transport,False,True,True,True
+Nr1h3,Cholesterol / lipid transport,False,True,True,True
+Plin2,Cholesterol / lipid transport,False,True,True,True
+Plin3,Cholesterol / lipid transport,False,False,True,True
+Plin4,Cholesterol / lipid transport,False,True,True,True
+Ugt8a,Myelin lipid synthesis,False,True,True,True
+Gal3st1,Myelin lipid synthesis,False,False,True,True
+Cers2,Myelin lipid synthesis,False,True,True,True
+Sptlc1,Myelin lipid synthesis,False,False,True,True
+Pigt,Myelin lipid synthesis,False,False,True,True
+Fa2h,Myelin lipid synthesis,False,False,True,True
+Hif1a,Nutrient sensing / regulators,False,True,True,True
+Epas1,Nutrient sensing / regulators,False,True,True,True
+Prkaa1,Nutrient sensing / regulators,False,True,True,True
+Prkaa2,Nutrient sensing / regulators,False,True,True,True
+Mtor,Nutrient sensing / regulators,False,True,True,True
+Rptor,Nutrient sensing / regulators,False,True,True,True
+Tsc2,Nutrient sensing / regulators,False,True,True,True
+Ddit4,Nutrient sensing / regulators,False,True,True,True
+Txnip,Nutrient sensing / regulators,False,True,True,True
+Sirt1,Nutrient sensing / regulators,False,True,True,True
+Sirt3,Nutrient sensing / regulators,False,True,True,True
+Ppara,Nutrient sensing / regulators,False,True,True,True
+Ppard,Nutrient sensing / regulators,False,False,True,True
+Pparg,Nutrient sensing / regulators,False,True,True,True
+Nfe2l2,Nutrient sensing / regulators,False,True,True,True

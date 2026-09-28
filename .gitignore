@@ -34,5 +34,7 @@ Thumbs.db
 # Secrets
 .env
 *.env
-results/*.csv
 logs/
+
+# keep the small summary tables written by the notebooks
+!results/*.csv
