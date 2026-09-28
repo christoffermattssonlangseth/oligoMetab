@@ -93,6 +93,30 @@ Inside DA oligodendrocytes (Xenium EAE) the metabolic genes that track *C4b* are
 <figcaption>Public mouse datasets: pathway score in *C4b*-high minus *C4b*-negative oligodendrocytes; * paired Wilcoxon across samples p < 0.05.</figcaption>
 </figure>
 
+## 6b. Ketone-body metabolism, gene by gene
+
+Brain ketogenesis is vascular and marginally astrocytic: *Hmgcs2* is detected in 3 % of astrocytes, 0 % of oligodendrocytes, microglia and human nuclei, and 12–22 % of endothelial cells; *Hmgcs2*⁺ astrocytes are the fatty-acid-oxidising ones (1.5–3.8× enriched for *Acadm*, *Cpt1a*, *Hmgcl*). The committed ketolytic enzyme *Oxct1* is broad, but the complete *Oxct1* + *Bdh1* machinery is a neuronal, ependymal and progenitor feature (45 % of OPC / COP / NFOL, 2 % of oligodendrocytes, < 1 % of microglia). MCT1 is endothelial and oligodendroglial, MCT2 neuronal, MCT4 microglial and, in EAE, astrocytic; *Hcar2* is strictly myeloid; *Ffar3* and SMCT1 are absent. In disease, *Bdh1* falls in oligodendrocytes across the public contrasts and rises in EAE oligodendrocytes (2.3× in sorted EAE MOL), *Acss1* / *Acss2* and *Ppara* fall broadly, MCT1 falls and MCT4 rises in disease oligodendrocytes, and *Hcar2* rises in disease microglia (+1.3 log2 aged, +2.6 in 5XFAD). No ketone gene correlates with *C4b* inside oligodendrocytes beyond |ρ| ≈ 0.1.
+
+<figure markdown="1">
+![](figures/ketone_who_whole_cells.png)
+<figcaption>Mouse whole-cell datasets: fraction of cells detecting each ketone-related gene, by cell type (averaged over datasets).</figcaption>
+</figure>
+
+<figure markdown="1">
+![](figures/ketone_falcao_dotplot.png)
+<figcaption>Falcão 2018 sorted cells: ketone-related genes by cluster along the oligodendrocyte lineage and in microglia.</figcaption>
+</figure>
+
+<figure markdown="1">
+![](figures/ketone_oligo_genes_de.png)
+<figcaption>Public datasets, oligodendrocytes: pseudobulk log2 fold change of the ketone-related genes per contrast; * Mann–Whitney p < 0.05.</figcaption>
+</figure>
+
+<figure markdown="1">
+![](figures/ketone_microglia_genes_de.png)
+<figcaption>Public datasets, microglia: the same. *Hcar2* rises in nearly every disease contrast.</figcaption>
+</figure>
+
 ## 7. Spatial partners of *C4b*-high oligodendrocytes (Xenium EAE)
 
 *Hcar2*⁺ cells (median ratio 1.7), *Hcar2*⁺ myeloid cells (1.8), *Slc16a3*⁺ astrocytes (2.3), *Hk2*⁺ (1.8), *Pdk1*⁺ (1.3) and *Plin2*⁺ (1.4) cells are enriched within 30 µm of *C4b*-high compared with *C4b*-negative oligodendrocytes in 87 samples (paired Wilcoxon p < 10⁻⁵); *Slc2a1*⁺ cells are not. The enrichment survives matching for lesion distance (1.2–1.75) and restriction to non-lesion tissue (1.3–2.2).
@@ -140,4 +164,4 @@ Whole-section glycolysis, TCA and OXPHOS scores rise slightly with age (p ≈ 0.
 
 ## 11. Where everything lives
 
-Repository `oligoMetab` (GitHub, `christoffermattssonlangseth/oligoMetab`): executed notebooks under `notebooks/analysis/`, sources under `notebooks/src/`, the gene panel and helpers in `scripts/oligometab.py`, summary tables in `results/`, and plain-language documentation in `docs/` (`metabolism_findings.md`, `gene_panel.md`, `notebooks.md`, `public_datasets.md`). Data are the OligoC4b objects on the group's analysis machine.
+Repository `oligoMetab` (GitHub, `christoffermattssonlangseth/oligoMetab`): executed notebooks (spatial, public, ketone) under `notebooks/analysis/`, sources under `notebooks/src/`, the gene panel and helpers in `scripts/oligometab.py`, summary tables in `results/`, and plain-language documentation in `docs/` (`metabolism_findings.md`, `gene_panel.md`, `notebooks.md`, `public_datasets.md`). Data are the OligoC4b objects on the group's analysis machine.

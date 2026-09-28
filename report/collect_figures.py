@@ -20,6 +20,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 SPATIAL = ROOT / "notebooks/analysis/analysis_spatial_metabolism.ipynb"
 PUBLIC = ROOT / "notebooks/analysis/analysis_public_datasets_metabolism.ipynb"
+KETONE = ROOT / "notebooks/analysis/analysis_ketone_metabolism.ipynb"
 
 FIGURES = {
     # in-house spatial notebook
@@ -42,6 +43,15 @@ FIGURES = {
     "public_oligo_genes_lipid.png": (PUBLIC, 'heat(d, f"{ct}: pseudobulk log2 fold change, {label} genes"', 1),
     "public_c4b_pathway_enrichment.png": (PUBLIC, 'heat(E, "Pathway-level enrichment among C4b-correlated genes in oligodendrocytes', 0),
     "public_c4b_high_vs_neg.png": (PUBLIC, 'heat(D, "Pathway score in C4b-high minus C4b-negative oligodendrocytes', 0),
+    # ketone notebook
+    "ketone_who_whole_cells.png": (KETONE, 'WHO["mouse whole cells"] = avg_detection', 0),
+    "ketone_who_nuclei.png": (KETONE, 'WHO["mouse whole cells"] = avg_detection', 1),
+    "ketone_celltype_scores_z.png": (KETONE, 'WHO["mouse whole cells"] = avg_detection', -1),
+    "ketone_oligo_genes_de.png": (KETONE, 'for ct in [c for c in CTS_TEST + ["spot"] if c in DE.cell_type.unique()]:', 0),
+    "ketone_microglia_genes_de.png": (KETONE, 'for ct in [c for c in CTS_TEST + ["spot"] if c in DE.cell_type.unique()]:', 2),
+    "ketone_astro_genes_de.png": (KETONE, 'for ct in [c for c in CTS_TEST + ["spot"] if c in DE.cell_type.unique()]:', 3),
+    "ketone_falcao_dotplot.png": (KETONE, "sc.pl.dotplot(ad_f, var_names=[r[g] for g in kg_f]", 0),
+    "ketone_eae_lesion_distance.png": (KETONE, 'g = sns.relplot(data=tidy, x="bin", y="mean_expr", hue="population"', 2),
 }
 
 

@@ -14,6 +14,7 @@ Emulate the OligoC4b analysis (complement / *C4b*⁺ oligodendrocytes across in-
 | Shared helpers: detection, pseudobulk tests, pathway scores, *C4b* co-expression, genome-wide Spearman ranks (chunked), pathway rank enrichment, spatial neighbourhood tests | `scripts/oligometab.py` |
 | In-house notebook: Xenium AD, Xenium EAE (5K, 107 samples), Visium aging, Falcão sorted cells | `notebooks/analysis/analysis_spatial_metabolism.ipynb` (source `notebooks/src/`) |
 | Public notebook: the sixteen OligoC4b datasets, every coarse cell type tested | `notebooks/analysis/analysis_public_datasets_metabolism.ipynb` |
+| Ketone notebook: 26 ketone-related genes (synthesis, utilisation, acetate, transport, receptors, fatty-acid supply) in every cell type across all datasets | `notebooks/analysis/analysis_ketone_metabolism.ipynb` |
 | Summary tables (50 CSVs) | `results/` |
 | Findings, notebook guide, dataset notes | `docs/metabolism_findings.md`, `docs/notebooks.md`, `docs/public_datasets.md` |
 | Report with figures and PDF | `report/report.md`, `report/OligoMetab_metabolism_report.pdf` |

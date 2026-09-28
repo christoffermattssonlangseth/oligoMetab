@@ -57,3 +57,16 @@ Pathway **scores** (`SCORE_SETS`, `pathway_scores()`) are `scanpy.tl.score_genes
 | Visium aging, Falcão, all public datasets | 177–183 / 183 (losses are lowly expressed genes filtered at build time, e.g. *Prkn*, *Hcar2*, *Hmgcs2* in some human sets) |
 
 Re-check with `python scripts/check_panel_symbols.py <files.h5ad>`.
+
+## Ketone-body set (used by `analysis_ketone_metabolism.ipynb`)
+
+A 26-gene superset of the two ketone pathway groups, `oligometab.KETONE`, with three scores (`KETONE_SCORE_SETS`: ketogenesis, ketolysis, fatty-acid supply for ketogenesis). *Hmgcll1*, *Slc5a8* (SMCT1) and *Fgf21* are only in this set.
+
+| Group | Genes |
+| --- | --- |
+| Synthesis (ketogenesis) | *Hmgcs2*, *Hmgcl*, *Hmgcll1*, *Bdh1*, *Bdh2* |
+| Utilisation (ketolysis) | *Oxct1*, *Acat1*, *Bdh1* |
+| Acetate activation | *Acss1*, *Acss2* |
+| Ketone / lactate transport | *Slc16a1*, *Slc16a7*, *Slc16a3*, *Slc16a6*, *Slc5a8*, *Bsg* |
+| Receptors | *Hcar2*, *Ffar3*, *Ffar2* |
+| Fatty-acid supply / regulators | *Cpt1a*, *Cpt2*, *Acadm*, *Hadha*, *Acaa2*, *Ppara*, *Ppargc1a*, *Fgf21* |

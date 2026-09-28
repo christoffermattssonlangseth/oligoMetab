@@ -107,6 +107,24 @@ SCORE_SETS: Dict[str, List[str]] = {
     "Myelin lipids":        PANEL["Myelin lipid synthesis"],
 }
 
+# ketone-body metabolism in depth (used by analysis_ketone_metabolism.ipynb); a superset of the two ketone pathway groups above
+KETONE: Dict[str, List[str]] = {
+    "Synthesis (ketogenesis)":        ["Hmgcs2", "Hmgcl", "Hmgcll1", "Bdh1", "Bdh2"],          # Hmgcs2 is rate-limiting; Bdh1 interconverts AcAc <-> BHB (both directions)
+    "Utilisation (ketolysis)":        ["Oxct1", "Acat1", "Bdh1"],                              # Oxct1 (SCOT) is the committed ketolytic step, absent from liver
+    "Acetate activation":             ["Acss1", "Acss2"],
+    "Ketone / lactate transport":     ["Slc16a1", "Slc16a7", "Slc16a3", "Slc16a6", "Slc5a8", "Bsg"],   # MCT1 (oligodendrocytes, endothelium), MCT2 (neurons), MCT4 (astrocytes), MCT7, SMCT1
+    "Receptors":                      ["Hcar2", "Ffar3", "Ffar2"],                             # BHB agonist Hcar2 (GPR109A); Ffar3 (GPR41) is antagonised by BHB
+    "Fatty-acid supply / regulators": ["Cpt1a", "Cpt2", "Acadm", "Hadha", "Acaa2", "Ppara", "Ppargc1a", "Fgf21"],
+}
+KETONE_GENES: List[str] = list(dict.fromkeys(g for gs in KETONE.values() for g in gs))
+KETONE_SCORE_SETS: Dict[str, List[str]] = {
+    "Ketogenesis": ["Hmgcs2", "Hmgcl", "Hmgcll1", "Bdh1", "Bdh2"],
+    "Ketolysis": ["Oxct1", "Acat1", "Bdh1", "Slc16a1", "Slc16a7"],
+    "FA supply for ketogenesis": ["Cpt1a", "Cpt2", "Acadm", "Hadha", "Acaa2", "Ppara"],
+}
+for _g in ["Hmgcll1", "Slc5a8", "Fgf21"]:
+    PATHWAY_OF.setdefault(_g, "ketone extras")
+
 # context genes used to check cell identity and to anchor on the C4b program described in OligoC4b
 CONTEXT: List[str] = ["C4b", "Serpina3n", "Plp1", "Mbp", "Hexb", "Aqp4", "Gfap", "Itgam"]
 
