@@ -18,11 +18,10 @@
 # Questions, per dataset:
 #
 # 1. Which coarse cell types express each pathway (pathway scores and fraction of cells with ≥1 UMI for the focus genes)?
-# 2. Does expression in oligodendrocytes (and microglia, astrocytes, OPCs) change with disease / age / demyelination (pseudobulk per sample, gene-wise and pathway-wise)?
-# 3. Inside oligodendrocytes, which metabolic genes and pathways co-vary with C4b, the marker of the disease-associated state characterised in OligoC4b, and where do they rank genome-wide?
-# 4. Do C4b-high oligodendrocytes differ from C4b-negative ones in pathway scores, sample by sample?
-# 5. In the human datasets, how do the pathways behave by the authors' lesion / Braak labels?
-# 6. In the spatial datasets, which pathways follow C4b across spots?
+# 2. Does expression change with disease / age / demyelination in every coarse cell type (oligodendrocytes, OPCs, microglia, astrocytes, neurons, endothelial, vascular, immune, ependymal), pseudobulk per sample, gene-wise and pathway-wise?
+# 3. In the human datasets, how do the pathways behave by the authors' lesion / Braak labels?
+# 4. In the spatial datasets, how do the pathways change with genotype, age or lesion type across spots?
+# 5. Finally, as one axis among these: inside mouse oligodendrocytes, which metabolic genes and pathways co-vary with C4b, the marker of the disease-associated state characterised in OligoC4b, and do C4b-high cells differ from C4b-negative ones in pathway scores?
 #
 # Mouse symbols are used throughout; human genes are mapped through `oligometab.MOUSE_TO_HUMAN` / `ALIASES` (e.g. `Gpi1` → `GPI`, `Atp5a1` → `ATP5F1A` / `ATP5A1`).
 # Datasets are processed one at a time and only summary tables are kept in memory. Pathway scores are `scanpy.tl.score_genes` (mean of the set minus a
@@ -60,7 +59,8 @@ FOCUS_ENERGY = ["Hmgcs2", "Bdh1", "Oxct1", "Acat1", "Hcar2", "Slc16a1", "Slc16a7
 FOCUS_LIPID = ["Cpt1a", "Acadm", "Hadha", "Fasn", "Hmgcr", "Srebf2", "Plin2", "Apoe", "Hif1a", "Txnip", "Ddit4"]
 GENES = FOCUS + ["C4b", "Serpina3n"]
 CTS_MAIN = ["Oligodendrocyte", "OPC", "Microglia", "Astrocyte", "Immune (lymphoid/myeloid)", "Neuron"]
-CTS_TEST = ["Oligodendrocyte", "OPC", "Microglia", "Astrocyte"]
+CTS_TEST = [c for c in om.COARSE_TYPES if c != "Other"]          # every coarse cell type is tested; small ones drop out via the cell / sample filters
+CTS_GENE_HEAT = ["Oligodendrocyte", "OPC", "Microglia", "Astrocyte", "Neuron"]
 
 panel_table = pd.DataFrame([(k, len(v), ", ".join(v)) for k, v in PANEL.items()], columns=["pathway", "n_genes", "genes"]).set_index("pathway")
 display(panel_table)
@@ -71,7 +71,7 @@ display(panel_table)
 # For each dataset: load, record which panel genes resolve, compute pathway scores for every cell, the detection and pathway-score tables by cell type,
 # the pseudobulk group comparisons (gene-wise and pathway-wise) for oligodendrocytes / OPCs / microglia / astrocytes, the C4b co-expression, genome-wide
 # ranks and pathway-level rank enrichment inside oligodendrocytes, the C4b-high vs C4b-negative pathway-score comparison, the by-condition tables for
-# human data and the spot-level analyses for spatial data. Per-dataset figures are shown here; cross-dataset summaries follow in sections 2–7.
+# human data and the spot-level analyses for spatial data. Per-dataset figures are shown here; cross-dataset summaries follow in sections 2–7 (cell types, disease contrasts in every cell type, human conditions, spatial, then the C4b axis).
 
 # %%
 DET, DE, DE_SCORE, SCORE_CT = [], [], [], []
@@ -146,7 +146,7 @@ for name, path in PATHS.items():
             s_ct = s_ct.loc[n_ct[n_ct >= 30].index.intersection(s_ct.index)]
             s_ct.insert(0, "dataset", name)
             SCORE_CT.append(s_ct.reset_index().rename(columns={"index": "cell_type"}))
-            keep_ct = [c for c in CTS_MAIN if c in s_ct.index]
+            keep_ct = [c for c in CTS_TEST if c in s_ct.index]
             heat(s_ct.loc[keep_ct].drop(columns="dataset"), f"{short(name)}: mean pathway score by cell type", "pathway score (log scale)",
                  fmt=".2f", cmap="RdBu_r", center=0, row_labels=keep_ct)
 
@@ -319,13 +319,13 @@ if len(SCORE_CT):
     blocks = []
     for ds in mouse_ds:
         s = SCORE_CT[SCORE_CT.dataset == ds].set_index("cell_type").drop(columns="dataset")
-        s = s.loc[[c for c in CTS_MAIN if c in s.index]]
+        s = s.loc[[c for c in CTS_TEST if c in s.index]]
         blocks.append((s - s.mean()) / s.std(ddof=0))
-    z = pd.concat(blocks).groupby(level=0).mean().loc[[c for c in CTS_MAIN if c in pd.concat(blocks).index]]
+    z = pd.concat(blocks).groupby(level=0).mean().loc[[c for c in CTS_TEST if c in pd.concat(blocks).index]]
     heat(z.T, "Pathway score by cell type, z-scored within dataset and averaged over the mouse datasets", "z-score across cell types", fmt=".1f",
          cmap="RdBu_r", center=0, row_labels=list(z.columns), col_labels=list(z.index), annot_size=8)
     # raw scores in oligodendrocytes and microglia per dataset
-    for ct in ["Oligodendrocyte", "Microglia", "Astrocyte"]:
+    for ct in [c for c in CTS_TEST if c in SCORE_CT.cell_type.unique()]:
         s = SCORE_CT[SCORE_CT.cell_type == ct].set_index("dataset").drop(columns="cell_type")
         heat(s, f"{ct}: mean pathway score per dataset (log scale; 0 = same as size-matched control genes)", "pathway score", fmt=".2f", cmap="RdBu_r", center=0)
 
@@ -348,7 +348,7 @@ if len(DET):
 # %%
 if len(DE_SCORE):
     DE_SCORE["contrast"] = DE_SCORE["dataset"].map(short) + "  [" + DE_SCORE["alt"] + " vs " + DE_SCORE["ref"] + "]"
-    for ct in ["Oligodendrocyte", "OPC", "Microglia", "Astrocyte", "spot"]:
+    for ct in [c for c in CTS_TEST + ["spot"] if c in DE_SCORE.cell_type.unique()]:
         sub_ = DE_SCORE[DE_SCORE.cell_type == ct]
         if not len(sub_):
             continue
@@ -361,7 +361,7 @@ if len(DE_SCORE):
 # %%
 if len(DE):
     DE["contrast"] = DE["dataset"].map(short) + "  [" + DE["alt"] + " vs " + DE["ref"] + "]"
-    for ct in ["Oligodendrocyte", "Microglia", "Astrocyte"]:
+    for ct in [c for c in CTS_GENE_HEAT if c in DE.cell_type.unique()]:
         for label, block in [("energy", FOCUS_ENERGY), ("lipid / regulators", FOCUS_LIPID)]:
             sub_ = DE[DE.cell_type == ct]
             if not len(sub_):
@@ -373,21 +373,48 @@ if len(DE):
                  row_labels=list(d.index))
 
 # %%
-# consistency across contrasts: for each gene in oligodendrocytes, how many contrasts move it up / down (|log2FC| > 0.5), and the significant ones
+# consistency across contrasts, per cell type: how many contrasts move each gene up / down (|log2FC| > 0.5), and how many of those are significant
 if len(DE):
-    ol = DE[(DE.cell_type == "Oligodendrocyte")].copy()
-    cons = ol.groupby(["pathway", "gene"]).agg(n_contrasts=("log2FC", "size"), n_up=("log2FC", lambda x: int((x > 0.5).sum())),
-                                              n_down=("log2FC", lambda x: int((x < -0.5).sum())), median_log2FC=("log2FC", "median"),
-                                              n_sig_up=("MWU_p", lambda s: int(((s < 0.05) & (ol.loc[s.index, "log2FC"] > 0)).sum())),
-                                              n_sig_down=("MWU_p", lambda s: int(((s < 0.05) & (ol.loc[s.index, "log2FC"] < 0)).sum())))
-    cons["net"] = cons["n_up"] - cons["n_down"]
-    print("Oligodendrocytes: genes most consistently UP across contrasts"); display(cons.sort_values(["net", "median_log2FC"], ascending=False).head(25).round(3))
-    print("Oligodendrocytes: genes most consistently DOWN across contrasts"); display(cons.sort_values(["net", "median_log2FC"]).head(25).round(3))
-    sig = ol[ol.MWU_p < 0.05].sort_values(["pathway", "gene", "dataset"])
-    print(f"{len(sig)} significant gene-level contrasts in oligodendrocytes:"); display(sig[["dataset", "gene", "pathway", "alt", "ref", "mean_alt", "mean_ref", "log2FC", "MWU_p", "n_alt", "n_ref"]].round(4).reset_index(drop=True))
+    CONS = {}
+    for ct in [c for c in CTS_TEST if c in DE.cell_type.unique()]:
+        d_ = DE[DE.cell_type == ct].copy()
+        d_["sig_up"] = (d_.MWU_p < 0.05) & (d_.log2FC > 0); d_["sig_down"] = (d_.MWU_p < 0.05) & (d_.log2FC < 0)
+        cons = d_.groupby(["pathway", "gene"]).agg(n_contrasts=("log2FC", "size"), n_up=("log2FC", lambda x: int((x > 0.5).sum())),
+                                                   n_down=("log2FC", lambda x: int((x < -0.5).sum())), median_log2FC=("log2FC", "median"),
+                                                   n_sig_up=("sig_up", "sum"), n_sig_down=("sig_down", "sum"))
+        cons["net"] = cons["n_up"] - cons["n_down"]; CONS[ct] = cons
+        print(f"\n=== {ct}: most consistently UP across {d_.contrast.nunique()} contrasts"); display(cons.sort_values(["net", "median_log2FC"], ascending=False).head(12).round(3))
+        print(f"=== {ct}: most consistently DOWN"); display(cons.sort_values(["net", "median_log2FC"]).head(12).round(3))
+    sig = DE[(DE.MWU_p < 0.05) & (DE.cell_type != "spot")].sort_values(["cell_type", "pathway", "gene", "dataset"])
+    print(f"\n{len(sig)} significant gene-level contrasts across all cell types (full table in results/public_gene_pseudobulk_contrasts.csv); oligodendrocytes:")
+    display(sig[sig.cell_type == "Oligodendrocyte"][["dataset", "gene", "pathway", "alt", "ref", "mean_alt", "mean_ref", "log2FC", "MWU_p", "n_alt", "n_ref"]].round(4).reset_index(drop=True))
 
 # %% [markdown]
-# ## 4. The C4b⁺ oligodendrocyte program and metabolism (mouse datasets)
+# ## 4. Human datasets by the authors' condition labels
+#
+# Pathway scores and focus-gene detection in oligodendrocytes and microglia by lesion type (MS) or Braak stage / diagnosis (AD). The metabolic genes are
+# quantifiable in human nuclei (unlike C4A/C4B), so these are direct read-outs.
+
+# %%
+for (name, ct), s in COND_SCORE.items():
+    if INFO[name]["species"] != "human" or ct not in ("Oligodendrocyte", "Microglia"):
+        continue
+    heat(s[[c for c in SCORE_SETS if c in s.columns]], f"{short(name)} — {ct}: mean pathway score by condition", "pathway score", fmt=".2f", cmap="RdBu_r", center=0, row_labels=list(s.index))
+for (name, ct), t in COND.items():
+    if INFO[name]["species"] != "human" or ct != "Oligodendrocyte":
+        continue
+    print(f"=== {short(name)} — {ct}: fraction detected by condition"); display(t[["n_cells"] + [g for g in FOCUS if g in t.columns]].round(3))
+
+# %% [markdown]
+# ## 5. Spatial datasets: metabolism across spots
+
+# %%
+for (name, kind), t in SPATIAL.items():
+    print(f"=== {short(name)} — {kind}")
+    display(t.round(4) if kind != "coexpr" else t.sort_values("rank")[["pathway", "spearman_rho", "rank", "frac_in_C4b-", "frac_in_C4b+", "enrichment(+/-)", "fisher_p"]].round(4).head(40))
+
+# %% [markdown]
+# ## 6. One axis among many: the C4b⁺ oligodendrocyte program and metabolism (mouse datasets)
 #
 # Spearman correlation of every gene with C4b inside oligodendrocytes, then (a) the correlation of the focus genes, (b) pathway-level rank enrichment
 # (mean rho of the pathway's genes; Mann–Whitney against all other ranked genes), (c) the best-ranked metabolic genes per dataset, and (d) pathway
@@ -427,30 +454,6 @@ if C4B_SCORE:
     heat(D, "Pathway score in C4b-high minus C4b-negative oligodendrocytes (cell-level difference; * paired Wilcoxon across samples p < 0.05)",
          "score difference", annot=annot.values, vmin=-0.3, vmax=0.3)
     display(pd.concat(C4B_SCORE, names=["dataset", "pathway"]).round(4))
-
-# %% [markdown]
-# ## 5. Human datasets by the authors' condition labels
-#
-# Pathway scores and focus-gene detection in oligodendrocytes and microglia by lesion type (MS) or Braak stage / diagnosis (AD). The metabolic genes are
-# quantifiable in human nuclei (unlike C4A/C4B), so these are direct read-outs.
-
-# %%
-for (name, ct), s in COND_SCORE.items():
-    if INFO[name]["species"] != "human" or ct not in ("Oligodendrocyte", "Microglia"):
-        continue
-    heat(s[[c for c in SCORE_SETS if c in s.columns]], f"{short(name)} — {ct}: mean pathway score by condition", "pathway score", fmt=".2f", cmap="RdBu_r", center=0, row_labels=list(s.index))
-for (name, ct), t in COND.items():
-    if INFO[name]["species"] != "human" or ct != "Oligodendrocyte":
-        continue
-    print(f"=== {short(name)} — {ct}: fraction detected by condition"); display(t[["n_cells"] + [g for g in FOCUS if g in t.columns]].round(3))
-
-# %% [markdown]
-# ## 6. Spatial datasets: metabolism across spots
-
-# %%
-for (name, kind), t in SPATIAL.items():
-    print(f"=== {short(name)} — {kind}")
-    display(t.round(4) if kind != "coexpr" else t.sort_values("rank")[["pathway", "spearman_rho", "rank", "frac_in_C4b-", "frac_in_C4b+", "enrichment(+/-)", "fisher_p"]].round(4).head(40))
 
 # %% [markdown]
 # ## 7. Cross-dataset summary

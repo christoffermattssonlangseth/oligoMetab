@@ -304,17 +304,40 @@ def coexpression_with_anchor(adata, anchor: str, genes: Sequence[str], high_q: f
     return pd.DataFrame(rows).set_index("gene")
 
 
-def genome_wide_rho(adata, anchor_var: str, min_frac: float = 0.01, max_cells: int = 60000, seed: int = 0) -> pd.Series:
-    """Spearman correlation of every detected gene with ``anchor_var`` (a var_name), sorted descending."""
+def genome_wide_rho(adata, anchor_var: str, min_frac: float = 0.01, max_cells: int = 40000, seed: int = 0, chunk: int = 2000) -> pd.Series:
+    """Spearman correlation of every detected gene with ``anchor_var`` (a var_name), sorted descending.
+
+    Genes detected in more than ``min_frac`` of cells are ranked column-wise in chunks (average ranks for ties, as
+    ``pandas.rank``), standardised and correlated with the ranked anchor by a matrix product, so memory stays at one
+    chunk (cells x ``chunk`` genes) instead of the full dense matrix. Cells are subsampled to ``max_cells``.
+    """
+    from scipy.stats import rankdata
     if adata.n_obs > max_cells:
         adata = adata[np.random.RandomState(seed).choice(adata.n_obs, max_cells, replace=False)]
-    X = adata.X.toarray() if sp.issparse(adata.X) else np.asarray(adata.X)
-    df = pd.DataFrame(X, columns=adata.var_names)
-    keep = df.columns[(df > 0).mean() > min_frac]
-    if anchor_var not in keep:
-        keep = keep.append(pd.Index([anchor_var]))
-    a = df[anchor_var].rank()
-    rho = df[keep].rank().corrwith(a).drop(anchor_var, errors="ignore").sort_values(ascending=False)
+    X = adata.X
+    n = X.shape[0]
+    if sp.issparse(X):
+        X = X.tocsc()
+        frac = np.asarray((X > 0).sum(axis=0)).ravel() / n
+    else:
+        X = np.asarray(X)
+        frac = (X > 0).mean(axis=0)
+    names = np.asarray(adata.var_names)
+    ai = int(np.where(names == anchor_var)[0][0])
+    keep = np.where((frac > min_frac) | (np.arange(len(names)) == ai))[0]
+    a = X[:, ai].toarray().ravel() if sp.issparse(X) else X[:, ai]
+    a = rankdata(a).astype(np.float64)
+    a = (a - a.mean()) / (a.std() + 1e-12)
+    out = np.empty(len(keep), dtype=np.float64)
+    for start in range(0, len(keep), chunk):
+        cols = keep[start:start + chunk]
+        D = X[:, cols].toarray() if sp.issparse(X) else X[:, cols]
+        R = rankdata(D, axis=0).astype(np.float64)
+        R -= R.mean(axis=0)
+        sd = R.std(axis=0)
+        sd[sd == 0] = np.nan
+        out[start:start + len(cols)] = (R.T @ a) / n / sd
+    rho = pd.Series(out, index=names[keep]).drop(anchor_var, errors="ignore").dropna().sort_values(ascending=False)
     return rho
 
 

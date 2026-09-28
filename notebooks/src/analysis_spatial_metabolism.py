@@ -5,9 +5,10 @@
 # dataset by dataset:
 #
 # 1. **Is the gene measurable at all?** Xenium is targeted, so the first result is which metabolic genes are on each panel.
-# 2. **Which cell types express which pathway, and does that change with disease / age?** Pathway scores (`scanpy.tl.score_genes`, set mean minus a
-#    size-matched control set, log scale) and single genes; pseudobulk per sample wherever replicates exist.
-# 3. **How does metabolism relate to the C4b⁺ oligodendrocyte state?** Cell-level co-expression with C4b inside oligodendrocytes, the rank of every
+# 2. **Which cell types express which pathway, and does that change with disease / age, in every cell type?** Pathway scores (`scanpy.tl.score_genes`, set mean
+#    minus a size-matched control set, log scale) and single genes for all annotated cell types; pseudobulk per sample wherever replicates exist; along the
+#    lesion-distance gradient in EAE for each cell type.
+# 3. **As one axis among these, how does metabolism relate to the C4b⁺ oligodendrocyte state?** Cell-level co-expression with C4b inside oligodendrocytes, the rank of every
 #    metabolic gene among all panel genes correlated with C4b, a pathway-level rank-enrichment test, and pathway scores in disease-associated versus
 #    homeostatic oligodendrocytes.
 # 4. **Spatially**, whether cells expressing the ketone receptor Hcar2, the astrocytic lactate exporter Slc16a3 (MCT4) or the hypoxia-inducible hexokinase
@@ -252,7 +253,9 @@ if ad_eae is not None:
 
 # %%
 if ad_eae is not None:
-    cts = ["Oligodendrocytes", "DA Oligodendrocytes", "OPCs", "Microglia", "Macrophages", "Astrocytes", "DA astrocytes", "Neurons"]
+    vc = ad_eae.obs["cell_type"].value_counts()
+    cts = [c for c in vc.index if vc[c] >= 1500 and c != "unclear"]          # every annotated cell type with enough cells
+    print(len(cts), "cell types tested:", cts)
     m_cts = ad_eae.obs["cell_type"].isin(cts).values
     sub = ad_eae[m_cts]
     n = sub.obs.groupby(["sample_name", "cell_type"], observed=True).size().rename("n_cells").reset_index()
@@ -281,7 +284,7 @@ if ad_eae is not None:
     sig = de[(de.MWU_p < 0.05) & (de.log2FC.abs() > 0.5)].sort_values(["cell_type", "log2FC"])
     print(f"{len(sig)} gene-level changes with p < 0.05 and |log2FC| > 0.5:"); display(sig.round(4).reset_index(drop=True))
     tidy = pbs.melt(id_vars=["sample_name", "cell_type", "condition", "model", "n_cells"], value_vars=list(P_eae.columns), var_name="pathway", value_name="score")
-    g = sns.catplot(data=tidy, x="cell_type", y="score", hue="condition", col="pathway", col_wrap=3, kind="box", sharey=False, height=3, aspect=1.4, showfliers=False, order=cts)
+    g = sns.catplot(data=tidy, x="cell_type", y="score", hue="condition", col="pathway", col_wrap=2, kind="box", sharey=False, height=3.2, aspect=2.4, showfliers=False, order=cts)
     for ax in g.axes.flat:
         ax.tick_params(axis="x", rotation=45)
     plt.show()
@@ -308,6 +311,7 @@ if ad_eae is not None:
         results[ds][f"lesion_distance_scores_{label}"] = sb
         mt = om.mean_table(s, [g for g in FOCUS_ENERGY + FOCUS_LIPID if g in genes_eae] + ["C4b"], "lesion_distance_bin", min_cells=50).reindex(bins)
         results[ds][f"lesion_distance_genes_{label}"] = mt
+        del s
         print(f"--- {label}: mean pathway score by lesion distance"); display(sb.round(3))
         t = sb.reset_index().melt(id_vars="index", var_name="pathway", value_name="score").rename(columns={"index": "bin"}); t["population"] = label; ld_rows.append(t)
     ld = pd.concat(ld_rows)
@@ -315,6 +319,18 @@ if ad_eae is not None:
     for ax in g.axes.flat:
         ax.tick_params(axis="x", rotation=45)
     g.set_titles("{col_name}"); plt.show()
+    # every cell type separately: cell type x lesion-distance bin, one heatmap per pathway (value = mean score minus the >500 µm value of that cell type)
+    s_all = ad_eae[m_eae]
+    ct_bin = P_eae.loc[s_all.obs_names].groupby([s_all.obs["cell_type"].astype(str).values, s_all.obs["lesion_distance_bin"].astype(str).values]).mean()
+    n_ct_bin = s_all.obs.groupby([s_all.obs["cell_type"].astype(str).values, s_all.obs["lesion_distance_bin"].astype(str).values]).size()
+    ct_bin = ct_bin[n_ct_bin >= 50]
+    results[ds]["lesion_distance_scores_by_celltype"] = ct_bin
+    for pw in P_eae.columns:
+        m = ct_bin[pw].unstack(1).reindex(columns=bins)
+        m = m.loc[[c for c in cts if c in m.index]]
+        far = m[">500µm"] if ">500µm" in m.columns else m.iloc[:, -1]
+        heat(m.sub(far, axis=0), f"Xenium EAE, {pw}: mean pathway score by cell type and lesion distance, relative to the >500 µm value of the same cell type", "score minus far-from-lesion score", fmt=".2f", vmin=-0.4, vmax=0.4, row_labels=list(m.index))
+    del s_all, ct_bin
     print("oligodendrocyte lineage: mean log-expression by lesion distance"); display(results[ds]["lesion_distance_genes_oligodendrocyte lineage"].round(3))
 
 # %% [markdown]
@@ -489,7 +505,7 @@ if ad_eae is not None:
     for k, v in results[ds].items():
         if isinstance(v, pd.DataFrame):
             v.to_csv(f"../../results/xenium_eae_{k.replace(' ', '_').replace('/', '-')}.csv")
-    del ad_eae, P_eae; gc.collect()
+    del ad_eae, P_eae, show_scores, meta; gc.collect()
 
 # %% [markdown]
 # ---
@@ -543,6 +559,7 @@ if ad_vis is not None:
         print(f"{label}: panel genes with p < 0.05 for the age trend"); display(age_df[age_df.p < 0.05].sort_values("pearson_r").round(4))
         tidy = pbs.melt(id_vars=["sample", "age_group", "age_months"], value_vars=list(P_vis.columns), var_name="pathway", value_name="score")
         g = sns.catplot(data=tidy, x="age_group", y="score", col="pathway", col_wrap=6, kind="strip", sharey=False, height=2.2, size=7); g.fig.suptitle(label, y=1.03); plt.show()
+        del a_
 
 # %% [markdown]
 # ### 3.2 Correlation with C4b across spots and within white-matter-rich spots
@@ -557,6 +574,7 @@ if ad_vis is not None:
         print(f"=== {label}: pathway enrichment among {len(rho)} genes ranked by correlation with C4b"); display(en.round(4))
         print("20 best-ranked metabolic genes:"); display(results[ds][f"coexpr_{label.split(' ')[0]}"].sort_values("rank").head(20)[["pathway", "spearman_rho", "rank", "frac_in_C4b-", "frac_in_C4b+"]].round(4))
         print("top 20 C4b-correlated genes (any):", ", ".join(rho.head(20).index))
+        del sub
     # pathway scores in C4b-high vs C4b-negative white-matter spots (per section paired)
     wm = ad_vis[ad_vis.obs["wm_rich"].values].copy(); c4b = om.expr(wm, "C4b"); pos = c4b > 0
     thr = np.quantile(c4b[pos], 0.75)
