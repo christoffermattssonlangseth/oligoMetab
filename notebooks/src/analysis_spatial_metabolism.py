@@ -273,14 +273,18 @@ if ad_eae is not None:
             rows_s.append({"cell_type": ct, "pathway": pw, "mean_EAE": ma, "mean_CONTROL": mr, "diff": ma - mr, "MWU_p": p, "n_EAE": na, "n_CONTROL": nr})
     de, de_s = pd.DataFrame(rows), pd.DataFrame(rows_s)
     results[ds]["EAE_vs_control_genes"], results[ds]["EAE_vs_control_scores"] = de, de_s
-    d = de_s.pivot(index="cell_type", columns="pathway", values="diff").loc[cts]; p = de_s.pivot(index="cell_type", columns="pathway", values="MWU_p").loc[cts, d.columns]
+    d = de_s.pivot(index="cell_type", columns="pathway", values="diff").loc[cts, list(P_eae.columns)]
+    d = d[d.notna().any(axis=1)]                      # cell types without control samples have nothing to show
+    p = de_s.pivot(index="cell_type", columns="pathway", values="MWU_p").loc[d.index, d.columns]
     annot = d.round(2).astype(str) + np.where(p < 0.05, "*", "")
-    heat(d, "Xenium EAE: pathway-score difference EAE − CONTROL per cell type (pseudobulk per sample; * MWU p < 0.05)", "score difference", annot=annot.values, vmin=-0.3, vmax=0.3, row_labels=cts)
+    heat(d, "Xenium EAE: pathway-score difference EAE − CONTROL per cell type (pseudobulk per sample; * MWU p < 0.05)", "score difference", annot=annot.values, vmin=-0.3, vmax=0.3, row_labels=list(d.index))
+    print("cell types without enough CONTROL samples (descriptive only, not shown):", [c for c in cts if c not in d.index])
     for label, block in [("energy", FOCUS_ENERGY), ("lipid / regulators", FOCUS_LIPID)]:
         cols = [g for g in block if g in genes_eae]
-        d = de.pivot(index="cell_type", columns="gene", values="log2FC").loc[cts, cols]; p = de.pivot(index="cell_type", columns="gene", values="MWU_p").loc[cts, cols]
+        d = de.pivot(index="cell_type", columns="gene", values="log2FC").loc[cts, cols]; d = d[d.notna().any(axis=1)]
+        p = de.pivot(index="cell_type", columns="gene", values="MWU_p").loc[d.index, cols]
         annot = d.round(1).astype(str) + np.where(p < 0.05, "*", "")
-        heat(d, f"Xenium EAE: pseudobulk log2FC EAE vs CONTROL, {label} genes (* MWU p < 0.05)", "log2 fold change", annot=annot.values, vmin=-2, vmax=2, row_labels=cts)
+        heat(d, f"Xenium EAE: pseudobulk log2FC EAE vs CONTROL, {label} genes (* MWU p < 0.05)", "log2 fold change", annot=annot.values, vmin=-2, vmax=2, row_labels=list(d.index))
     sig = de[(de.MWU_p < 0.05) & (de.log2FC.abs() > 0.5)].sort_values(["cell_type", "log2FC"])
     print(f"{len(sig)} gene-level changes with p < 0.05 and |log2FC| > 0.5:"); display(sig.round(4).reset_index(drop=True))
     tidy = pbs.melt(id_vars=["sample_name", "cell_type", "condition", "model", "n_cells"], value_vars=list(P_eae.columns), var_name="pathway", value_name="score")
