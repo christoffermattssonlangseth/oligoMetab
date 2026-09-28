@@ -8,12 +8,12 @@
 # 2. **Which cell types express which pathway, and does that change with disease / age, in every cell type?** Pathway scores (`scanpy.tl.score_genes`, set mean
 #    minus a size-matched control set, log scale) and single genes for all annotated cell types; pseudobulk per sample wherever replicates exist; along the
 #    lesion-distance gradient in EAE for each cell type.
-# 3. **As one axis among these, how does metabolism relate to the C4b⁺ oligodendrocyte state?** Cell-level co-expression with C4b inside oligodendrocytes, the rank of every
-#    metabolic gene among all panel genes correlated with C4b, a pathway-level rank-enrichment test, and pathway scores in disease-associated versus
+# 3. **As one axis among these, how does metabolism relate to the *C4b*⁺ oligodendrocyte state?** Cell-level co-expression with *C4b* inside oligodendrocytes, the rank of every
+#    metabolic gene among all panel genes correlated with *C4b*, a pathway-level rank-enrichment test, and pathway scores in disease-associated versus
 #    homeostatic oligodendrocytes.
-# 4. **Spatially**, whether cells expressing the ketone receptor Hcar2, the astrocytic lactate exporter Slc16a3 (MCT4) or the hypoxia-inducible hexokinase
-#    Hk2 sit closer to C4b-high than to C4b-negative oligodendrocytes, with the lesion-distance-matched control from OligoC4b, and whether the
-#    neighbourhood of C4b-high oligodendrocytes is itself more glycolytic.
+# 4. **Spatially**, whether cells expressing the ketone receptor *Hcar2*, the astrocytic lactate exporter *Slc16a3* (MCT4) or the hypoxia-inducible hexokinase
+#    *Hk2* sit closer to *C4b*-high than to *C4b*-negative oligodendrocytes, with the lesion-distance-matched control from OligoC4b, and whether the
+#    neighbourhood of *C4b*-high oligodendrocytes is itself more glycolytic.
 #
 # Datasets: Xenium mouse AD (TgCRND8 time course, 347-gene panel), Xenium mouse EAE (5K panel, 107 samples), Visium aging mouse brain (whole
 # transcriptome), and the Falcão et al. 2018 EAE scRNA-seq (Smart-seq2, sorted oligodendrocyte-lineage cells) as the intrinsic-expression check.
@@ -166,9 +166,9 @@ else:
     print("skipped")
 
 # %% [markdown]
-# ### 1.1 The three measurable genes (Apoe, Apod, Acsbg1) by cell type and over the disease course
+# ### 1.1 The three measurable genes (*Apoe*, *Apod*, *Acsbg1*) by cell type and over the disease course
 #
-# Apod (lipid-binding, a known correlate of the C4b⁺ program), Apoe (cholesterol transport) and Acsbg1 (very-long-chain acyl-CoA synthetase, oligodendrocyte-
+# *Apod* (lipid-binding, a known correlate of the *C4b*⁺ program), *Apoe* (cholesterol transport) and *Acsbg1* (very-long-chain acyl-CoA synthetase, oligodendrocyte-
 # enriched) are the only metabolic panel genes present. One section per model × age, so trends are descriptive.
 
 # %%
@@ -201,8 +201,8 @@ if ad_ad is not None and genes_ad:
 # ---
 # ## 2. Xenium mouse EAE (5K pan-tissue panel; RR-EAE and chronic EAE, 107 samples)
 #
-# The 5K panel carries about 100 of the 183 panel genes, including Slc16a1 (MCT1), Slc16a3 (MCT4), Hk1/Hk2, Pfkp, Pkm, Ldha/Ldhb, Pdk1, Bdh1, Hcar2, Cpt1a,
-# Fasn, Hmgcr, Srebf1/2, Plin2 and the regulators. Missing are ketogenesis (Hmgcs2, Hmgcl), Oxct1/Acat1, most OXPHOS subunits, Apoe and most of the
+# The 5K panel carries about 100 of the 183 panel genes, including *Slc16a1* (MCT1), *Slc16a3* (MCT4), *Hk1*/Hk2, *Pfkp*, *Pkm*, *Ldha*/Ldhb, *Pdk1*, *Bdh1*, *Hcar2*, *Cpt1a*,
+# *Fasn*, *Hmgcr*, *Srebf1*/2, *Plin2* and the regulators. Missing are ketogenesis (*Hmgcs2*, *Hmgcl*), *Oxct1*/Acat1, most OXPHOS subunits, *Apoe* and most of the
 # cholesterol pathway. The matrix is raw counts and is normalised (`target_sum=1e4`) and log1p-transformed here as in OligoC4b; the sparse matrix is read with
 # `h5py` to skip the neighbour graphs.
 
@@ -338,9 +338,9 @@ if ad_eae is not None:
     print("oligodendrocyte lineage: mean log-expression by lesion distance"); display(results[ds]["lesion_distance_genes_oligodendrocyte lineage"].round(3))
 
 # %% [markdown]
-# ### 2.4 Co-expression with C4b inside DA oligodendrocytes
+# ### 2.4 Co-expression with *C4b* inside DA oligodendrocytes
 #
-# Detection of each metabolic gene in C4b⁺ vs C4b⁻ DA oligodendrocytes, the rank of every metabolic gene among the ~5,000 panel genes correlated with C4b, and a
+# Detection of each metabolic gene in *C4b*⁺ vs *C4b*⁻ DA oligodendrocytes, the rank of every metabolic gene among the ~5,000 panel genes correlated with *C4b*, and a
 # pathway-level test of whether metabolic pathways sit systematically high or low in that ranking (Mann–Whitney of the pathway genes' rho against all other genes).
 
 # %%
@@ -368,7 +368,7 @@ if ad_eae is not None:
 # ### 2.5 Disease-associated versus homeostatic oligodendrocytes: the metabolic profile of the DA state
 #
 # Within each sample that has ≥20 cells of both types, the mean pathway score (and gene mean) of DA oligodendrocytes is compared with that of homeostatic
-# oligodendrocytes; paired Wilcoxon across samples. Also C4b-high vs C4b-negative cells within the oligodendrocyte lineage.
+# oligodendrocytes; paired Wilcoxon across samples. Also *C4b*-high vs *C4b*-negative cells within the oligodendrocyte lineage.
 
 # %%
 if ad_eae is not None:
@@ -394,13 +394,13 @@ if ad_eae is not None:
     plt.tight_layout(); plt.show()
 
 # %% [markdown]
-# ### 2.6 Spatial neighbourhood: metabolic partners of C4b-high oligodendrocytes
+# ### 2.6 Spatial neighbourhood: metabolic partners of *C4b*-high oligodendrocytes
 #
-# Same design as OligoC4b section 2.5: in EAE samples, C4b-high (top quartile of C4b⁺) versus C4b-negative oligodendrocyte-lineage cells as sources, all cells
-# within 30 µm as neighbours. Targets: Hcar2⁺ cells (the ketone-body / niacin receptor, myeloid), Hcar2⁺ myeloid cells, Slc16a3⁺ (MCT4, lactate-exporting)
-# astrocytes, Hk2⁺ cells and Pdk1⁺ cells (hypoxia / glycolytic switch markers), Plin2⁺ cells (lipid-droplet-laden). A ratio > 1 means enrichment around
-# C4b-high oligodendrocytes. Then the lesion-distance-matched control (sources stratified by `lesion_distance_bin`) and the non-lesion-only control.
-# Finally, the mean glycolysis / OXPHOS / lipid score of the *neighbours* of C4b-high vs C4b-negative oligodendrocytes (source cells excluded).
+# Same design as OligoC4b section 2.5: in EAE samples, *C4b*-high (top quartile of *C4b*⁺) versus *C4b*-negative oligodendrocyte-lineage cells as sources, all cells
+# within 30 µm as neighbours. Targets: *Hcar2*⁺ cells (the ketone-body / niacin receptor, myeloid), *Hcar2*⁺ myeloid cells, *Slc16a3*⁺ (MCT4, lactate-exporting)
+# astrocytes, *Hk2*⁺ cells and *Pdk1*⁺ cells (hypoxia / glycolytic switch markers), *Plin2*⁺ cells (lipid-droplet-laden). A ratio > 1 means enrichment around
+# *C4b*-high oligodendrocytes. Then the lesion-distance-matched control (sources stratified by `lesion_distance_bin`) and the non-lesion-only control.
+# Finally, the mean glycolysis / OXPHOS / lipid score of the *neighbours* of *C4b*-high vs *C4b*-negative oligodendrocytes (source cells excluded).
 
 # %%
 if ad_eae is not None:
@@ -515,7 +515,7 @@ if ad_eae is not None:
 # ---
 # ## 3. Visium aging mouse brain (whole transcriptome)
 #
-# Every panel gene is measurable. Spots are ~55 µm mixtures, so cell-type attribution is indirect; a white-matter score (Plp1, Mbp, Mobp, Mag, Cldn11) selects
+# Every panel gene is measurable. Spots are ~55 µm mixtures, so cell-type attribution is indirect; a white-matter score (*Plp1*, *Mbp*, *Mobp*, *Mag*, *Cldn11*) selects
 # oligodendrocyte-rich spots. Age mapping as in OligoC4b (Young = 6, Mid = 18, Old = 21 months; two sections per group).
 
 # %%
@@ -566,7 +566,7 @@ if ad_vis is not None:
         del a_
 
 # %% [markdown]
-# ### 3.2 Correlation with C4b across spots and within white-matter-rich spots
+# ### 3.2 Correlation with *C4b* across spots and within white-matter-rich spots
 
 # %%
 if ad_vis is not None:
@@ -688,20 +688,20 @@ if "Xenium AD" in results and "coexpr_oligo" in results["Xenium AD"]:
 # %% [markdown]
 # ### Interpretation
 #
-# **Panel content first.** The 347-gene Xenium AD panel carries three metabolic genes (Apoe, Apod, Acsbg1), so metabolism cannot be read from that dataset; Apod is the only one that tracks C4b in oligodendrocytes (rank 7 of 341 panel genes, in line with OligoC4b). The 5K EAE panel has 100 of 183 panel genes (no ketogenesis enzymes, no Oxct1/Acat1, two OXPHOS subunits, three cholesterol-synthesis genes), Visium and Falcão have everything.
+# **Panel content first.** The 347-gene Xenium AD panel carries three metabolic genes (*Apoe*, *Apod*, *Acsbg1*), so metabolism cannot be read from that dataset; *Apod* is the only one that tracks *C4b* in oligodendrocytes (rank 7 of 341 panel genes, in line with OligoC4b). The 5K EAE panel has 100 of 183 panel genes (no ketogenesis enzymes, no *Oxct1*/Acat1, two OXPHOS subunits, three cholesterol-synthesis genes), Visium and Falcão have everything.
 #
 # **Baseline division of labour (Xenium EAE, 27 cell types; Falcão lineage stages).** Astrocytes and neurons carry the highest glycolysis and TCA scores; homeostatic oligodendrocytes the highest lipid-synthesis score and newly formed oligodendrocytes the highest cholesterol-synthesis score; microglia, macrophages and especially foamy myeloid cells the highest lipid-transport / storage score together with the lowest cholesterol synthesis. In sorted cells, OPC/COP/NFOL have the highest ketone-utilisation and TCA scores of the lineage, mature oligodendrocytes the highest cholesterol- and myelin-lipid synthesis, microglia the highest glycolysis and pentose-phosphate scores.
 #
-# **EAE is a tissue-wide metabolic shift, not an oligodendrocyte-specific one.** Comparing 92 EAE with 15 control samples per cell type, cholesterol synthesis falls and lipid transport / storage rises in essentially every cell type with enough control samples (oligodendrocytes, DA oligodendrocytes, OPCs, newly formed oligodendrocytes, astrocytes, DA astrocytes, microglia, activated myeloid cells, neurons, endothelial, vascular, fibroblasts, stromal, ependymal and Schwann cells), and the TCA score falls in most of them. Glycolysis rises only in microglia and DA oligodendrocytes and falls in OPCs, neurons and endothelial cells. At the gene level Hcar2, Cd36, Hk2, Plin2, Plin4, Abca1, Lpl, Slc16a3 and Txnip rise across many cell types; because this is in situ, the myeloid genes among them (Hcar2, Cd36, Slc16a3) can be spill-over from adjacent myeloid processes and are checked below in sorted cells.
+# **EAE is a tissue-wide metabolic shift, not an oligodendrocyte-specific one.** Comparing 92 EAE with 15 control samples per cell type, cholesterol synthesis falls and lipid transport / storage rises in essentially every cell type with enough control samples (oligodendrocytes, DA oligodendrocytes, OPCs, newly formed oligodendrocytes, astrocytes, DA astrocytes, microglia, activated myeloid cells, neurons, endothelial, vascular, fibroblasts, stromal, ependymal and Schwann cells), and the TCA score falls in most of them. Glycolysis rises only in microglia and DA oligodendrocytes and falls in OPCs, neurons and endothelial cells. At the gene level *Hcar2*, *Cd36*, *Hk2*, *Plin2*, *Plin4*, *Abca1*, *Lpl*, *Slc16a3* and *Txnip* rise across many cell types; because this is in situ, the myeloid genes among them (*Hcar2*, *Cd36*, *Slc16a3*) can be spill-over from adjacent myeloid processes and are checked below in sorted cells.
 #
 # **Lesion distance.** Toward lesions, glycolysis and TCA scores fall in neurons, homeostatic oligodendrocytes, endothelial and vascular cells, while lipid transport / storage rises in nearly every cell type (largest in endothelial cells, microglia, OPCs and oligodendrocytes). Cholesterol synthesis falls most steeply in OPCs (−0.33), newly formed oligodendrocytes (−0.29) and DA oligodendrocytes (−0.16), the cells that would need it to remyelinate, and rises in homeostatic oligodendrocytes far from the core. Myeloid cells are glycolytic everywhere and become more lactate-producing (Pyruvate-to-lactate score) toward lesions.
 #
-# **The disease-associated oligodendrocyte state (paired within 107 samples).** DA oligodendrocytes score lower than homeostatic ones on glycolysis (−0.10), TCA (−0.12), lipid synthesis (−0.15) and cholesterol synthesis (−0.16) and higher on lipid transport / storage (+0.15; 99 % of samples), with β-oxidation unchanged. Genes: Hk2 (3.5×), Ldha, Pdk1, Slc16a3, Slc2a4, Plin2, Abca1, Lpl, Cd36, Hcar2, Mlxipl, Txnip and Fabp7 up; Slc2a3, Eno2, Ppargc1a, Mpc2, Pcx, Got2, Fh1, Ogdh, Mfn2, Dnm1l, Elovl1 and Pfkp down. C4b-high versus C4b-negative lineage cells give the same picture. **Sorted cells (Falcão) confirm the core of this intrinsically:** EAE MOL clusters versus control MOL clusters show cholesterol synthesis −1.0 (Hmgcs1, Fdps, Cyp51, Dhcr7, Dhcr24, Sqle each 20–30 % lower), myelin-lipid synthesis −0.30, lipid transport / storage +0.95 (Plin4 5×, Plin2 3×, Abca1 2.5×), Pdk4 4×, Ldha 2.2×, Cpt1a 2.5×, Bdh1 2.3×, and Slc16a1 (MCT1) −0.24 log2. Where the two datasets disagree is the direction of the glycolysis / TCA / β-oxidation scores (down in Xenium DA oligodendrocytes, up in sorted EAE MOL); the Xenium glycolysis set is 15 genes weighted toward Eno2, Pfkp and Slc2a3, which fall, whereas the whole-transcriptome set is dominated by Aldoa, Tpi1, Gapdh and Ldha, which rise, so the gene-level tables are the safer read-out here. Ketone-body handling in oligodendrocytes is modest: Bdh1 rises, Oxct1 / Acat1 are flat or lower, Hmgcs2 is barely expressed; Hcar2 is a myeloid receptor (8 % of microglia, 0.3 % of oligodendrocytes in EAE) and its 2 % detection in EAE MOL is a handful of cells.
+# **The disease-associated oligodendrocyte state (paired within 107 samples).** DA oligodendrocytes score lower than homeostatic ones on glycolysis (−0.10), TCA (−0.12), lipid synthesis (−0.15) and cholesterol synthesis (−0.16) and higher on lipid transport / storage (+0.15; 99 % of samples), with β-oxidation unchanged. Genes: *Hk2* (3.5×), *Ldha*, *Pdk1*, *Slc16a3*, *Slc2a4*, *Plin2*, *Abca1*, *Lpl*, *Cd36*, *Hcar2*, *Mlxipl*, *Txnip* and *Fabp7* up; *Slc2a3*, *Eno2*, *Ppargc1a*, *Mpc2*, *Pcx*, *Got2*, *Fh1*, *Ogdh*, *Mfn2*, *Dnm1l*, *Elovl1* and *Pfkp* down. *C4b*-high versus *C4b*-negative lineage cells give the same picture. **Sorted cells (Falcão) confirm the core of this intrinsically:** EAE MOL clusters versus control MOL clusters show cholesterol synthesis −1.0 (*Hmgcs1*, *Fdps*, *Cyp51*, *Dhcr7*, *Dhcr24*, *Sqle* each 20–30 % lower), myelin-lipid synthesis −0.30, lipid transport / storage +0.95 (*Plin4* 5×, *Plin2* 3×, *Abca1* 2.5×), *Pdk4* 4×, *Ldha* 2.2×, *Cpt1a* 2.5×, *Bdh1* 2.3×, and *Slc16a1* (MCT1) −0.24 log2. Where the two datasets disagree is the direction of the glycolysis / TCA / β-oxidation scores (down in Xenium DA oligodendrocytes, up in sorted EAE MOL); the Xenium glycolysis set is 15 genes weighted toward *Eno2*, *Pfkp* and *Slc2a3*, which fall, whereas the whole-transcriptome set is dominated by *Aldoa*, *Tpi1*, *Gapdh* and *Ldha*, which rise, so the gene-level tables are the safer read-out here. Ketone-body handling in oligodendrocytes is modest: *Bdh1* rises, *Oxct1* / *Acat1* are flat or lower, *Hmgcs2* is barely expressed; *Hcar2* is a myeloid receptor (8 % of microglia, 0.3 % of oligodendrocytes in EAE) and its 2 % detection in EAE MOL is a handful of cells.
 #
-# **The C4b axis.** Inside DA oligodendrocytes the metabolic genes that follow C4b are the lipid-droplet / lipid-handling genes (Plin4 rank 2 of 3,673 panel genes, right behind C4a-type immune genes and Serpina3n; Apod 42; Cers2 72; Fasn 86); no metabolic pathway is enriched as a set, and across the whole oligodendrocyte lineage of EAE animals the glycolysis, TCA and mitochondrial-biogenesis sets are significantly *anti*-correlated with C4b. In sorted MOL the same holds with more power: lipid transport / storage is the top pathway (Apod 0.46, Plin4 0.40, Abca1 0.32), cholesterol synthesis is significantly anti-correlated, and glycolysis, TCA and β-oxidation are mildly positive. In Visium the spot-level C4b correlates are white-matter lipid genes (Apoe, Apod, Scd2, Fa2h, Ugt8a), i.e. tissue composition; within white-matter-rich spots, C4b-high spots have higher lipid-synthesis / storage / myelin-lipid and pentose-phosphate scores and lower glycolysis / TCA / OXPHOS in all six sections.
+# **The *C4b* axis.** Inside DA oligodendrocytes the metabolic genes that follow *C4b* are the lipid-droplet / lipid-handling genes (*Plin4* rank 2 of 3,673 panel genes, right behind *C4a*-type immune genes and *Serpina3n*; *Apod* 42; *Cers2* 72; *Fasn* 86); no metabolic pathway is enriched as a set, and across the whole oligodendrocyte lineage of EAE animals the glycolysis, TCA and mitochondrial-biogenesis sets are significantly *anti*-correlated with *C4b*. In sorted MOL the same holds with more power: lipid transport / storage is the top pathway (*Apod* 0.46, *Plin4* 0.40, *Abca1* 0.32), cholesterol synthesis is significantly anti-correlated, and glycolysis, TCA and β-oxidation are mildly positive. In Visium the spot-level *C4b* correlates are white-matter lipid genes (*Apoe*, *Apod*, *Scd2*, *Fa2h*, *Ugt8a*), i.e. tissue composition; within white-matter-rich spots, *C4b*-high spots have higher lipid-synthesis / storage / myelin-lipid and pentose-phosphate scores and lower glycolysis / TCA / OXPHOS in all six sections.
 #
-# **Spatial partners.** In EAE, Hcar2⁺ cells (1.7×), Hcar2⁺ myeloid cells (1.8×), Slc16a3⁺ (MCT4, lactate-exporting) astrocytes (2.3×), Hk2⁺ (1.8×), Pdk1⁺ (1.3×) and Plin2⁺ (1.4×) cells are enriched within 30 µm of C4b-high compared with C4b-negative oligodendrocytes (paired Wilcoxon p < 10⁻⁵ in 87 samples), whereas Slc2a1⁺ cells are not (0.97). The enrichment persists after matching source oligodendrocytes for lesion distance (1.2–1.75) and in non-lesion tissue (1.3–2.2), so, as with C5aR1 in OligoC4b, C4b-high oligodendrocytes mark glycolytic, lactate-exporting, lipid-loaded micro-niches also outside lesions. The non-oligodendrocyte neighbourhood of C4b-high cells is itself less glycolytic and less oxidative on the score scale and richer in lipid storage, which mostly reflects who the neighbours are (myeloid rather than neuronal / astrocytic) rather than a per-cell change.
+# **Spatial partners.** In EAE, *Hcar2*⁺ cells (1.7×), *Hcar2*⁺ myeloid cells (1.8×), *Slc16a3*⁺ (MCT4, lactate-exporting) astrocytes (2.3×), *Hk2*⁺ (1.8×), *Pdk1*⁺ (1.3×) and *Plin2*⁺ (1.4×) cells are enriched within 30 µm of *C4b*-high compared with *C4b*-negative oligodendrocytes (paired Wilcoxon p < 10⁻⁵ in 87 samples), whereas *Slc2a1*⁺ cells are not (0.97). The enrichment persists after matching source oligodendrocytes for lesion distance (1.2–1.75) and in non-lesion tissue (1.3–2.2), so, as with C5aR1 in OligoC4b, *C4b*-high oligodendrocytes mark glycolytic, lactate-exporting, lipid-loaded micro-niches also outside lesions. The non-oligodendrocyte neighbourhood of *C4b*-high cells is itself less glycolytic and less oxidative on the score scale and richer in lipid storage, which mostly reflects who the neighbours are (myeloid rather than neuronal / astrocytic) rather than a per-cell change.
 #
-# **Aging (Visium, 6 sections).** Whole-section glycolysis, TCA and OXPHOS scores rise slightly with age (r ≈ 0.84–0.86, p ≈ 0.03–0.04, slopes of a few hundredths over 15 months), driven by housekeeping glycolytic and OXPHOS genes (Pkm, Aldoa, Gapdh, Hk1, Ldhb, Ndufv1, Uqcrc1, Sdhb). In white-matter-rich spots the lipid-synthesis score falls (p = 0.03) and the myelin-lipid and cholesterol-synthesis genes Fa2h, Ugt8a, Cyp51 and Hmgcs1 decline by 10–19 %, while Apoe (+0.12 log2), Plin2 (+0.48 log2) and Bdh1 rise and Ddit4 (−0.63 log2), Slc2a1 (−0.15 log2) and Sirt1 fall. Aging white matter therefore shows a milder version of the EAE pattern: less lipid / cholesterol synthesis, more lipid storage, with Hcar2 rising from a very low base.
+# **Aging (Visium, 6 sections).** Whole-section glycolysis, TCA and OXPHOS scores rise slightly with age (r ≈ 0.84–0.86, p ≈ 0.03–0.04, slopes of a few hundredths over 15 months), driven by housekeeping glycolytic and OXPHOS genes (*Pkm*, *Aldoa*, *Gapdh*, *Hk1*, *Ldhb*, *Ndufv1*, *Uqcrc1*, *Sdhb*). In white-matter-rich spots the lipid-synthesis score falls (p = 0.03) and the myelin-lipid and cholesterol-synthesis genes *Fa2h*, *Ugt8a*, *Cyp51* and *Hmgcs1* decline by 10–19 %, while *Apoe* (+0.12 log2), *Plin2* (+0.48 log2) and *Bdh1* rise and *Ddit4* (−0.63 log2), *Slc2a1* (−0.15 log2) and *Sirt1* fall. Aging white matter therefore shows a milder version of the EAE pattern: less lipid / cholesterol synthesis, more lipid storage, with *Hcar2* rising from a very low base.
 #
-# **Caveats.** One Xenium AD section per genotype × age; the EAE 5K panel misses the ketogenesis, ketolysis, most OXPHOS and most cholesterol-synthesis genes, so those scores are absent or thin there; in situ transcripts inside a segment can come from a neighbouring cell (Hcar2, Cd36, Slc16a3 in "oligodendrocytes"); the Visium age trend rests on 6 sections; Falcão cells are the replicates (few animals), so its p-values are descriptive; pathway scores are relative to size-matched control genes and are compared by difference, not fold change.
+# **Caveats.** One Xenium AD section per genotype × age; the EAE 5K panel misses the ketogenesis, ketolysis, most OXPHOS and most cholesterol-synthesis genes, so those scores are absent or thin there; in situ transcripts inside a segment can come from a neighbouring cell (*Hcar2*, *Cd36*, *Slc16a3* in "oligodendrocytes"); the Visium age trend rests on 6 sections; Falcão cells are the replicates (few animals), so its p-values are descriptive; pathway scores are relative to size-matched control genes and are compared by difference, not fold change.
