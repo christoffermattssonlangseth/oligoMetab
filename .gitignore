@@ -1,0 +1,37 @@
+# Data and large analysis artefacts
+data/
+*.h5ad
+*.mtx
+*.csv
+*.rds
+*.hdf5
+*.loom
+*.log
+
+# Notebook and Jupyter state
+.ipynb_checkpoints/
+.jupyter/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.cache/
+
+# Editor and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.env
+results/*.csv
