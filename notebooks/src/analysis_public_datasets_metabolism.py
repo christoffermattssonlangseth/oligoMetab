@@ -47,6 +47,9 @@ sc.set_figure_params(dpi=80, frameon=False)
 pd.set_option("display.width", 220); pd.set_option("display.max_columns", 60); pd.set_option("display.max_rows", 400)
 
 PATHS = om.processed_paths()
+only = os.getenv("OLIGOMETAB_ONLY_DATASETS")          # optional comma-separated subset, for smoke tests
+if only:
+    PATHS = {k: v for k, v in PATHS.items() if k in only.split(",")}
 print(f"{len(PATHS)} datasets in {om.PROCESSED_DIR}")
 for k, v in PATHS.items():
     print(f"  {k:42s} {v}")
@@ -74,6 +77,18 @@ display(panel_table)
 DET, DE, DE_SCORE, SCORE_CT = [], [], [], []
 CO, RANKS, ENRICH, TOP, C4B_SCORE, COND, COND_SCORE, SPATIAL, INFO, AVAIL, ERRORS = {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}
 np.random.seed(0)
+
+
+def pv(df, index, columns, values):
+    """NaN-preserving pivot (pivot_table drops rows whose values are all NaN, e.g. p-values of underpowered contrasts)."""
+    idx = [index] if isinstance(index, str) else list(index)
+    return df.drop_duplicates(idx + [columns]).set_index(idx + [columns])[values].unstack(columns)
+
+
+def star(d, p):
+    """Annotation matrix: rounded value plus '*' where p < 0.05 (p aligned to d)."""
+    p = p.reindex(index=d.index, columns=d.columns)
+    return (d.round(2).astype(str).replace("nan", "") + np.where(p.values < 0.05, "*", "")).values
 
 
 def c4b_high_vs_neg_scores(ol, P, sample_col="sample", high_q=0.75, min_cells=20):
@@ -158,11 +173,10 @@ for name, path in PATHS.items():
                                          "diff": ma - mr, "MWU_p": p, "n_alt": na, "n_ref": nr})
             d = pd.DataFrame([x for x in DE_SCORE if x["dataset"] == name])
             if len(d):
-                piv = d.pivot_table(index=["cell_type", "alt"], columns="pathway", values="diff")
-                pp = d.pivot_table(index=["cell_type", "alt"], columns="pathway", values="MWU_p").reindex(columns=piv.columns)
-                annot = piv.round(2).astype(str).replace("nan", "") + np.where(pp < 0.05, "*", "")
+                piv = pv(d, ["cell_type", "alt"], "pathway", "diff")
+                pp = pv(d, ["cell_type", "alt"], "pathway", "MWU_p")
                 heat(piv, f"{short(name)}: pathway-score difference ({' / '.join(alts)} vs {ref}), pseudobulk per sample", "score difference (* MWU p < 0.05)",
-                     annot=annot.values, vmin=-0.3, vmax=0.3, row_labels=[f"{c} | {al} vs {ref}" for c, al in piv.index])
+                     annot=star(piv, pp), vmin=-0.3, vmax=0.3, row_labels=[f"{c} | {al} vs {ref}" for c, al in piv.index])
 
             # -- 3) C4b program inside oligodendrocytes (mouse; human C4B is not quantifiable)
             m_ol = (a.obs["cell_type_coarse"] == "Oligodendrocyte").values
@@ -335,27 +349,27 @@ if len(DET):
 if len(DE_SCORE):
     DE_SCORE["contrast"] = DE_SCORE["dataset"].map(short) + "  [" + DE_SCORE["alt"] + " vs " + DE_SCORE["ref"] + "]"
     for ct in ["Oligodendrocyte", "OPC", "Microglia", "Astrocyte", "spot"]:
-        d = DE_SCORE[DE_SCORE.cell_type == ct].pivot_table(index="contrast", columns="pathway", values="diff")
-        if not len(d):
+        sub_ = DE_SCORE[DE_SCORE.cell_type == ct]
+        if not len(sub_):
             continue
+        d = pv(sub_, "contrast", "pathway", "diff")
         d = d[[c for c in SCORE_SETS if c in d.columns]]
-        p = DE_SCORE[DE_SCORE.cell_type == ct].pivot_table(index="contrast", columns="pathway", values="MWU_p").reindex(columns=d.columns)
-        annot = d.round(2).astype(str).replace("nan", "") + np.where(p < 0.05, "*", "")
+        p = pv(sub_, "contrast", "pathway", "MWU_p")
         heat(d, f"{ct}: pathway-score difference (disease / aged / demyelinated vs reference)", "score difference (* Mann–Whitney p < 0.05)",
-             annot=annot.values, vmin=-0.3, vmax=0.3, row_labels=list(d.index))
+             annot=star(d, p), vmin=-0.3, vmax=0.3, row_labels=list(d.index))
 
 # %%
 if len(DE):
     DE["contrast"] = DE["dataset"].map(short) + "  [" + DE["alt"] + " vs " + DE["ref"] + "]"
     for ct in ["Oligodendrocyte", "Microglia", "Astrocyte"]:
         for label, block in [("energy", FOCUS_ENERGY), ("lipid / regulators", FOCUS_LIPID)]:
-            d = DE[DE.cell_type == ct].pivot_table(index="contrast", columns="gene", values="log2FC")
-            if not len(d):
+            sub_ = DE[DE.cell_type == ct]
+            if not len(sub_):
                 continue
+            d = pv(sub_, "contrast", "gene", "log2FC")
             d = d[[g for g in block if g in d.columns]]
-            p = DE[DE.cell_type == ct].pivot_table(index="contrast", columns="gene", values="MWU_p").reindex(columns=d.columns)
-            annot = d.round(1).astype(str).replace("nan", "") + np.where(p < 0.05, "*", "")
-            heat(d, f"{ct}: pseudobulk log2 fold change, {label} genes", "log2 fold change  (* Mann–Whitney p < 0.05)", annot=annot.values, vmin=-2, vmax=2,
+            p = pv(sub_, "contrast", "gene", "MWU_p")
+            heat(d, f"{ct}: pseudobulk log2 fold change, {label} genes", "log2 fold change  (* Mann–Whitney p < 0.05)", annot=star(d, p), vmin=-2, vmax=2,
                  row_labels=list(d.index))
 
 # %%
@@ -444,7 +458,8 @@ for (name, kind), t in SPATIAL.items():
 # %%
 display(pd.DataFrame(INFO).T)
 if len(DE_SCORE):
-    summ = DE_SCORE[DE_SCORE.cell_type == "Oligodendrocyte"].pivot_table(index="contrast", columns="pathway", values="diff")[[c for c in SCORE_SETS if c in DE_SCORE.pathway.unique()]]
+    summ = pv(DE_SCORE[DE_SCORE.cell_type == "Oligodendrocyte"], "contrast", "pathway", "diff")
+    summ = summ[[c for c in SCORE_SETS if c in summ.columns]]
     print("Oligodendrocyte pathway-score differences per contrast (also shown as a heatmap in section 3):"); display(summ.round(3))
     sig = DE_SCORE[(DE_SCORE.MWU_p < 0.05) & (DE_SCORE.cell_type != "spot")].sort_values(["cell_type", "pathway", "dataset"])
     print(f"{len(sig)} significant pathway-level contrasts:"); display(sig[["dataset", "cell_type", "pathway", "alt", "ref", "mean_alt", "mean_ref", "diff", "MWU_p", "n_alt", "n_ref"]].round(4).reset_index(drop=True))
