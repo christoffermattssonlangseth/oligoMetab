@@ -354,6 +354,18 @@ def rank_panel(rho: pd.Series, adata, genes: Sequence[str]) -> pd.DataFrame:
     return pd.DataFrame(rows).set_index("gene")
 
 
+def _mwu_p(a: np.ndarray, b: np.ndarray) -> float:
+    """Two-sided Mann-Whitney p with the normal approximation.
+
+    SciPy's default ``method='auto'`` switches to the exact distribution when one sample has <= 8 values, which for a
+    small gene set against ~15,000 other genes takes minutes per test; the asymptotic p is what we want here.
+    """
+    try:
+        return float(stats.mannwhitneyu(a, b, alternative="two-sided", method="asymptotic").pvalue)
+    except TypeError:  # scipy < 1.7 has no `method` and is asymptotic by default
+        return float(stats.mannwhitneyu(a, b, alternative="two-sided").pvalue)
+
+
 def pathway_rank_enrichment(rho: pd.Series, adata, sets: Optional[Dict[str, List[str]]] = None, min_genes: int = 4) -> pd.DataFrame:
     """Does a pathway sit systematically high or low in the anchor-correlation ranking?
 
@@ -370,7 +382,7 @@ def pathway_rank_enrichment(rho: pd.Series, adata, sets: Optional[Dict[str, List
             continue
         inset = rho.loc[vs]
         rest = rho.drop(vs)
-        p = stats.mannwhitneyu(inset, rest, alternative="two-sided").pvalue
+        p = _mwu_p(inset.values, rest.values)
         rows.append({"pathway": name, "n_genes": len(vs), "mean_rho": float(inset.mean()), "median_rank": float(ranks[vs].median()),
                      "n_ranked": len(rho), "frac_top_500": float((ranks[vs] <= 500).mean()), "MWU_p": p,
                      "top_gene": inset.idxmax(), "top_rho": float(inset.max())})
