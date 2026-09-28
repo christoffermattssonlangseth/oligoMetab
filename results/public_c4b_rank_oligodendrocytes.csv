@@ -1,0 +1,1159 @@
+dataset,gene,pathway,symbol,spearman_rho,rank,n_ranked
+Aging_snRNA_HIP_CP_mouse,Hmgcl,Ketone body synthesis,Hmgcl,-0.013232947564365204,11449,13295
+Aging_snRNA_HIP_CP_mouse,Bdh1,Ketone body synthesis,Bdh1,0.003634003894258155,3427,13295
+Aging_snRNA_HIP_CP_mouse,Oxct1,Ketone body utilisation,Oxct1,-0.00850992330279898,9632,13295
+Aging_snRNA_HIP_CP_mouse,Acat1,Ketone body utilisation,Acat1,0.0037600645843544234,3376,13295
+Aging_snRNA_HIP_CP_mouse,Acat2,Ketone body utilisation,Acat2,-0.003667907248898509,7086,13295
+Aging_snRNA_HIP_CP_mouse,Acss1,Ketone body utilisation,Acss1,-0.011282343809459826,10787,13295
+Aging_snRNA_HIP_CP_mouse,Acss2,Ketone body utilisation,Acss2,0.00034834222679132917,4939,13295
+Aging_snRNA_HIP_CP_mouse,Slc16a1,Monocarboxylate transporters,Slc16a1,-0.0021554111428395656,6271,13295
+Aging_snRNA_HIP_CP_mouse,Slc16a7,Monocarboxylate transporters,Slc16a7,0.018025381569819487,515,13295
+Aging_snRNA_HIP_CP_mouse,Slc16a6,Monocarboxylate transporters,Slc16a6,0.0024093215212324885,3963,13295
+Aging_snRNA_HIP_CP_mouse,Bsg,Monocarboxylate transporters,Bsg,-0.0179852558769283,12432,13295
+Aging_snRNA_HIP_CP_mouse,Slc2a1,Glucose transporters,Slc2a1,-0.003275799435816197,6903,13295
+Aging_snRNA_HIP_CP_mouse,Slc2a3,Glucose transporters,Slc2a3,0.001981008651547302,4181,13295
+Aging_snRNA_HIP_CP_mouse,Slc2a8,Glucose transporters,Slc2a8,0.0012838332969774462,4483,13295
+Aging_snRNA_HIP_CP_mouse,Hk1,Glycolysis,Hk1,0.0028128274803056884,3796,13295
+Aging_snRNA_HIP_CP_mouse,Gpi1,Glycolysis,Gpi1,-0.003146841860694947,6824,13295
+Aging_snRNA_HIP_CP_mouse,Pfkl,Glycolysis,Pfkl,-0.022144029519748337,12864,13295
+Aging_snRNA_HIP_CP_mouse,Pfkm,Glycolysis,Pfkm,-0.006051715371829077,8362,13295
+Aging_snRNA_HIP_CP_mouse,Pfkp,Glycolysis,Pfkp,0.0021550752820624305,4093,13295
+Aging_snRNA_HIP_CP_mouse,Pfkfb2,Glycolysis,Pfkfb2,-0.009202016319203737,9945,13295
+Aging_snRNA_HIP_CP_mouse,Pfkfb3,Glycolysis,Pfkfb3,0.003359046269758333,3556,13295
+Aging_snRNA_HIP_CP_mouse,Aldoa,Glycolysis,Aldoa,-0.01561448425836521,12030,13295
+Aging_snRNA_HIP_CP_mouse,Aldoc,Glycolysis,Aldoc,-0.002567257441529283,6482,13295
+Aging_snRNA_HIP_CP_mouse,Tpi1,Glycolysis,Tpi1,-0.011839339755189495,10984,13295
+Aging_snRNA_HIP_CP_mouse,Gapdh,Glycolysis,Gapdh,-0.004735771332160699,7652,13295
+Aging_snRNA_HIP_CP_mouse,Pgk1,Glycolysis,Pgk1,-0.007868884587908805,9305,13295
+Aging_snRNA_HIP_CP_mouse,Pgam1,Glycolysis,Pgam1,-0.013867955569040594,11620,13295
+Aging_snRNA_HIP_CP_mouse,Eno1,Glycolysis,Eno1,0.003646049123833296,3420,13295
+Aging_snRNA_HIP_CP_mouse,Eno2,Glycolysis,Eno2,-0.010609368331430754,10536,13295
+Aging_snRNA_HIP_CP_mouse,Pkm,Glycolysis,Pkm,-0.011111942867099852,10718,13295
+Aging_snRNA_HIP_CP_mouse,Ldha,Glycolysis,Ldha,0.0037485809364063405,3380,13295
+Aging_snRNA_HIP_CP_mouse,Ldhb,Glycolysis,Ldhb,0.0026143133008415804,3871,13295
+Aging_snRNA_HIP_CP_mouse,Pdha1,Pyruvate fate,Pdha1,0.00028141184768941207,4976,13295
+Aging_snRNA_HIP_CP_mouse,Pdhb,Pyruvate fate,Pdhb,-0.0042929060859713515,7405,13295
+Aging_snRNA_HIP_CP_mouse,Pdk1,Pyruvate fate,Pdk1,-0.0035229911528922024,7009,13295
+Aging_snRNA_HIP_CP_mouse,Pdk2,Pyruvate fate,Pdk2,-0.004951652012716852,7781,13295
+Aging_snRNA_HIP_CP_mouse,Pdk3,Pyruvate fate,Pdk3,0.0010582949311288819,4585,13295
+Aging_snRNA_HIP_CP_mouse,Pdk4,Pyruvate fate,Pdk4,0.0009072218622436017,4646,13295
+Aging_snRNA_HIP_CP_mouse,Pdp1,Pyruvate fate,Pdp1,0.0001876319615911951,5023,13295
+Aging_snRNA_HIP_CP_mouse,Mpc1,Pyruvate fate,Mpc1,-0.014228999111145028,11709,13295
+Aging_snRNA_HIP_CP_mouse,Mpc2,Pyruvate fate,Mpc2,-0.021681596907290972,12839,13295
+Aging_snRNA_HIP_CP_mouse,Pcx,Pyruvate fate,Pcx,-0.0045653697563750595,7563,13295
+Aging_snRNA_HIP_CP_mouse,G6pdx,Pentose phosphate pathway,G6pdx,0.006807620755742015,2314,13295
+Aging_snRNA_HIP_CP_mouse,Pgd,Pentose phosphate pathway,Pgd,-0.007521050011585768,9143,13295
+Aging_snRNA_HIP_CP_mouse,Tkt,Pentose phosphate pathway,Tkt,0.012703294516245871,1047,13295
+Aging_snRNA_HIP_CP_mouse,Taldo1,Pentose phosphate pathway,Taldo1,-0.003745702602852091,7128,13295
+Aging_snRNA_HIP_CP_mouse,Gys1,Glycogen,Gys1,-0.001470697186428102,5906,13295
+Aging_snRNA_HIP_CP_mouse,Pygb,Glycogen,Pygb,-0.006058047381496469,8365,13295
+Aging_snRNA_HIP_CP_mouse,Gbe1,Glycogen,Gbe1,0.0031285419969534637,3654,13295
+Aging_snRNA_HIP_CP_mouse,Agl,Glycogen,Agl,-0.005826381661608824,8237,13295
+Aging_snRNA_HIP_CP_mouse,Cs,TCA cycle,Cs,-0.0017435777770736542,6046,13295
+Aging_snRNA_HIP_CP_mouse,Aco2,TCA cycle,Aco2,-0.016615334444662958,12222,13295
+Aging_snRNA_HIP_CP_mouse,Idh2,TCA cycle,Idh2,0.003289710026000973,3584,13295
+Aging_snRNA_HIP_CP_mouse,Idh3a,TCA cycle,Idh3a,0.0002571228835785052,4989,13295
+Aging_snRNA_HIP_CP_mouse,Ogdh,TCA cycle,Ogdh,0.027671162877293324,206,13295
+Aging_snRNA_HIP_CP_mouse,Dlst,TCA cycle,Dlst,0.010920406671959914,1332,13295
+Aging_snRNA_HIP_CP_mouse,Sucla2,TCA cycle,Sucla2,-0.01280008322034827,11299,13295
+Aging_snRNA_HIP_CP_mouse,Suclg1,TCA cycle,Suclg1,-0.0056358688380137596,8136,13295
+Aging_snRNA_HIP_CP_mouse,Sdha,TCA cycle,Sdha,0.015236900033425656,738,13295
+Aging_snRNA_HIP_CP_mouse,Sdhb,TCA cycle,Sdhb,-0.015909639905284097,12096,13295
+Aging_snRNA_HIP_CP_mouse,Fh1,TCA cycle,Fh1,-0.0005482637385777149,5404,13295
+Aging_snRNA_HIP_CP_mouse,Mdh1,TCA cycle,Mdh1,-0.017536334812069853,12371,13295
+Aging_snRNA_HIP_CP_mouse,Mdh2,TCA cycle,Mdh2,-0.00876647995213589,9740,13295
+Aging_snRNA_HIP_CP_mouse,Got1,Anaplerosis / amino acids,Got1,0.0008621965416935036,4671,13295
+Aging_snRNA_HIP_CP_mouse,Got2,Anaplerosis / amino acids,Got2,-0.007141586421795227,8936,13295
+Aging_snRNA_HIP_CP_mouse,Glud1,Anaplerosis / amino acids,Glud1,0.00481318267271077,2972,13295
+Aging_snRNA_HIP_CP_mouse,Gls,Anaplerosis / amino acids,Gls,-0.011728383162766639,10945,13295
+Aging_snRNA_HIP_CP_mouse,Glul,Anaplerosis / amino acids,Glul,-0.007140652955866518,8935,13295
+Aging_snRNA_HIP_CP_mouse,Idh1,Anaplerosis / amino acids,Idh1,-0.0014781575629597829,5913,13295
+Aging_snRNA_HIP_CP_mouse,Slc25a1,Anaplerosis / amino acids,Slc25a1,-0.00691134039513115,8801,13295
+Aging_snRNA_HIP_CP_mouse,Slc25a11,Anaplerosis / amino acids,Slc25a11,-0.00950483176045461,10082,13295
+Aging_snRNA_HIP_CP_mouse,Ndufa4,Oxidative phosphorylation,Ndufa4,-0.02660486397393725,13086,13295
+Aging_snRNA_HIP_CP_mouse,Ndufs1,Oxidative phosphorylation,Ndufs1,0.0008004782947286684,4701,13295
+Aging_snRNA_HIP_CP_mouse,Ndufv1,Oxidative phosphorylation,Ndufv1,-0.010180419810368655,10365,13295
+Aging_snRNA_HIP_CP_mouse,Ndufb8,Oxidative phosphorylation,Ndufb8,-0.013669741377521258,11569,13295
+Aging_snRNA_HIP_CP_mouse,Uqcrc1,Oxidative phosphorylation,Uqcrc1,-0.0013204138876432632,5815,13295
+Aging_snRNA_HIP_CP_mouse,Uqcrc2,Oxidative phosphorylation,Uqcrc2,-0.0014114783410511416,5866,13295
+Aging_snRNA_HIP_CP_mouse,Uqcrfs1,Oxidative phosphorylation,Uqcrfs1,-0.0033257502683652555,6925,13295
+Aging_snRNA_HIP_CP_mouse,Cycs,Oxidative phosphorylation,Cycs,-0.009558294123935655,10105,13295
+Aging_snRNA_HIP_CP_mouse,Cox4i1,Oxidative phosphorylation,Cox4i1,-0.019757562531539083,12648,13295
+Aging_snRNA_HIP_CP_mouse,Cox5a,Oxidative phosphorylation,Cox5a,-0.007659782399116535,9207,13295
+Aging_snRNA_HIP_CP_mouse,Cox6c,Oxidative phosphorylation,Cox6c,-0.019593338718732402,12627,13295
+Aging_snRNA_HIP_CP_mouse,Cox7c,Oxidative phosphorylation,Cox7c,-0.021000773374182772,12779,13295
+Aging_snRNA_HIP_CP_mouse,Atp5a1,Oxidative phosphorylation,Atp5a1,-0.014192530429963615,11702,13295
+Aging_snRNA_HIP_CP_mouse,Atp5b,Oxidative phosphorylation,Atp5b,-0.013422728247292395,11499,13295
+Aging_snRNA_HIP_CP_mouse,Atp5o,Oxidative phosphorylation,Atp5o,-0.007126970371642737,8929,13295
+Aging_snRNA_HIP_CP_mouse,Ppargc1a,Mitochondrial biogenesis / dynamics,Ppargc1a,0.00412166231726338,3236,13295
+Aging_snRNA_HIP_CP_mouse,Tfam,Mitochondrial biogenesis / dynamics,Tfam,-0.01082775423495953,10619,13295
+Aging_snRNA_HIP_CP_mouse,Nrf1,Mitochondrial biogenesis / dynamics,Nrf1,0.002900884942937224,3756,13295
+Aging_snRNA_HIP_CP_mouse,Opa1,Mitochondrial biogenesis / dynamics,Opa1,-0.00275350686556028,6577,13295
+Aging_snRNA_HIP_CP_mouse,Mfn2,Mitochondrial biogenesis / dynamics,Mfn2,-0.016638193662939046,12224,13295
+Aging_snRNA_HIP_CP_mouse,Dnm1l,Mitochondrial biogenesis / dynamics,Dnm1l,-0.0018397328763912417,6099,13295
+Aging_snRNA_HIP_CP_mouse,Pink1,Mitochondrial biogenesis / dynamics,Pink1,0.009695590462375739,1596,13295
+Aging_snRNA_HIP_CP_mouse,Prkn,Mitochondrial biogenesis / dynamics,Prkn,0.02162818532231422,361,13295
+Aging_snRNA_HIP_CP_mouse,Slc27a1,Fatty acid uptake / activation,Slc27a1,-0.0009133285192972725,5597,13295
+Aging_snRNA_HIP_CP_mouse,Fabp5,Fatty acid uptake / activation,Fabp5,0.008220591438189184,1915,13295
+Aging_snRNA_HIP_CP_mouse,Acsl1,Fatty acid uptake / activation,Acsl1,0.0260395414895382,232,13295
+Aging_snRNA_HIP_CP_mouse,Acsl3,Fatty acid uptake / activation,Acsl3,0.008981126133273284,1747,13295
+Aging_snRNA_HIP_CP_mouse,Acsl6,Fatty acid uptake / activation,Acsl6,-0.006402025161740395,8552,13295
+Aging_snRNA_HIP_CP_mouse,Acsbg1,Fatty acid uptake / activation,Acsbg1,0.006960146750768648,2262,13295
+Aging_snRNA_HIP_CP_mouse,Cpt1a,Fatty acid beta-oxidation,Cpt1a,0.008693661379610087,1810,13295
+Aging_snRNA_HIP_CP_mouse,Cpt1c,Fatty acid beta-oxidation,Cpt1c,-0.014439992007388958,11754,13295
+Aging_snRNA_HIP_CP_mouse,Cpt2,Fatty acid beta-oxidation,Cpt2,0.0005858610573647721,4824,13295
+Aging_snRNA_HIP_CP_mouse,Slc25a20,Fatty acid beta-oxidation,Slc25a20,-0.012544341874739172,11218,13295
+Aging_snRNA_HIP_CP_mouse,Acadm,Fatty acid beta-oxidation,Acadm,0.0034802035979199565,3500,13295
+Aging_snRNA_HIP_CP_mouse,Acadl,Fatty acid beta-oxidation,Acadl,-0.0002638076707199984,5260,13295
+Aging_snRNA_HIP_CP_mouse,Acadvl,Fatty acid beta-oxidation,Acadvl,0.006054581364494349,2540,13295
+Aging_snRNA_HIP_CP_mouse,Hadha,Fatty acid beta-oxidation,Hadha,0.00894004539242308,1754,13295
+Aging_snRNA_HIP_CP_mouse,Hadhb,Fatty acid beta-oxidation,Hadhb,-0.0061298048360714594,8408,13295
+Aging_snRNA_HIP_CP_mouse,Echs1,Fatty acid beta-oxidation,Echs1,0.008084856990083962,1944,13295
+Aging_snRNA_HIP_CP_mouse,Acaa2,Fatty acid beta-oxidation,Acaa2,0.004698396859630079,3017,13295
+Aging_snRNA_HIP_CP_mouse,Decr1,Fatty acid beta-oxidation,Decr1,0.01044430023751506,1441,13295
+Aging_snRNA_HIP_CP_mouse,Eci1,Fatty acid beta-oxidation,Eci1,0.011134048303677563,1298,13295
+Aging_snRNA_HIP_CP_mouse,Acox1,Fatty acid beta-oxidation,Acox1,0.005678471522374211,2664,13295
+Aging_snRNA_HIP_CP_mouse,Ehhadh,Fatty acid beta-oxidation,Ehhadh,0.004792920427249864,2980,13295
+Aging_snRNA_HIP_CP_mouse,Acly,Lipid synthesis,Acly,-0.0013983716766975132,5859,13295
+Aging_snRNA_HIP_CP_mouse,Acaca,Lipid synthesis,Acaca,0.03130973213488171,145,13295
+Aging_snRNA_HIP_CP_mouse,Fasn,Lipid synthesis,Fasn,0.006158837326062253,2506,13295
+Aging_snRNA_HIP_CP_mouse,Elovl1,Lipid synthesis,Elovl1,-0.006294897538492982,8499,13295
+Aging_snRNA_HIP_CP_mouse,Elovl5,Lipid synthesis,Elovl5,0.0069632775004827945,2260,13295
+Aging_snRNA_HIP_CP_mouse,Elovl6,Lipid synthesis,Elovl6,0.009616061636312423,1615,13295
+Aging_snRNA_HIP_CP_mouse,Scd1,Lipid synthesis,Scd1,-0.0018729820279942497,6122,13295
+Aging_snRNA_HIP_CP_mouse,Scd2,Lipid synthesis,Scd2,-0.013073699308637669,11392,13295
+Aging_snRNA_HIP_CP_mouse,Srebf1,Lipid synthesis,Srebf1,0.01230712454971315,1111,13295
+Aging_snRNA_HIP_CP_mouse,Hmgcs1,Cholesterol synthesis,Hmgcs1,0.008835188582848425,1779,13295
+Aging_snRNA_HIP_CP_mouse,Hmgcr,Cholesterol synthesis,Hmgcr,-0.006499113137772305,8603,13295
+Aging_snRNA_HIP_CP_mouse,Mvk,Cholesterol synthesis,Mvk,0.006605029935779897,2369,13295
+Aging_snRNA_HIP_CP_mouse,Fdps,Cholesterol synthesis,Fdps,-0.007272449412860422,9001,13295
+Aging_snRNA_HIP_CP_mouse,Fdft1,Cholesterol synthesis,Fdft1,0.0295224245315162,184,13295
+Aging_snRNA_HIP_CP_mouse,Sqle,Cholesterol synthesis,Sqle,0.0029251479832292033,3745,13295
+Aging_snRNA_HIP_CP_mouse,Lss,Cholesterol synthesis,Lss,-0.009470915592398777,10067,13295
+Aging_snRNA_HIP_CP_mouse,Cyp51,Cholesterol synthesis,Cyp51,0.000418922228722194,4906,13295
+Aging_snRNA_HIP_CP_mouse,Dhcr24,Cholesterol synthesis,Dhcr24,-0.008725280752395856,9716,13295
+Aging_snRNA_HIP_CP_mouse,Dhcr7,Cholesterol synthesis,Dhcr7,-0.0004594102952156934,5356,13295
+Aging_snRNA_HIP_CP_mouse,Srebf2,Cholesterol synthesis,Srebf2,-0.0007138788052493512,5483,13295
+Aging_snRNA_HIP_CP_mouse,Insig1,Cholesterol synthesis,Insig1,-0.0040470941155880446,7287,13295
+Aging_snRNA_HIP_CP_mouse,Ldlr,Cholesterol / lipid transport,Ldlr,0.010955450731275317,1327,13295
+Aging_snRNA_HIP_CP_mouse,Abca1,Cholesterol / lipid transport,Abca1,0.03336780695996857,124,13295
+Aging_snRNA_HIP_CP_mouse,Abca2,Cholesterol / lipid transport,Abca2,-0.015639461615539786,12037,13295
+Aging_snRNA_HIP_CP_mouse,Abcg1,Cholesterol / lipid transport,Abcg1,0.02415539979826068,277,13295
+Aging_snRNA_HIP_CP_mouse,Apoe,Cholesterol / lipid transport,Apoe,0.011622642755878753,1220,13295
+Aging_snRNA_HIP_CP_mouse,Apod,Cholesterol / lipid transport,Apod,0.047354573079753874,42,13295
+Aging_snRNA_HIP_CP_mouse,Lpl,Cholesterol / lipid transport,Lpl,-0.004168879940016536,7353,13295
+Aging_snRNA_HIP_CP_mouse,Nr1h2,Cholesterol / lipid transport,Nr1h2,-0.018992087003304157,12554,13295
+Aging_snRNA_HIP_CP_mouse,Plin3,Cholesterol / lipid transport,Plin3,-0.00014707057393977793,5197,13295
+Aging_snRNA_HIP_CP_mouse,Plin4,Cholesterol / lipid transport,Plin4,-0.010015928755343215,10309,13295
+Aging_snRNA_HIP_CP_mouse,Ugt8a,Myelin lipid synthesis,Ugt8a,0.012741843872257142,1036,13295
+Aging_snRNA_HIP_CP_mouse,Gal3st1,Myelin lipid synthesis,Gal3st1,0.024145239988862727,278,13295
+Aging_snRNA_HIP_CP_mouse,Cers2,Myelin lipid synthesis,Cers2,-0.018580423640468798,12507,13295
+Aging_snRNA_HIP_CP_mouse,Sptlc1,Myelin lipid synthesis,Sptlc1,0.006969199547283318,2256,13295
+Aging_snRNA_HIP_CP_mouse,Pigt,Myelin lipid synthesis,Pigt,0.0011520246468646334,4534,13295
+Aging_snRNA_HIP_CP_mouse,Fa2h,Myelin lipid synthesis,Fa2h,0.02832827198520425,202,13295
+Aging_snRNA_HIP_CP_mouse,Hif1a,Nutrient sensing / regulators,Hif1a,-0.006374819022707619,8539,13295
+Aging_snRNA_HIP_CP_mouse,Epas1,Nutrient sensing / regulators,Epas1,-0.02635366363022391,13077,13295
+Aging_snRNA_HIP_CP_mouse,Prkaa1,Nutrient sensing / regulators,Prkaa1,0.0047543645767603865,2996,13295
+Aging_snRNA_HIP_CP_mouse,Prkaa2,Nutrient sensing / regulators,Prkaa2,-0.007780991792477581,9266,13295
+Aging_snRNA_HIP_CP_mouse,Mtor,Nutrient sensing / regulators,Mtor,0.009925578981616561,1543,13295
+Aging_snRNA_HIP_CP_mouse,Rptor,Nutrient sensing / regulators,Rptor,0.007786577115626759,2020,13295
+Aging_snRNA_HIP_CP_mouse,Tsc2,Nutrient sensing / regulators,Tsc2,-0.008660749610477544,9686,13295
+Aging_snRNA_HIP_CP_mouse,Ddit4,Nutrient sensing / regulators,Ddit4,-0.011770199863131027,10958,13295
+Aging_snRNA_HIP_CP_mouse,Txnip,Nutrient sensing / regulators,Txnip,0.002709025392762436,3835,13295
+Aging_snRNA_HIP_CP_mouse,Sirt1,Nutrient sensing / regulators,Sirt1,-0.008089189904313607,9410,13295
+Aging_snRNA_HIP_CP_mouse,Sirt3,Nutrient sensing / regulators,Sirt3,0.005778799902588966,2623,13295
+Aging_snRNA_HIP_CP_mouse,Ppard,Nutrient sensing / regulators,Ppard,0.014390306752771923,821,13295
+Aging_snRNA_HIP_CP_mouse,Pparg,Nutrient sensing / regulators,Pparg,-0.005290178298158494,7950,13295
+Aging_snRNA_HIP_CP_mouse,Nfe2l2,Nutrient sensing / regulators,Nfe2l2,0.009352332918669425,1668,13295
+Kaya2022_aged_WM_vs_GM_scRNA,Hmgcl,Ketone body synthesis,Hmgcl,-0.010048480871946354,9331,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Bdh1,Ketone body synthesis,Bdh1,-0.03920960026059329,10829,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Oxct1,Ketone body utilisation,Oxct1,-0.01676379326180179,9905,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Acat1,Ketone body utilisation,Acat1,0.020010798630500905,4367,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Acat2,Ketone body utilisation,Acat2,0.0022873231606062435,7847,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Acss2,Ketone body utilisation,Acss2,-0.026950642578388615,10429,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Slc16a1,Monocarboxylate transporters,Slc16a1,-0.020741206567276245,10140,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Slc16a7,Monocarboxylate transporters,Slc16a7,0.06382460784242636,777,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Slc16a3,Monocarboxylate transporters,Slc16a3,0.01204384643376826,5955,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Slc16a6,Monocarboxylate transporters,Slc16a6,0.033016419684936786,2356,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Bsg,Monocarboxylate transporters,Bsg,-0.07286192136507492,11278,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Slc2a1,Glucose transporters,Slc2a1,0.0005233473556414118,8123,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Slc2a8,Glucose transporters,Slc2a8,-0.010779583444392418,9416,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Hk1,Glycolysis,Hk1,0.0647270721160014,750,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Hk2,Glycolysis,Hk2,-0.03840620535437544,10804,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Gpi1,Glycolysis,Gpi1,0.08177892683020221,511,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pfkl,Glycolysis,Pfkl,0.010914060056610076,6173,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pfkm,Glycolysis,Pfkm,-0.023495324338646807,10275,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pfkp,Glycolysis,Pfkp,-0.020323815966053392,10119,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pfkfb2,Glycolysis,Pfkfb2,0.012906280242788727,5767,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pfkfb3,Glycolysis,Pfkfb3,0.007652245085461973,6845,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Aldoa,Glycolysis,Aldoa,0.09812018562063285,357,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Aldoc,Glycolysis,Aldoc,-0.11771995106607196,11477,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Tpi1,Glycolysis,Tpi1,0.04259812476311431,1530,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Gapdh,Glycolysis,Gapdh,0.18510263284546094,76,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pgk1,Glycolysis,Pgk1,0.005088642773407987,7348,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pgam1,Glycolysis,Pgam1,0.030289634848389348,2695,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Eno1,Glycolysis,Eno1,-0.03328953035532573,10661,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Eno2,Glycolysis,Eno2,0.07183717274355458,629,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pkm,Glycolysis,Pkm,0.0021143508714017395,7866,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Ldha,Glycolysis,Ldha,0.08497216515416404,477,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Ldhb,Glycolysis,Ldhb,-0.17256470739522956,11563,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pdha1,Pyruvate fate,Pdha1,0.020459840273920005,4280,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pdhb,Pyruvate fate,Pdhb,-0.012851546802673279,9597,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pdk1,Pyruvate fate,Pdk1,0.006595376734845024,7048,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pdk2,Pyruvate fate,Pdk2,0.0050033501095294725,7365,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pdk3,Pyruvate fate,Pdk3,0.06748985134744105,699,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pdk4,Pyruvate fate,Pdk4,0.031595540467608735,2528,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pdp1,Pyruvate fate,Pdp1,0.010365303693883339,6296,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Mpc1,Pyruvate fate,Mpc1,0.003224409517634087,7675,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Mpc2,Pyruvate fate,Mpc2,0.039831445527955804,1737,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pcx,Pyruvate fate,Pcx,-0.014096006853294691,9705,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pck2,Pyruvate fate,Pck2,-0.022371950899676543,10219,11601
+Kaya2022_aged_WM_vs_GM_scRNA,G6pdx,Pentose phosphate pathway,G6pdx,0.08724216831525652,456,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pgd,Pentose phosphate pathway,Pgd,0.02226116637358037,3949,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Tkt,Pentose phosphate pathway,Tkt,0.0029297869369438985,7732,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Taldo1,Pentose phosphate pathway,Taldo1,0.004110767415486079,7514,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Gys1,Glycogen,Gys1,-0.008786383481700926,9225,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pygb,Glycogen,Pygb,0.024820729569851138,3485,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Gbe1,Glycogen,Gbe1,0.014491395429899108,5442,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Agl,Glycogen,Agl,0.013807415552018839,5577,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Cs,TCA cycle,Cs,0.0341621626388703,2237,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Aco2,TCA cycle,Aco2,0.03282059904284742,2380,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Idh2,TCA cycle,Idh2,0.06758784246127517,698,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Idh3a,TCA cycle,Idh3a,0.027833536485528297,3010,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Ogdh,TCA cycle,Ogdh,0.010039764842423396,6360,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Dlst,TCA cycle,Dlst,0.034210624541105294,2232,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Sucla2,TCA cycle,Sucla2,0.019627764508288428,4445,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Suclg1,TCA cycle,Suclg1,-0.0033298366622277697,8638,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Sdha,TCA cycle,Sdha,0.03857010036922732,1822,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Sdhb,TCA cycle,Sdhb,0.005775682997586017,7204,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Fh1,TCA cycle,Fh1,0.023413627906723907,3746,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Mdh1,TCA cycle,Mdh1,0.0014782881419292335,7959,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Mdh2,TCA cycle,Mdh2,0.03663409527207666,1975,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Got1,Anaplerosis / amino acids,Got1,0.0006756804740494044,8101,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Got2,Anaplerosis / amino acids,Got2,-0.008408797741919216,9185,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Glud1,Anaplerosis / amino acids,Glud1,0.03040390009089974,2679,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Gls,Anaplerosis / amino acids,Gls,0.01766521862216129,4837,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Glul,Anaplerosis / amino acids,Glul,-0.4098812259962519,11601,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Idh1,Anaplerosis / amino acids,Idh1,0.010863348372574825,6181,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Slc25a1,Anaplerosis / amino acids,Slc25a1,0.044664926329327524,1389,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Slc25a11,Anaplerosis / amino acids,Slc25a11,0.02507420528003949,3438,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Ndufa4,Oxidative phosphorylation,Ndufa4,0.036742925664268525,1971,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Ndufs1,Oxidative phosphorylation,Ndufs1,0.020811194000527684,4220,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Ndufv1,Oxidative phosphorylation,Ndufv1,0.003170037632819408,7685,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Ndufb8,Oxidative phosphorylation,Ndufb8,0.004885122383945506,7388,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Uqcrc1,Oxidative phosphorylation,Uqcrc1,0.04961375383342293,1157,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Uqcrc2,Oxidative phosphorylation,Uqcrc2,0.03500454772280371,2153,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Uqcrfs1,Oxidative phosphorylation,Uqcrfs1,-0.005201021795984974,8874,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Cycs,Oxidative phosphorylation,Cycs,0.015488937692262585,5252,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Cox4i1,Oxidative phosphorylation,Cox4i1,-0.03158131341746563,10603,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Cox5a,Oxidative phosphorylation,Cox5a,0.025705876041457437,3336,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Cox6c,Oxidative phosphorylation,Cox6c,-0.036504346380799725,10741,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Cox7c,Oxidative phosphorylation,Cox7c,0.019273806456588025,4525,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Atp5a1,Oxidative phosphorylation,Atp5a1,0.0307268436179825,2634,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Atp5b,Oxidative phosphorylation,Atp5b,0.05663694489505989,922,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Atp5o,Oxidative phosphorylation,Atp5o,-0.11787203140556489,11480,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Tfam,Mitochondrial biogenesis / dynamics,Tfam,0.009652865971137873,6436,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Nrf1,Mitochondrial biogenesis / dynamics,Nrf1,-0.005681905239909814,8918,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Opa1,Mitochondrial biogenesis / dynamics,Opa1,0.010912155253368885,6175,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Mfn2,Mitochondrial biogenesis / dynamics,Mfn2,0.03733023242250026,1922,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Dnm1l,Mitochondrial biogenesis / dynamics,Dnm1l,0.017436605619774375,4867,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pink1,Mitochondrial biogenesis / dynamics,Pink1,-0.05627632439780721,11128,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Prkn,Mitochondrial biogenesis / dynamics,Prkn,-0.05007537153783118,11040,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Slc27a1,Fatty acid uptake / activation,Slc27a1,-0.012249005360973116,9550,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Fabp5,Fatty acid uptake / activation,Fabp5,0.1357760307882548,174,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Fabp7,Fatty acid uptake / activation,Fabp7,-0.011099018554332589,9450,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Acsl1,Fatty acid uptake / activation,Acsl1,0.0039382048369898965,7537,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Acsl3,Fatty acid uptake / activation,Acsl3,-0.056949266972886776,11137,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Acsl6,Fatty acid uptake / activation,Acsl6,-0.03837856472380125,10803,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Acsbg1,Fatty acid uptake / activation,Acsbg1,-0.036570680241869866,10745,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Cpt1a,Fatty acid beta-oxidation,Cpt1a,0.01095760600129047,6162,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Cpt1c,Fatty acid beta-oxidation,Cpt1c,0.027461577816143962,3065,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Cpt2,Fatty acid beta-oxidation,Cpt2,0.026723114895326607,3163,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Slc25a20,Fatty acid beta-oxidation,Slc25a20,0.019561726040997113,4460,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Acadm,Fatty acid beta-oxidation,Acadm,0.008553120812667394,6664,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Acadl,Fatty acid beta-oxidation,Acadl,0.0030025473195441884,7719,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Acadvl,Fatty acid beta-oxidation,Acadvl,0.02546630829811477,3371,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Acads,Fatty acid beta-oxidation,Acads,0.02836635159843965,2932,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Hadha,Fatty acid beta-oxidation,Hadha,0.016048649142518856,5146,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Hadhb,Fatty acid beta-oxidation,Hadhb,-0.006804263577249889,9036,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Echs1,Fatty acid beta-oxidation,Echs1,-0.04451125225908108,10938,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Acaa2,Fatty acid beta-oxidation,Acaa2,0.013728631489922209,5588,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Decr1,Fatty acid beta-oxidation,Decr1,0.03186804187038262,2490,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Eci1,Fatty acid beta-oxidation,Eci1,0.01657667295211126,5040,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Acox1,Fatty acid beta-oxidation,Acox1,0.0040620893298124626,7520,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Ehhadh,Fatty acid beta-oxidation,Ehhadh,0.005960956990351281,7165,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Acly,Lipid synthesis,Acly,0.05205322428370753,1068,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Acaca,Lipid synthesis,Acaca,0.062608685410723,798,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Fasn,Lipid synthesis,Fasn,0.09134359339132783,426,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Elovl1,Lipid synthesis,Elovl1,-0.0035306199883224656,8665,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Elovl5,Lipid synthesis,Elovl5,-0.05461156740407075,11096,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Elovl6,Lipid synthesis,Elovl6,-0.05597708651848802,11119,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Scd1,Lipid synthesis,Scd1,-0.12810866660024553,11504,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Scd2,Lipid synthesis,Scd2,-0.07754767918211433,11309,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Srebf1,Lipid synthesis,Srebf1,-0.025883405290867096,10391,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Hmgcs1,Cholesterol synthesis,Hmgcs1,0.0362922213521212,2010,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Hmgcr,Cholesterol synthesis,Hmgcr,0.02103862850463045,4175,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Mvk,Cholesterol synthesis,Mvk,0.04457983620077353,1397,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Fdps,Cholesterol synthesis,Fdps,-0.022985835703768515,10253,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Fdft1,Cholesterol synthesis,Fdft1,0.027005970735921286,3127,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Sqle,Cholesterol synthesis,Sqle,0.05656058704683213,926,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Lss,Cholesterol synthesis,Lss,0.008972545403070676,6578,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Cyp51,Cholesterol synthesis,Cyp51,0.04470668070769673,1384,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Dhcr24,Cholesterol synthesis,Dhcr24,0.031985514368717,2477,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Dhcr7,Cholesterol synthesis,Dhcr7,-0.019324880966050517,10063,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Srebf2,Cholesterol synthesis,Srebf2,0.01127612809001388,6095,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Insig1,Cholesterol synthesis,Insig1,-0.10847190278780303,11444,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Ldlr,Cholesterol / lipid transport,Ldlr,0.01553572564980945,5238,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Abca1,Cholesterol / lipid transport,Abca1,0.034390789641811984,2213,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Abca2,Cholesterol / lipid transport,Abca2,0.0476268155026285,1242,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Abcg1,Cholesterol / lipid transport,Abcg1,-0.01196418569036611,9514,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Apoe,Cholesterol / lipid transport,Apoe,-0.02493465170042012,10342,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Apod,Cholesterol / lipid transport,Apod,0.3188893427274524,11,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Lpl,Cholesterol / lipid transport,Lpl,0.004640545423388663,7426,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Nr1h2,Cholesterol / lipid transport,Nr1h2,0.02859079127631296,2898,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Plin2,Cholesterol / lipid transport,Plin2,0.007611321444307821,6853,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Plin3,Cholesterol / lipid transport,Plin3,-0.1167623611673692,11474,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Plin4,Cholesterol / lipid transport,Plin4,0.026538238712271876,3195,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Ugt8a,Myelin lipid synthesis,Ugt8a,0.016414367062064596,5074,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Gal3st1,Myelin lipid synthesis,Gal3st1,0.08943094390028768,437,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Cers2,Myelin lipid synthesis,Cers2,0.09344820377676406,403,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Sptlc1,Myelin lipid synthesis,Sptlc1,0.014461198828558851,5448,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Pigt,Myelin lipid synthesis,Pigt,0.058436487247534946,868,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Fa2h,Myelin lipid synthesis,Fa2h,0.050730522599190864,1115,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Hif1a,Nutrient sensing / regulators,Hif1a,-0.027692070847495632,10465,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Epas1,Nutrient sensing / regulators,Epas1,-0.07092847402341042,11262,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Prkaa1,Nutrient sensing / regulators,Prkaa1,0.03290111289725424,2372,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Prkaa2,Nutrient sensing / regulators,Prkaa2,0.026539025845342144,3194,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Mtor,Nutrient sensing / regulators,Mtor,0.023582966202399018,3717,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Rptor,Nutrient sensing / regulators,Rptor,0.013935029687055563,5549,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Tsc2,Nutrient sensing / regulators,Tsc2,0.06027361121960944,836,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Ddit4,Nutrient sensing / regulators,Ddit4,-0.01860029852371229,10007,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Txnip,Nutrient sensing / regulators,Txnip,0.011204646085434068,6104,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Sirt1,Nutrient sensing / regulators,Sirt1,0.03305876470996389,2351,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Sirt3,Nutrient sensing / regulators,Sirt3,0.03338420985989736,2322,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Ppard,Nutrient sensing / regulators,Ppard,0.0302008215927455,2704,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Nfe2l2,Nutrient sensing / regulators,Nfe2l2,0.07583855742944057,574,11601
+Kaya2022_aged_WM_vs_GM_scRNA,Serpina3n,context,Serpina3n,0.6210850777683485,1,11601
+LPC_Cuprizone_CC_snRNA_mouse,Hmgcl,Ketone body synthesis,Hmgcl,0.057752550746848645,1795,10656
+LPC_Cuprizone_CC_snRNA_mouse,Bdh1,Ketone body synthesis,Bdh1,0.024867330528929872,7568,10656
+LPC_Cuprizone_CC_snRNA_mouse,Oxct1,Ketone body utilisation,Oxct1,0.0332804525940858,5881,10656
+LPC_Cuprizone_CC_snRNA_mouse,Acat1,Ketone body utilisation,Acat1,0.03988822292134059,4483,10656
+LPC_Cuprizone_CC_snRNA_mouse,Acat2,Ketone body utilisation,Acat2,0.01783658164657312,8742,10656
+LPC_Cuprizone_CC_snRNA_mouse,Acss1,Ketone body utilisation,Acss1,0.015372181380784562,9082,10656
+LPC_Cuprizone_CC_snRNA_mouse,Acss2,Ketone body utilisation,Acss2,0.041389592469370386,4196,10656
+LPC_Cuprizone_CC_snRNA_mouse,Slc16a1,Monocarboxylate transporters,Slc16a1,0.03109603241304094,6327,10656
+LPC_Cuprizone_CC_snRNA_mouse,Slc16a7,Monocarboxylate transporters,Slc16a7,0.0603251700998973,1554,10656
+LPC_Cuprizone_CC_snRNA_mouse,Slc16a6,Monocarboxylate transporters,Slc16a6,0.07402559484722948,686,10656
+LPC_Cuprizone_CC_snRNA_mouse,Bsg,Monocarboxylate transporters,Bsg,0.08226917316664467,435,10656
+LPC_Cuprizone_CC_snRNA_mouse,Slc2a1,Glucose transporters,Slc2a1,0.04095564137294458,4274,10656
+LPC_Cuprizone_CC_snRNA_mouse,Slc2a3,Glucose transporters,Slc2a3,0.0014294507121242475,10287,10656
+LPC_Cuprizone_CC_snRNA_mouse,Slc2a8,Glucose transporters,Slc2a8,0.017374984753188712,8803,10656
+LPC_Cuprizone_CC_snRNA_mouse,Hk1,Glycolysis,Hk1,0.0496982892835802,2772,10656
+LPC_Cuprizone_CC_snRNA_mouse,Hk2,Glycolysis,Hk2,0.04173618240154915,4141,10656
+LPC_Cuprizone_CC_snRNA_mouse,Gpi1,Glycolysis,Gpi1,0.04736533491482363,3114,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pfkl,Glycolysis,Pfkl,0.023527943170930644,7802,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pfkp,Glycolysis,Pfkp,0.00011213131208729764,10333,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pfkfb2,Glycolysis,Pfkfb2,0.05291648255504698,2353,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pfkfb3,Glycolysis,Pfkfb3,0.02966575300573451,6614,10656
+LPC_Cuprizone_CC_snRNA_mouse,Aldoa,Glycolysis,Aldoa,0.042080207350857976,4080,10656
+LPC_Cuprizone_CC_snRNA_mouse,Aldoc,Glycolysis,Aldoc,0.027587959081065948,7022,10656
+LPC_Cuprizone_CC_snRNA_mouse,Tpi1,Glycolysis,Tpi1,0.026512622488212966,7249,10656
+LPC_Cuprizone_CC_snRNA_mouse,Gapdh,Glycolysis,Gapdh,0.08240523025305135,430,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pgk1,Glycolysis,Pgk1,0.023211364034530144,7860,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pgam1,Glycolysis,Pgam1,0.024515430780586264,7622,10656
+LPC_Cuprizone_CC_snRNA_mouse,Eno1,Glycolysis,Eno1,-0.00968233165636349,10524,10656
+LPC_Cuprizone_CC_snRNA_mouse,Eno2,Glycolysis,Eno2,-0.0026675987692881434,10410,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pkm,Glycolysis,Pkm,0.08195143783845728,446,10656
+LPC_Cuprizone_CC_snRNA_mouse,Ldha,Glycolysis,Ldha,0.029076099540012636,6734,10656
+LPC_Cuprizone_CC_snRNA_mouse,Ldhb,Glycolysis,Ldhb,0.0199568927442837,8426,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pdha1,Pyruvate fate,Pdha1,0.033097398736983495,5916,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pdhb,Pyruvate fate,Pdhb,0.04500209131705769,3547,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pdk1,Pyruvate fate,Pdk1,0.024401836484489868,7638,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pdk2,Pyruvate fate,Pdk2,0.06394297483301287,1249,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pdk3,Pyruvate fate,Pdk3,0.04609807588714389,3356,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pdk4,Pyruvate fate,Pdk4,0.04841601364210067,2957,10656
+LPC_Cuprizone_CC_snRNA_mouse,Mpc1,Pyruvate fate,Mpc1,0.036346732197085646,5197,10656
+LPC_Cuprizone_CC_snRNA_mouse,Mpc2,Pyruvate fate,Mpc2,0.03775048179954379,4903,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pcx,Pyruvate fate,Pcx,0.011569615575936743,9536,10656
+LPC_Cuprizone_CC_snRNA_mouse,G6pdx,Pentose phosphate pathway,G6pdx,0.03282245392198572,5982,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pgd,Pentose phosphate pathway,Pgd,0.01425935106971397,9217,10656
+LPC_Cuprizone_CC_snRNA_mouse,Tkt,Pentose phosphate pathway,Tkt,0.021697984467382386,8124,10656
+LPC_Cuprizone_CC_snRNA_mouse,Taldo1,Pentose phosphate pathway,Taldo1,0.04094276617446951,4278,10656
+LPC_Cuprizone_CC_snRNA_mouse,Gys1,Glycogen,Gys1,0.007425924704149196,9909,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pygb,Glycogen,Pygb,0.017297345927250334,8815,10656
+LPC_Cuprizone_CC_snRNA_mouse,Gbe1,Glycogen,Gbe1,0.043956488499201564,3722,10656
+LPC_Cuprizone_CC_snRNA_mouse,Agl,Glycogen,Agl,0.04064192827108716,4351,10656
+LPC_Cuprizone_CC_snRNA_mouse,Cs,TCA cycle,Cs,0.01940997815832223,8512,10656
+LPC_Cuprizone_CC_snRNA_mouse,Aco2,TCA cycle,Aco2,0.0698117425668805,880,10656
+LPC_Cuprizone_CC_snRNA_mouse,Idh2,TCA cycle,Idh2,0.0573556636415435,1832,10656
+LPC_Cuprizone_CC_snRNA_mouse,Idh3a,TCA cycle,Idh3a,0.03397815641977104,5740,10656
+LPC_Cuprizone_CC_snRNA_mouse,Ogdh,TCA cycle,Ogdh,0.062024607753136236,1395,10656
+LPC_Cuprizone_CC_snRNA_mouse,Dlst,TCA cycle,Dlst,0.05505923054898586,2087,10656
+LPC_Cuprizone_CC_snRNA_mouse,Sucla2,TCA cycle,Sucla2,0.05026646145035745,2704,10656
+LPC_Cuprizone_CC_snRNA_mouse,Suclg1,TCA cycle,Suclg1,0.018578962869906946,8637,10656
+LPC_Cuprizone_CC_snRNA_mouse,Sdha,TCA cycle,Sdha,0.04521957483289256,3504,10656
+LPC_Cuprizone_CC_snRNA_mouse,Sdhb,TCA cycle,Sdhb,0.03429411925704949,5656,10656
+LPC_Cuprizone_CC_snRNA_mouse,Fh1,TCA cycle,Fh1,0.025816654612668063,7390,10656
+LPC_Cuprizone_CC_snRNA_mouse,Mdh1,TCA cycle,Mdh1,0.04391326790440057,3729,10656
+LPC_Cuprizone_CC_snRNA_mouse,Mdh2,TCA cycle,Mdh2,0.03125818642738891,6298,10656
+LPC_Cuprizone_CC_snRNA_mouse,Got1,Anaplerosis / amino acids,Got1,0.03964409174693778,4526,10656
+LPC_Cuprizone_CC_snRNA_mouse,Got2,Anaplerosis / amino acids,Got2,0.04286149722791049,3927,10656
+LPC_Cuprizone_CC_snRNA_mouse,Glud1,Anaplerosis / amino acids,Glud1,0.04853406955579548,2939,10656
+LPC_Cuprizone_CC_snRNA_mouse,Gls,Anaplerosis / amino acids,Gls,0.07048954312210791,840,10656
+LPC_Cuprizone_CC_snRNA_mouse,Glul,Anaplerosis / amino acids,Glul,0.09115682537214306,290,10656
+LPC_Cuprizone_CC_snRNA_mouse,Idh1,Anaplerosis / amino acids,Idh1,0.040439726670357515,4386,10656
+LPC_Cuprizone_CC_snRNA_mouse,Slc25a1,Anaplerosis / amino acids,Slc25a1,0.022238642641779112,8032,10656
+LPC_Cuprizone_CC_snRNA_mouse,Slc25a11,Anaplerosis / amino acids,Slc25a11,0.017526527549428458,8782,10656
+LPC_Cuprizone_CC_snRNA_mouse,Ndufa4,Oxidative phosphorylation,Ndufa4,0.016649434369645725,8911,10656
+LPC_Cuprizone_CC_snRNA_mouse,Ndufs1,Oxidative phosphorylation,Ndufs1,0.04648830663967656,3294,10656
+LPC_Cuprizone_CC_snRNA_mouse,Ndufv1,Oxidative phosphorylation,Ndufv1,0.04220244644872112,4060,10656
+LPC_Cuprizone_CC_snRNA_mouse,Ndufb8,Oxidative phosphorylation,Ndufb8,0.04276917631121719,3950,10656
+LPC_Cuprizone_CC_snRNA_mouse,Uqcrc1,Oxidative phosphorylation,Uqcrc1,0.04302482532714972,3900,10656
+LPC_Cuprizone_CC_snRNA_mouse,Uqcrc2,Oxidative phosphorylation,Uqcrc2,0.046488878543410224,3293,10656
+LPC_Cuprizone_CC_snRNA_mouse,Uqcrfs1,Oxidative phosphorylation,Uqcrfs1,0.038436031820689776,4782,10656
+LPC_Cuprizone_CC_snRNA_mouse,Cycs,Oxidative phosphorylation,Cycs,0.027604920886906543,7018,10656
+LPC_Cuprizone_CC_snRNA_mouse,Cox4i1,Oxidative phosphorylation,Cox4i1,0.056365759491153744,1931,10656
+LPC_Cuprizone_CC_snRNA_mouse,Cox5a,Oxidative phosphorylation,Cox5a,0.05321838007747823,2312,10656
+LPC_Cuprizone_CC_snRNA_mouse,Cox6c,Oxidative phosphorylation,Cox6c,0.04716565576943468,3154,10656
+LPC_Cuprizone_CC_snRNA_mouse,Cox7c,Oxidative phosphorylation,Cox7c,0.059164483859473094,1649,10656
+LPC_Cuprizone_CC_snRNA_mouse,Atp5a1,Oxidative phosphorylation,Atp5a1,0.04203528608147149,4091,10656
+LPC_Cuprizone_CC_snRNA_mouse,Atp5b,Oxidative phosphorylation,Atp5b,0.047532421286192734,3080,10656
+LPC_Cuprizone_CC_snRNA_mouse,Atp5o,Oxidative phosphorylation,Atp5o,0.019453768219224166,8507,10656
+LPC_Cuprizone_CC_snRNA_mouse,Tfam,Mitochondrial biogenesis / dynamics,Tfam,0.03567410875560419,5365,10656
+LPC_Cuprizone_CC_snRNA_mouse,Nrf1,Mitochondrial biogenesis / dynamics,Nrf1,0.05356959457424973,2262,10656
+LPC_Cuprizone_CC_snRNA_mouse,Opa1,Mitochondrial biogenesis / dynamics,Opa1,0.06435307487388033,1225,10656
+LPC_Cuprizone_CC_snRNA_mouse,Mfn2,Mitochondrial biogenesis / dynamics,Mfn2,0.03935659615085336,4591,10656
+LPC_Cuprizone_CC_snRNA_mouse,Dnm1l,Mitochondrial biogenesis / dynamics,Dnm1l,0.07259825090198159,747,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pink1,Mitochondrial biogenesis / dynamics,Pink1,0.032974467595815876,5942,10656
+LPC_Cuprizone_CC_snRNA_mouse,Prkn,Mitochondrial biogenesis / dynamics,Prkn,0.06787404516889328,972,10656
+LPC_Cuprizone_CC_snRNA_mouse,Slc27a1,Fatty acid uptake / activation,Slc27a1,0.03693853023841896,5088,10656
+LPC_Cuprizone_CC_snRNA_mouse,Fabp5,Fatty acid uptake / activation,Fabp5,0.05007032429188272,2726,10656
+LPC_Cuprizone_CC_snRNA_mouse,Fabp7,Fatty acid uptake / activation,Fabp7,0.06466162895016085,1198,10656
+LPC_Cuprizone_CC_snRNA_mouse,Acsl1,Fatty acid uptake / activation,Acsl1,0.04842592989336195,2954,10656
+LPC_Cuprizone_CC_snRNA_mouse,Acsl3,Fatty acid uptake / activation,Acsl3,0.026506533342045734,7251,10656
+LPC_Cuprizone_CC_snRNA_mouse,Cpt1a,Fatty acid beta-oxidation,Cpt1a,0.049745451741929146,2763,10656
+LPC_Cuprizone_CC_snRNA_mouse,Cpt1c,Fatty acid beta-oxidation,Cpt1c,0.05914696852602203,1650,10656
+LPC_Cuprizone_CC_snRNA_mouse,Cpt2,Fatty acid beta-oxidation,Cpt2,0.031466966318789376,6252,10656
+LPC_Cuprizone_CC_snRNA_mouse,Acadm,Fatty acid beta-oxidation,Acadm,0.03400649891604564,5729,10656
+LPC_Cuprizone_CC_snRNA_mouse,Acadl,Fatty acid beta-oxidation,Acadl,0.03103618061769082,6336,10656
+LPC_Cuprizone_CC_snRNA_mouse,Acadvl,Fatty acid beta-oxidation,Acadvl,0.025922019726226816,7364,10656
+LPC_Cuprizone_CC_snRNA_mouse,Hadha,Fatty acid beta-oxidation,Hadha,0.03502981280427291,5501,10656
+LPC_Cuprizone_CC_snRNA_mouse,Hadhb,Fatty acid beta-oxidation,Hadhb,0.018707752759101987,8619,10656
+LPC_Cuprizone_CC_snRNA_mouse,Echs1,Fatty acid beta-oxidation,Echs1,0.045817712440835705,3404,10656
+LPC_Cuprizone_CC_snRNA_mouse,Decr1,Fatty acid beta-oxidation,Decr1,0.02982314158341296,6585,10656
+LPC_Cuprizone_CC_snRNA_mouse,Eci1,Fatty acid beta-oxidation,Eci1,0.011842508822247777,9503,10656
+LPC_Cuprizone_CC_snRNA_mouse,Acox1,Fatty acid beta-oxidation,Acox1,0.04970868624655785,2771,10656
+LPC_Cuprizone_CC_snRNA_mouse,Ehhadh,Fatty acid beta-oxidation,Ehhadh,0.009799138998352807,9716,10656
+LPC_Cuprizone_CC_snRNA_mouse,Acly,Lipid synthesis,Acly,0.03335575768729029,5867,10656
+LPC_Cuprizone_CC_snRNA_mouse,Acaca,Lipid synthesis,Acaca,0.0835239218348363,396,10656
+LPC_Cuprizone_CC_snRNA_mouse,Fasn,Lipid synthesis,Fasn,0.05653242123886151,1915,10656
+LPC_Cuprizone_CC_snRNA_mouse,Elovl1,Lipid synthesis,Elovl1,0.06428554467674949,1229,10656
+LPC_Cuprizone_CC_snRNA_mouse,Elovl5,Lipid synthesis,Elovl5,0.03408554770732435,5705,10656
+LPC_Cuprizone_CC_snRNA_mouse,Elovl6,Lipid synthesis,Elovl6,0.0031115841699690195,10210,10656
+LPC_Cuprizone_CC_snRNA_mouse,Scd1,Lipid synthesis,Scd1,0.0025378048337972884,10233,10656
+LPC_Cuprizone_CC_snRNA_mouse,Scd2,Lipid synthesis,Scd2,-0.05238260336401219,10642,10656
+LPC_Cuprizone_CC_snRNA_mouse,Srebf1,Lipid synthesis,Srebf1,0.044335203243692486,3664,10656
+LPC_Cuprizone_CC_snRNA_mouse,Hmgcs1,Cholesterol synthesis,Hmgcs1,0.018339385050183666,8679,10656
+LPC_Cuprizone_CC_snRNA_mouse,Hmgcr,Cholesterol synthesis,Hmgcr,0.010818986827590254,9601,10656
+LPC_Cuprizone_CC_snRNA_mouse,Mvk,Cholesterol synthesis,Mvk,0.02993217267407598,6566,10656
+LPC_Cuprizone_CC_snRNA_mouse,Fdps,Cholesterol synthesis,Fdps,0.023087004826370872,7887,10656
+LPC_Cuprizone_CC_snRNA_mouse,Fdft1,Cholesterol synthesis,Fdft1,0.05844886383852027,1723,10656
+LPC_Cuprizone_CC_snRNA_mouse,Sqle,Cholesterol synthesis,Sqle,0.013947743988676964,9268,10656
+LPC_Cuprizone_CC_snRNA_mouse,Lss,Cholesterol synthesis,Lss,0.019825813902590354,8444,10656
+LPC_Cuprizone_CC_snRNA_mouse,Cyp51,Cholesterol synthesis,Cyp51,0.030744297103966586,6392,10656
+LPC_Cuprizone_CC_snRNA_mouse,Dhcr24,Cholesterol synthesis,Dhcr24,0.010237385134889896,9665,10656
+LPC_Cuprizone_CC_snRNA_mouse,Dhcr7,Cholesterol synthesis,Dhcr7,0.02157079738166652,8149,10656
+LPC_Cuprizone_CC_snRNA_mouse,Srebf2,Cholesterol synthesis,Srebf2,0.029900289601811934,6574,10656
+LPC_Cuprizone_CC_snRNA_mouse,Insig1,Cholesterol synthesis,Insig1,0.012306519664471828,9452,10656
+LPC_Cuprizone_CC_snRNA_mouse,Ldlr,Cholesterol / lipid transport,Ldlr,0.02410852824299385,7706,10656
+LPC_Cuprizone_CC_snRNA_mouse,Abca1,Cholesterol / lipid transport,Abca1,0.1293053633682306,67,10656
+LPC_Cuprizone_CC_snRNA_mouse,Abca2,Cholesterol / lipid transport,Abca2,0.0689326734490066,919,10656
+LPC_Cuprizone_CC_snRNA_mouse,Abcg1,Cholesterol / lipid transport,Abcg1,0.07006224912178306,867,10656
+LPC_Cuprizone_CC_snRNA_mouse,Apoe,Cholesterol / lipid transport,Apoe,0.23713157616844657,1,10656
+LPC_Cuprizone_CC_snRNA_mouse,Apod,Cholesterol / lipid transport,Apod,0.1626504519580214,18,10656
+LPC_Cuprizone_CC_snRNA_mouse,Lpl,Cholesterol / lipid transport,Lpl,0.09628096400318939,229,10656
+LPC_Cuprizone_CC_snRNA_mouse,Nr1h2,Cholesterol / lipid transport,Nr1h2,0.039154404399302935,4631,10656
+LPC_Cuprizone_CC_snRNA_mouse,Plin2,Cholesterol / lipid transport,Plin2,0.07033963577173416,849,10656
+LPC_Cuprizone_CC_snRNA_mouse,Plin3,Cholesterol / lipid transport,Plin3,0.04998325242048165,2735,10656
+LPC_Cuprizone_CC_snRNA_mouse,Plin4,Cholesterol / lipid transport,Plin4,0.09692125749882669,221,10656
+LPC_Cuprizone_CC_snRNA_mouse,Ugt8a,Myelin lipid synthesis,Ugt8a,-0.02569135450879318,10613,10656
+LPC_Cuprizone_CC_snRNA_mouse,Gal3st1,Myelin lipid synthesis,Gal3st1,0.04088924811743508,4288,10656
+LPC_Cuprizone_CC_snRNA_mouse,Cers2,Myelin lipid synthesis,Cers2,0.07809837522309616,542,10656
+LPC_Cuprizone_CC_snRNA_mouse,Sptlc1,Myelin lipid synthesis,Sptlc1,0.03588819592961928,5312,10656
+LPC_Cuprizone_CC_snRNA_mouse,Pigt,Myelin lipid synthesis,Pigt,0.0697960620895106,881,10656
+LPC_Cuprizone_CC_snRNA_mouse,Fa2h,Myelin lipid synthesis,Fa2h,0.04418365688265452,3689,10656
+LPC_Cuprizone_CC_snRNA_mouse,Hif1a,Nutrient sensing / regulators,Hif1a,0.051438418909756776,2539,10656
+LPC_Cuprizone_CC_snRNA_mouse,Epas1,Nutrient sensing / regulators,Epas1,0.027342909400195306,7087,10656
+LPC_Cuprizone_CC_snRNA_mouse,Prkaa1,Nutrient sensing / regulators,Prkaa1,0.03738166735241977,4988,10656
+LPC_Cuprizone_CC_snRNA_mouse,Prkaa2,Nutrient sensing / regulators,Prkaa2,0.026969785190390585,7158,10656
+LPC_Cuprizone_CC_snRNA_mouse,Mtor,Nutrient sensing / regulators,Mtor,0.06035872666311223,1553,10656
+LPC_Cuprizone_CC_snRNA_mouse,Rptor,Nutrient sensing / regulators,Rptor,0.047817662193430054,3042,10656
+LPC_Cuprizone_CC_snRNA_mouse,Tsc2,Nutrient sensing / regulators,Tsc2,0.0312708342484113,6295,10656
+LPC_Cuprizone_CC_snRNA_mouse,Ddit4,Nutrient sensing / regulators,Ddit4,0.039417619656282835,4570,10656
+LPC_Cuprizone_CC_snRNA_mouse,Txnip,Nutrient sensing / regulators,Txnip,0.03867194345951429,4738,10656
+LPC_Cuprizone_CC_snRNA_mouse,Sirt1,Nutrient sensing / regulators,Sirt1,0.0492492120830533,2829,10656
+LPC_Cuprizone_CC_snRNA_mouse,Sirt3,Nutrient sensing / regulators,Sirt3,0.0669069060343734,1030,10656
+LPC_Cuprizone_CC_snRNA_mouse,Ppard,Nutrient sensing / regulators,Ppard,0.07621281837957752,593,10656
+LPC_Cuprizone_CC_snRNA_mouse,Nfe2l2,Nutrient sensing / regulators,Nfe2l2,0.046890913120359465,3205,10656
+LPC_Cuprizone_CC_snRNA_mouse,Serpina3n,context,Serpina3n,0.2145477504256243,3,10656
+Park2023_AD_hippocampus_scRNA,Hmgcl,Ketone body synthesis,Hmgcl,0.018452183234238452,6765,11007
+Park2023_AD_hippocampus_scRNA,Bdh1,Ketone body synthesis,Bdh1,0.029943646173033852,4034,11007
+Park2023_AD_hippocampus_scRNA,Oxct1,Ketone body utilisation,Oxct1,0.03514924679566123,2983,11007
+Park2023_AD_hippocampus_scRNA,Acat1,Ketone body utilisation,Acat1,0.04505341761302605,1473,11007
+Park2023_AD_hippocampus_scRNA,Acat2,Ketone body utilisation,Acat2,0.00792977968711541,8793,11007
+Park2023_AD_hippocampus_scRNA,Acss1,Ketone body utilisation,Acss1,0.006303169771821507,9037,11007
+Park2023_AD_hippocampus_scRNA,Acss2,Ketone body utilisation,Acss2,0.0143813719473643,7613,11007
+Park2023_AD_hippocampus_scRNA,Slc16a1,Monocarboxylate transporters,Slc16a1,0.021018631786922145,6154,11007
+Park2023_AD_hippocampus_scRNA,Slc16a7,Monocarboxylate transporters,Slc16a7,0.042153302464082734,1833,11007
+Park2023_AD_hippocampus_scRNA,Slc16a3,Monocarboxylate transporters,Slc16a3,0.021188379844678112,6118,11007
+Park2023_AD_hippocampus_scRNA,Slc16a6,Monocarboxylate transporters,Slc16a6,0.0018345358867439363,9604,11007
+Park2023_AD_hippocampus_scRNA,Bsg,Monocarboxylate transporters,Bsg,-0.026467204448885843,10865,11007
+Park2023_AD_hippocampus_scRNA,Slc2a1,Glucose transporters,Slc2a1,-0.004937054291212134,10214,11007
+Park2023_AD_hippocampus_scRNA,Slc2a8,Glucose transporters,Slc2a8,0.0221539743210351,5860,11007
+Park2023_AD_hippocampus_scRNA,Hk1,Glycolysis,Hk1,0.01771294953080072,6929,11007
+Park2023_AD_hippocampus_scRNA,Hk2,Glycolysis,Hk2,-0.01213007509939222,10555,11007
+Park2023_AD_hippocampus_scRNA,Gpi1,Glycolysis,Gpi1,0.047229912169020914,1234,11007
+Park2023_AD_hippocampus_scRNA,Pfkl,Glycolysis,Pfkl,0.029749122318646317,4072,11007
+Park2023_AD_hippocampus_scRNA,Pfkm,Glycolysis,Pfkm,-0.0033164972979757984,10097,11007
+Park2023_AD_hippocampus_scRNA,Pfkp,Glycolysis,Pfkp,0.0009021629304559188,9704,11007
+Park2023_AD_hippocampus_scRNA,Pfkfb2,Glycolysis,Pfkfb2,0.0015084775365502708,9643,11007
+Park2023_AD_hippocampus_scRNA,Pfkfb3,Glycolysis,Pfkfb3,0.02067368466648129,6240,11007
+Park2023_AD_hippocampus_scRNA,Aldoa,Glycolysis,Aldoa,0.022977567277696283,5639,11007
+Park2023_AD_hippocampus_scRNA,Aldoc,Glycolysis,Aldoc,-0.005040026390870595,10223,11007
+Park2023_AD_hippocampus_scRNA,Tpi1,Glycolysis,Tpi1,0.027477733143872394,4594,11007
+Park2023_AD_hippocampus_scRNA,Gapdh,Glycolysis,Gapdh,0.12805072420581337,6,11007
+Park2023_AD_hippocampus_scRNA,Pgk1,Glycolysis,Pgk1,0.014265387217152767,7643,11007
+Park2023_AD_hippocampus_scRNA,Pgam1,Glycolysis,Pgam1,0.019900199219160697,6431,11007
+Park2023_AD_hippocampus_scRNA,Eno1,Glycolysis,Eno1,0.10396810947137114,62,11007
+Park2023_AD_hippocampus_scRNA,Eno2,Glycolysis,Eno2,0.026024134727028327,4945,11007
+Park2023_AD_hippocampus_scRNA,Pkm,Glycolysis,Pkm,0.020422094924175082,6312,11007
+Park2023_AD_hippocampus_scRNA,Ldha,Glycolysis,Ldha,0.006317454663656595,9033,11007
+Park2023_AD_hippocampus_scRNA,Ldhb,Glycolysis,Ldhb,0.018843491566209365,6679,11007
+Park2023_AD_hippocampus_scRNA,Pdha1,Pyruvate fate,Pdha1,0.02502688477633227,5158,11007
+Park2023_AD_hippocampus_scRNA,Pdhb,Pyruvate fate,Pdhb,0.03297712457071003,3398,11007
+Park2023_AD_hippocampus_scRNA,Pdk1,Pyruvate fate,Pdk1,0.017608268328126835,6951,11007
+Park2023_AD_hippocampus_scRNA,Pdk2,Pyruvate fate,Pdk2,0.03254974496251134,3475,11007
+Park2023_AD_hippocampus_scRNA,Pdk3,Pyruvate fate,Pdk3,0.017467598125556937,6978,11007
+Park2023_AD_hippocampus_scRNA,Pdk4,Pyruvate fate,Pdk4,0.027444538385850616,4604,11007
+Park2023_AD_hippocampus_scRNA,Pdp1,Pyruvate fate,Pdp1,0.014867630346269431,7526,11007
+Park2023_AD_hippocampus_scRNA,Mpc1,Pyruvate fate,Mpc1,-0.021885635819066517,10810,11007
+Park2023_AD_hippocampus_scRNA,Mpc2,Pyruvate fate,Mpc2,0.007714964103345422,8824,11007
+Park2023_AD_hippocampus_scRNA,Pcx,Pyruvate fate,Pcx,0.021004622130429588,6161,11007
+Park2023_AD_hippocampus_scRNA,G6pdx,Pentose phosphate pathway,G6pdx,0.025835769671526232,4986,11007
+Park2023_AD_hippocampus_scRNA,Pgd,Pentose phosphate pathway,Pgd,0.030114372544592725,3982,11007
+Park2023_AD_hippocampus_scRNA,Tkt,Pentose phosphate pathway,Tkt,0.020658708302741108,6245,11007
+Park2023_AD_hippocampus_scRNA,Taldo1,Pentose phosphate pathway,Taldo1,-0.010578070459898016,10495,11007
+Park2023_AD_hippocampus_scRNA,Pygb,Glycogen,Pygb,0.038015116883217126,2470,11007
+Park2023_AD_hippocampus_scRNA,Gbe1,Glycogen,Gbe1,0.011027105787098606,8273,11007
+Park2023_AD_hippocampus_scRNA,Agl,Glycogen,Agl,0.04558866116928371,1406,11007
+Park2023_AD_hippocampus_scRNA,Cs,TCA cycle,Cs,0.022747565063064863,5701,11007
+Park2023_AD_hippocampus_scRNA,Aco2,TCA cycle,Aco2,0.037227700798153,2609,11007
+Park2023_AD_hippocampus_scRNA,Idh2,TCA cycle,Idh2,0.036133250359258615,2810,11007
+Park2023_AD_hippocampus_scRNA,Idh3a,TCA cycle,Idh3a,0.02471393147857569,5233,11007
+Park2023_AD_hippocampus_scRNA,Ogdh,TCA cycle,Ogdh,0.05307315338112026,825,11007
+Park2023_AD_hippocampus_scRNA,Dlst,TCA cycle,Dlst,0.05893454085429931,560,11007
+Park2023_AD_hippocampus_scRNA,Sucla2,TCA cycle,Sucla2,0.01240902647728832,8026,11007
+Park2023_AD_hippocampus_scRNA,Suclg1,TCA cycle,Suclg1,0.04061173654320364,2048,11007
+Park2023_AD_hippocampus_scRNA,Sdha,TCA cycle,Sdha,0.02231216508987346,5811,11007
+Park2023_AD_hippocampus_scRNA,Sdhb,TCA cycle,Sdhb,-0.011251651285079628,10527,11007
+Park2023_AD_hippocampus_scRNA,Fh1,TCA cycle,Fh1,0.03270255081948736,3447,11007
+Park2023_AD_hippocampus_scRNA,Mdh1,TCA cycle,Mdh1,-0.0023183742842638583,10014,11007
+Park2023_AD_hippocampus_scRNA,Mdh2,TCA cycle,Mdh2,0.009608693868339907,8506,11007
+Park2023_AD_hippocampus_scRNA,Got1,Anaplerosis / amino acids,Got1,0.023399605536567968,5545,11007
+Park2023_AD_hippocampus_scRNA,Got2,Anaplerosis / amino acids,Got2,0.026937046241430465,4731,11007
+Park2023_AD_hippocampus_scRNA,Glud1,Anaplerosis / amino acids,Glud1,0.024997809702557296,5162,11007
+Park2023_AD_hippocampus_scRNA,Gls,Anaplerosis / amino acids,Gls,0.04041248367956161,2079,11007
+Park2023_AD_hippocampus_scRNA,Glul,Anaplerosis / amino acids,Glul,-0.03954698778840776,10945,11007
+Park2023_AD_hippocampus_scRNA,Idh1,Anaplerosis / amino acids,Idh1,-0.014425948881959468,10646,11007
+Park2023_AD_hippocampus_scRNA,Slc25a1,Anaplerosis / amino acids,Slc25a1,0.021292152833025844,6095,11007
+Park2023_AD_hippocampus_scRNA,Slc25a11,Anaplerosis / amino acids,Slc25a11,0.023820965424629043,5462,11007
+Park2023_AD_hippocampus_scRNA,Ndufa4,Oxidative phosphorylation,Ndufa4,-0.02167020801728162,10808,11007
+Park2023_AD_hippocampus_scRNA,Ndufs1,Oxidative phosphorylation,Ndufs1,0.0297783286157592,4067,11007
+Park2023_AD_hippocampus_scRNA,Ndufv1,Oxidative phosphorylation,Ndufv1,0.02321766439140484,5578,11007
+Park2023_AD_hippocampus_scRNA,Ndufb8,Oxidative phosphorylation,Ndufb8,0.020187808967290923,6371,11007
+Park2023_AD_hippocampus_scRNA,Uqcrc1,Oxidative phosphorylation,Uqcrc1,-0.01447857670369418,10647,11007
+Park2023_AD_hippocampus_scRNA,Uqcrc2,Oxidative phosphorylation,Uqcrc2,0.02869337909159306,4321,11007
+Park2023_AD_hippocampus_scRNA,Uqcrfs1,Oxidative phosphorylation,Uqcrfs1,0.0025954672909250893,9514,11007
+Park2023_AD_hippocampus_scRNA,Cycs,Oxidative phosphorylation,Cycs,-0.02907579771080492,10891,11007
+Park2023_AD_hippocampus_scRNA,Cox4i1,Oxidative phosphorylation,Cox4i1,0.012123924646241931,8071,11007
+Park2023_AD_hippocampus_scRNA,Cox5a,Oxidative phosphorylation,Cox5a,-0.00034011895716845613,9819,11007
+Park2023_AD_hippocampus_scRNA,Cox6c,Oxidative phosphorylation,Cox6c,-0.020126210113275613,10778,11007
+Park2023_AD_hippocampus_scRNA,Cox7c,Oxidative phosphorylation,Cox7c,0.02933766251712865,4160,11007
+Park2023_AD_hippocampus_scRNA,Atp5a1,Oxidative phosphorylation,Atp5a1,0.03542168916704299,2929,11007
+Park2023_AD_hippocampus_scRNA,Atp5b,Oxidative phosphorylation,Atp5b,-0.005802093384815936,10270,11007
+Park2023_AD_hippocampus_scRNA,Atp5o,Oxidative phosphorylation,Atp5o,0.020897956137814522,6195,11007
+Park2023_AD_hippocampus_scRNA,Ppargc1a,Mitochondrial biogenesis / dynamics,Ppargc1a,0.010781300413479057,8320,11007
+Park2023_AD_hippocampus_scRNA,Tfam,Mitochondrial biogenesis / dynamics,Tfam,0.026211649405173926,4900,11007
+Park2023_AD_hippocampus_scRNA,Nrf1,Mitochondrial biogenesis / dynamics,Nrf1,0.04116457897965311,1971,11007
+Park2023_AD_hippocampus_scRNA,Opa1,Mitochondrial biogenesis / dynamics,Opa1,0.03581479889333709,2854,11007
+Park2023_AD_hippocampus_scRNA,Mfn2,Mitochondrial biogenesis / dynamics,Mfn2,0.02718697331388078,4666,11007
+Park2023_AD_hippocampus_scRNA,Dnm1l,Mitochondrial biogenesis / dynamics,Dnm1l,0.03127078153230428,3738,11007
+Park2023_AD_hippocampus_scRNA,Pink1,Mitochondrial biogenesis / dynamics,Pink1,0.03347916145001701,3295,11007
+Park2023_AD_hippocampus_scRNA,Slc27a1,Fatty acid uptake / activation,Slc27a1,0.01688080455957692,7113,11007
+Park2023_AD_hippocampus_scRNA,Fabp5,Fatty acid uptake / activation,Fabp5,-0.003447759266657875,10106,11007
+Park2023_AD_hippocampus_scRNA,Fabp7,Fatty acid uptake / activation,Fabp7,-0.025852429795403135,10860,11007
+Park2023_AD_hippocampus_scRNA,Acsl1,Fatty acid uptake / activation,Acsl1,0.045880175964573694,1374,11007
+Park2023_AD_hippocampus_scRNA,Acsl3,Fatty acid uptake / activation,Acsl3,0.0215689305570709,6017,11007
+Park2023_AD_hippocampus_scRNA,Acsl6,Fatty acid uptake / activation,Acsl6,0.006779598692235925,8960,11007
+Park2023_AD_hippocampus_scRNA,Acsbg1,Fatty acid uptake / activation,Acsbg1,0.012095777984719227,8079,11007
+Park2023_AD_hippocampus_scRNA,Cpt1a,Fatty acid beta-oxidation,Cpt1a,0.006417375812093927,9012,11007
+Park2023_AD_hippocampus_scRNA,Cpt1c,Fatty acid beta-oxidation,Cpt1c,0.032436738395421195,3503,11007
+Park2023_AD_hippocampus_scRNA,Cpt2,Fatty acid beta-oxidation,Cpt2,0.014951757788582232,7512,11007
+Park2023_AD_hippocampus_scRNA,Slc25a20,Fatty acid beta-oxidation,Slc25a20,0.00234327300202774,9539,11007
+Park2023_AD_hippocampus_scRNA,Acadm,Fatty acid beta-oxidation,Acadm,0.0084745696635841,8704,11007
+Park2023_AD_hippocampus_scRNA,Acadl,Fatty acid beta-oxidation,Acadl,0.03876344952840582,2335,11007
+Park2023_AD_hippocampus_scRNA,Acadvl,Fatty acid beta-oxidation,Acadvl,0.01349069251945256,7801,11007
+Park2023_AD_hippocampus_scRNA,Acads,Fatty acid beta-oxidation,Acads,-0.002545460029672178,10035,11007
+Park2023_AD_hippocampus_scRNA,Hadha,Fatty acid beta-oxidation,Hadha,0.0633953799302926,426,11007
+Park2023_AD_hippocampus_scRNA,Hadhb,Fatty acid beta-oxidation,Hadhb,0.021178052641780448,6120,11007
+Park2023_AD_hippocampus_scRNA,Echs1,Fatty acid beta-oxidation,Echs1,0.02883898077059324,4282,11007
+Park2023_AD_hippocampus_scRNA,Acaa2,Fatty acid beta-oxidation,Acaa2,-0.0004045762768351367,9829,11007
+Park2023_AD_hippocampus_scRNA,Decr1,Fatty acid beta-oxidation,Decr1,0.022946163707523587,5650,11007
+Park2023_AD_hippocampus_scRNA,Eci1,Fatty acid beta-oxidation,Eci1,0.03689141027725281,2670,11007
+Park2023_AD_hippocampus_scRNA,Acox1,Fatty acid beta-oxidation,Acox1,0.04607057125404152,1356,11007
+Park2023_AD_hippocampus_scRNA,Ehhadh,Fatty acid beta-oxidation,Ehhadh,0.0259954387307755,4950,11007
+Park2023_AD_hippocampus_scRNA,Acly,Lipid synthesis,Acly,0.003784196058543771,9373,11007
+Park2023_AD_hippocampus_scRNA,Acaca,Lipid synthesis,Acaca,0.08182535794625737,173,11007
+Park2023_AD_hippocampus_scRNA,Fasn,Lipid synthesis,Fasn,0.03520989132995082,2967,11007
+Park2023_AD_hippocampus_scRNA,Elovl1,Lipid synthesis,Elovl1,-0.015778464450436052,10688,11007
+Park2023_AD_hippocampus_scRNA,Elovl5,Lipid synthesis,Elovl5,0.012701654296908444,7966,11007
+Park2023_AD_hippocampus_scRNA,Elovl6,Lipid synthesis,Elovl6,0.02235830578658942,5794,11007
+Park2023_AD_hippocampus_scRNA,Scd1,Lipid synthesis,Scd1,0.04650637945920036,1310,11007
+Park2023_AD_hippocampus_scRNA,Scd2,Lipid synthesis,Scd2,0.028527077693236976,4360,11007
+Park2023_AD_hippocampus_scRNA,Srebf1,Lipid synthesis,Srebf1,0.052337143276788525,858,11007
+Park2023_AD_hippocampus_scRNA,Hmgcs1,Cholesterol synthesis,Hmgcs1,-0.02121153971304285,10800,11007
+Park2023_AD_hippocampus_scRNA,Hmgcr,Cholesterol synthesis,Hmgcr,0.032379878452703806,3510,11007
+Park2023_AD_hippocampus_scRNA,Mvk,Cholesterol synthesis,Mvk,0.03868383713235128,2351,11007
+Park2023_AD_hippocampus_scRNA,Fdps,Cholesterol synthesis,Fdps,-0.012217331251244981,10560,11007
+Park2023_AD_hippocampus_scRNA,Fdft1,Cholesterol synthesis,Fdft1,0.00680896487193371,8954,11007
+Park2023_AD_hippocampus_scRNA,Sqle,Cholesterol synthesis,Sqle,-0.007011884971665417,10337,11007
+Park2023_AD_hippocampus_scRNA,Lss,Cholesterol synthesis,Lss,0.037318729576682745,2599,11007
+Park2023_AD_hippocampus_scRNA,Cyp51,Cholesterol synthesis,Cyp51,-0.008974332937155287,10429,11007
+Park2023_AD_hippocampus_scRNA,Dhcr24,Cholesterol synthesis,Dhcr24,0.02478229322861902,5214,11007
+Park2023_AD_hippocampus_scRNA,Dhcr7,Cholesterol synthesis,Dhcr7,0.013562396864605327,7782,11007
+Park2023_AD_hippocampus_scRNA,Srebf2,Cholesterol synthesis,Srebf2,0.09076095559337666,126,11007
+Park2023_AD_hippocampus_scRNA,Insig1,Cholesterol synthesis,Insig1,0.026806228699137544,4759,11007
+Park2023_AD_hippocampus_scRNA,Ldlr,Cholesterol / lipid transport,Ldlr,0.01885629583806168,6676,11007
+Park2023_AD_hippocampus_scRNA,Abca1,Cholesterol / lipid transport,Abca1,0.024563323319709042,5269,11007
+Park2023_AD_hippocampus_scRNA,Abca2,Cholesterol / lipid transport,Abca2,0.04338699593647894,1679,11007
+Park2023_AD_hippocampus_scRNA,Abcg1,Cholesterol / lipid transport,Abcg1,0.041689855705789834,1890,11007
+Park2023_AD_hippocampus_scRNA,Apoe,Cholesterol / lipid transport,Apoe,0.009529160551363108,8520,11007
+Park2023_AD_hippocampus_scRNA,Apod,Cholesterol / lipid transport,Apod,0.0638022057569223,415,11007
+Park2023_AD_hippocampus_scRNA,Nr1h2,Cholesterol / lipid transport,Nr1h2,0.02361489700038723,5496,11007
+Park2023_AD_hippocampus_scRNA,Plin2,Cholesterol / lipid transport,Plin2,0.0013347151819672574,9659,11007
+Park2023_AD_hippocampus_scRNA,Plin3,Cholesterol / lipid transport,Plin3,0.029102743776248212,4210,11007
+Park2023_AD_hippocampus_scRNA,Plin4,Cholesterol / lipid transport,Plin4,0.08148310042982806,179,11007
+Park2023_AD_hippocampus_scRNA,Ugt8a,Myelin lipid synthesis,Ugt8a,-0.023299806111165593,10836,11007
+Park2023_AD_hippocampus_scRNA,Gal3st1,Myelin lipid synthesis,Gal3st1,0.03499044085752939,3005,11007
+Park2023_AD_hippocampus_scRNA,Cers2,Myelin lipid synthesis,Cers2,-0.006077697532790795,10280,11007
+Park2023_AD_hippocampus_scRNA,Sptlc1,Myelin lipid synthesis,Sptlc1,0.04354609283488833,1658,11007
+Park2023_AD_hippocampus_scRNA,Pigt,Myelin lipid synthesis,Pigt,0.02845506616908591,4376,11007
+Park2023_AD_hippocampus_scRNA,Fa2h,Myelin lipid synthesis,Fa2h,0.012291296461530234,8047,11007
+Park2023_AD_hippocampus_scRNA,Hif1a,Nutrient sensing / regulators,Hif1a,0.028457894296565648,4375,11007
+Park2023_AD_hippocampus_scRNA,Epas1,Nutrient sensing / regulators,Epas1,0.008116471804521776,8759,11007
+Park2023_AD_hippocampus_scRNA,Prkaa1,Nutrient sensing / regulators,Prkaa1,0.025139869576995242,5130,11007
+Park2023_AD_hippocampus_scRNA,Prkaa2,Nutrient sensing / regulators,Prkaa2,0.003555056144904256,9407,11007
+Park2023_AD_hippocampus_scRNA,Mtor,Nutrient sensing / regulators,Mtor,0.04065481151750959,2040,11007
+Park2023_AD_hippocampus_scRNA,Rptor,Nutrient sensing / regulators,Rptor,0.014999863880867922,7503,11007
+Park2023_AD_hippocampus_scRNA,Tsc2,Nutrient sensing / regulators,Tsc2,0.03453909281887624,3086,11007
+Park2023_AD_hippocampus_scRNA,Ddit4,Nutrient sensing / regulators,Ddit4,0.02237908484523756,5787,11007
+Park2023_AD_hippocampus_scRNA,Txnip,Nutrient sensing / regulators,Txnip,0.018018174152418836,6857,11007
+Park2023_AD_hippocampus_scRNA,Sirt1,Nutrient sensing / regulators,Sirt1,0.03228121043268139,3533,11007
+Park2023_AD_hippocampus_scRNA,Sirt3,Nutrient sensing / regulators,Sirt3,0.036013771969334155,2819,11007
+Park2023_AD_hippocampus_scRNA,Ppard,Nutrient sensing / regulators,Ppard,0.03816979410537642,2440,11007
+Park2023_AD_hippocampus_scRNA,Nfe2l2,Nutrient sensing / regulators,Nfe2l2,0.005446674469739977,9151,11007
+Park2023_AD_hippocampus_scRNA,Serpina3n,context,Serpina3n,0.09300430658522474,109,11007
+Serpina3n_Cuprizone_snRNA_mouse,Hmgcl,Ketone body synthesis,Hmgcl,0.1053207803098139,689,13537
+Serpina3n_Cuprizone_snRNA_mouse,Bdh1,Ketone body synthesis,Bdh1,0.05645613609762003,5510,13537
+Serpina3n_Cuprizone_snRNA_mouse,Oxct1,Ketone body utilisation,Oxct1,0.018795025294915835,11000,13537
+Serpina3n_Cuprizone_snRNA_mouse,Acat1,Ketone body utilisation,Acat1,0.023347185149853285,10552,13537
+Serpina3n_Cuprizone_snRNA_mouse,Acat2,Ketone body utilisation,Acat2,0.06338246042031163,4380,13537
+Serpina3n_Cuprizone_snRNA_mouse,Acss1,Ketone body utilisation,Acss1,0.09938014688323898,897,13537
+Serpina3n_Cuprizone_snRNA_mouse,Acss2,Ketone body utilisation,Acss2,0.01572981175746424,11317,13537
+Serpina3n_Cuprizone_snRNA_mouse,Slc16a1,Monocarboxylate transporters,Slc16a1,0.03702277018791854,8757,13537
+Serpina3n_Cuprizone_snRNA_mouse,Slc16a7,Monocarboxylate transporters,Slc16a7,0.023066660935949154,10580,13537
+Serpina3n_Cuprizone_snRNA_mouse,Slc16a6,Monocarboxylate transporters,Slc16a6,0.09977369865504307,881,13537
+Serpina3n_Cuprizone_snRNA_mouse,Bsg,Monocarboxylate transporters,Bsg,0.060076944465314835,4888,13537
+Serpina3n_Cuprizone_snRNA_mouse,Slc2a1,Glucose transporters,Slc2a1,0.06011965904362449,4884,13537
+Serpina3n_Cuprizone_snRNA_mouse,Slc2a3,Glucose transporters,Slc2a3,0.029430753562186066,9815,13537
+Serpina3n_Cuprizone_snRNA_mouse,Slc2a8,Glucose transporters,Slc2a8,0.06435025559229021,4209,13537
+Serpina3n_Cuprizone_snRNA_mouse,Hk1,Glycolysis,Hk1,0.04486187177548599,7560,13537
+Serpina3n_Cuprizone_snRNA_mouse,Hk2,Glycolysis,Hk2,0.18818471277686832,2,13537
+Serpina3n_Cuprizone_snRNA_mouse,Hk3,Glycolysis,Hk3,0.11365617834900783,463,13537
+Serpina3n_Cuprizone_snRNA_mouse,Gpi1,Glycolysis,Gpi1,0.013843930112893374,11495,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pfkl,Glycolysis,Pfkl,0.048577631631930365,6892,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pfkm,Glycolysis,Pfkm,0.07432298624231874,2807,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pfkp,Glycolysis,Pfkp,-0.004745261671207461,12618,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pfkfb2,Glycolysis,Pfkfb2,0.06940749165770654,3478,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pfkfb3,Glycolysis,Pfkfb3,0.05650415134554564,5499,13537
+Serpina3n_Cuprizone_snRNA_mouse,Aldoa,Glycolysis,Aldoa,0.0826880595507912,1958,13537
+Serpina3n_Cuprizone_snRNA_mouse,Aldoc,Glycolysis,Aldoc,0.13002293879705323,216,13537
+Serpina3n_Cuprizone_snRNA_mouse,Tpi1,Glycolysis,Tpi1,0.06727907644509737,3781,13537
+Serpina3n_Cuprizone_snRNA_mouse,Gapdh,Glycolysis,Gapdh,0.08017349542856426,2168,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pgk1,Glycolysis,Pgk1,0.0295389698761753,9802,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pgam1,Glycolysis,Pgam1,0.05496438407625636,5777,13537
+Serpina3n_Cuprizone_snRNA_mouse,Eno1,Glycolysis,Eno1,0.08614604472644928,1652,13537
+Serpina3n_Cuprizone_snRNA_mouse,Eno2,Glycolysis,Eno2,0.030392871831255303,9685,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pkm,Glycolysis,Pkm,0.06986379378776243,3413,13537
+Serpina3n_Cuprizone_snRNA_mouse,Ldha,Glycolysis,Ldha,0.04365676936357669,7740,13537
+Serpina3n_Cuprizone_snRNA_mouse,Ldhb,Glycolysis,Ldhb,0.06348428152377594,4357,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pdha1,Pyruvate fate,Pdha1,0.07082418199741246,3280,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pdhb,Pyruvate fate,Pdhb,0.0676302384654057,3723,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pdk1,Pyruvate fate,Pdk1,0.06908146824554146,3530,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pdk2,Pyruvate fate,Pdk2,0.0817476049937943,2048,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pdk3,Pyruvate fate,Pdk3,0.05140957106493675,6370,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pdk4,Pyruvate fate,Pdk4,0.08729172272828722,1563,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pdp1,Pyruvate fate,Pdp1,0.025015347684312073,10341,13537
+Serpina3n_Cuprizone_snRNA_mouse,Mpc1,Pyruvate fate,Mpc1,0.04351541765708661,7766,13537
+Serpina3n_Cuprizone_snRNA_mouse,Mpc2,Pyruvate fate,Mpc2,0.04520811669509294,7493,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pcx,Pyruvate fate,Pcx,0.05676505811774876,5456,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pck2,Pyruvate fate,Pck2,0.056798945582993546,5452,13537
+Serpina3n_Cuprizone_snRNA_mouse,G6pdx,Pentose phosphate pathway,G6pdx,0.10429606864658791,725,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pgd,Pentose phosphate pathway,Pgd,0.10600194820822115,670,13537
+Serpina3n_Cuprizone_snRNA_mouse,Tkt,Pentose phosphate pathway,Tkt,0.06672815263767237,3861,13537
+Serpina3n_Cuprizone_snRNA_mouse,Taldo1,Pentose phosphate pathway,Taldo1,0.08864716138750176,1466,13537
+Serpina3n_Cuprizone_snRNA_mouse,Gys1,Glycogen,Gys1,0.06001576853948333,4897,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pygb,Glycogen,Pygb,0.07095207621534824,3259,13537
+Serpina3n_Cuprizone_snRNA_mouse,Gbe1,Glycogen,Gbe1,0.03283303241038005,9337,13537
+Serpina3n_Cuprizone_snRNA_mouse,Agl,Glycogen,Agl,0.06765543048873977,3720,13537
+Serpina3n_Cuprizone_snRNA_mouse,Cs,TCA cycle,Cs,0.05560824698829161,5672,13537
+Serpina3n_Cuprizone_snRNA_mouse,Aco2,TCA cycle,Aco2,0.04520166271923358,7496,13537
+Serpina3n_Cuprizone_snRNA_mouse,Idh2,TCA cycle,Idh2,0.07093355711877927,3263,13537
+Serpina3n_Cuprizone_snRNA_mouse,Idh3a,TCA cycle,Idh3a,0.02230006885150756,10645,13537
+Serpina3n_Cuprizone_snRNA_mouse,Ogdh,TCA cycle,Ogdh,0.03152709933087309,9515,13537
+Serpina3n_Cuprizone_snRNA_mouse,Dlst,TCA cycle,Dlst,0.06820746231189478,3649,13537
+Serpina3n_Cuprizone_snRNA_mouse,Sucla2,TCA cycle,Sucla2,0.03813201756371619,8578,13537
+Serpina3n_Cuprizone_snRNA_mouse,Suclg1,TCA cycle,Suclg1,0.06135864123519233,4701,13537
+Serpina3n_Cuprizone_snRNA_mouse,Sdha,TCA cycle,Sdha,0.058429036507887666,5186,13537
+Serpina3n_Cuprizone_snRNA_mouse,Sdhb,TCA cycle,Sdhb,0.053116981544022626,6099,13537
+Serpina3n_Cuprizone_snRNA_mouse,Fh1,TCA cycle,Fh1,0.05767925428006458,5305,13537
+Serpina3n_Cuprizone_snRNA_mouse,Mdh1,TCA cycle,Mdh1,0.02356668847503008,10522,13537
+Serpina3n_Cuprizone_snRNA_mouse,Mdh2,TCA cycle,Mdh2,0.03528354222875857,8998,13537
+Serpina3n_Cuprizone_snRNA_mouse,Got1,Anaplerosis / amino acids,Got1,0.028162144772036067,9980,13537
+Serpina3n_Cuprizone_snRNA_mouse,Got2,Anaplerosis / amino acids,Got2,0.052012999787560535,6269,13537
+Serpina3n_Cuprizone_snRNA_mouse,Glud1,Anaplerosis / amino acids,Glud1,0.06538532483158088,4063,13537
+Serpina3n_Cuprizone_snRNA_mouse,Gls,Anaplerosis / amino acids,Gls,-0.023557926070938588,13073,13537
+Serpina3n_Cuprizone_snRNA_mouse,Glul,Anaplerosis / amino acids,Glul,0.10194662563784349,805,13537
+Serpina3n_Cuprizone_snRNA_mouse,Idh1,Anaplerosis / amino acids,Idh1,0.09610718372473324,1021,13537
+Serpina3n_Cuprizone_snRNA_mouse,Slc25a1,Anaplerosis / amino acids,Slc25a1,0.06600961862857754,3969,13537
+Serpina3n_Cuprizone_snRNA_mouse,Slc25a11,Anaplerosis / amino acids,Slc25a11,0.0797230197272949,2224,13537
+Serpina3n_Cuprizone_snRNA_mouse,Ndufa4,Oxidative phosphorylation,Ndufa4,0.09479362849334845,1081,13537
+Serpina3n_Cuprizone_snRNA_mouse,Ndufs1,Oxidative phosphorylation,Ndufs1,0.02998807175828241,9732,13537
+Serpina3n_Cuprizone_snRNA_mouse,Ndufv1,Oxidative phosphorylation,Ndufv1,0.07452548152242454,2780,13537
+Serpina3n_Cuprizone_snRNA_mouse,Ndufb8,Oxidative phosphorylation,Ndufb8,0.05603569410798601,5588,13537
+Serpina3n_Cuprizone_snRNA_mouse,Uqcrc1,Oxidative phosphorylation,Uqcrc1,0.062403097610096374,4542,13537
+Serpina3n_Cuprizone_snRNA_mouse,Uqcrc2,Oxidative phosphorylation,Uqcrc2,0.046326476349547,7313,13537
+Serpina3n_Cuprizone_snRNA_mouse,Uqcrfs1,Oxidative phosphorylation,Uqcrfs1,0.03411097980852956,9155,13537
+Serpina3n_Cuprizone_snRNA_mouse,Cycs,Oxidative phosphorylation,Cycs,0.013962083256317261,11484,13537
+Serpina3n_Cuprizone_snRNA_mouse,Cox4i1,Oxidative phosphorylation,Cox4i1,0.08758350815049158,1543,13537
+Serpina3n_Cuprizone_snRNA_mouse,Cox5a,Oxidative phosphorylation,Cox5a,0.06253401940078801,4524,13537
+Serpina3n_Cuprizone_snRNA_mouse,Cox6c,Oxidative phosphorylation,Cox6c,0.06490415636482645,4117,13537
+Serpina3n_Cuprizone_snRNA_mouse,Cox7c,Oxidative phosphorylation,Cox7c,0.06120111057206044,4727,13537
+Serpina3n_Cuprizone_snRNA_mouse,Atp5a1,Oxidative phosphorylation,Atp5a1,0.06962616106393649,3445,13537
+Serpina3n_Cuprizone_snRNA_mouse,Atp5b,Oxidative phosphorylation,Atp5b,0.0774682937467491,2455,13537
+Serpina3n_Cuprizone_snRNA_mouse,Atp5o,Oxidative phosphorylation,Atp5o,0.07336272206131733,2942,13537
+Serpina3n_Cuprizone_snRNA_mouse,Ppargc1a,Mitochondrial biogenesis / dynamics,Ppargc1a,0.023787038324082358,10494,13537
+Serpina3n_Cuprizone_snRNA_mouse,Tfam,Mitochondrial biogenesis / dynamics,Tfam,0.044334175494340836,7642,13537
+Serpina3n_Cuprizone_snRNA_mouse,Nrf1,Mitochondrial biogenesis / dynamics,Nrf1,0.057021067713472436,5408,13537
+Serpina3n_Cuprizone_snRNA_mouse,Opa1,Mitochondrial biogenesis / dynamics,Opa1,0.0350955077313715,9019,13537
+Serpina3n_Cuprizone_snRNA_mouse,Mfn2,Mitochondrial biogenesis / dynamics,Mfn2,0.03506927255049344,9024,13537
+Serpina3n_Cuprizone_snRNA_mouse,Dnm1l,Mitochondrial biogenesis / dynamics,Dnm1l,-0.006656637946516519,12683,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pink1,Mitochondrial biogenesis / dynamics,Pink1,0.046949630896489174,7213,13537
+Serpina3n_Cuprizone_snRNA_mouse,Prkn,Mitochondrial biogenesis / dynamics,Prkn,0.004907570911382026,12154,13537
+Serpina3n_Cuprizone_snRNA_mouse,Slc27a1,Fatty acid uptake / activation,Slc27a1,0.1037394553614982,739,13537
+Serpina3n_Cuprizone_snRNA_mouse,Fabp5,Fatty acid uptake / activation,Fabp5,0.0853656042345898,1710,13537
+Serpina3n_Cuprizone_snRNA_mouse,Acsl1,Fatty acid uptake / activation,Acsl1,0.0288692733240788,9888,13537
+Serpina3n_Cuprizone_snRNA_mouse,Acsl3,Fatty acid uptake / activation,Acsl3,0.06650522262375352,3899,13537
+Serpina3n_Cuprizone_snRNA_mouse,Acsl6,Fatty acid uptake / activation,Acsl6,0.039038499796773235,8447,13537
+Serpina3n_Cuprizone_snRNA_mouse,Acsbg1,Fatty acid uptake / activation,Acsbg1,0.1309770801612296,208,13537
+Serpina3n_Cuprizone_snRNA_mouse,Cpt1a,Fatty acid beta-oxidation,Cpt1a,0.12310668495431748,302,13537
+Serpina3n_Cuprizone_snRNA_mouse,Cpt1c,Fatty acid beta-oxidation,Cpt1c,0.017624522563514152,11136,13537
+Serpina3n_Cuprizone_snRNA_mouse,Slc25a20,Fatty acid beta-oxidation,Slc25a20,0.07356934330514943,2914,13537
+Serpina3n_Cuprizone_snRNA_mouse,Acadm,Fatty acid beta-oxidation,Acadm,0.08289360294964629,1934,13537
+Serpina3n_Cuprizone_snRNA_mouse,Acadl,Fatty acid beta-oxidation,Acadl,0.0823626164317203,1996,13537
+Serpina3n_Cuprizone_snRNA_mouse,Acadvl,Fatty acid beta-oxidation,Acadvl,0.036089494366103834,8891,13537
+Serpina3n_Cuprizone_snRNA_mouse,Hadha,Fatty acid beta-oxidation,Hadha,0.03561124233048623,8956,13537
+Serpina3n_Cuprizone_snRNA_mouse,Hadhb,Fatty acid beta-oxidation,Hadhb,0.06484951228847739,4125,13537
+Serpina3n_Cuprizone_snRNA_mouse,Echs1,Fatty acid beta-oxidation,Echs1,0.06653735438539522,3893,13537
+Serpina3n_Cuprizone_snRNA_mouse,Acaa2,Fatty acid beta-oxidation,Acaa2,0.013493820742378168,11523,13537
+Serpina3n_Cuprizone_snRNA_mouse,Decr1,Fatty acid beta-oxidation,Decr1,0.06615199266552546,3947,13537
+Serpina3n_Cuprizone_snRNA_mouse,Eci1,Fatty acid beta-oxidation,Eci1,0.0759613551144567,2600,13537
+Serpina3n_Cuprizone_snRNA_mouse,Acox1,Fatty acid beta-oxidation,Acox1,0.05857157891003971,5155,13537
+Serpina3n_Cuprizone_snRNA_mouse,Ehhadh,Fatty acid beta-oxidation,Ehhadh,0.09339255413513947,1163,13537
+Serpina3n_Cuprizone_snRNA_mouse,Acly,Lipid synthesis,Acly,0.07242731477690084,3063,13537
+Serpina3n_Cuprizone_snRNA_mouse,Acaca,Lipid synthesis,Acaca,0.04072366589299188,8190,13537
+Serpina3n_Cuprizone_snRNA_mouse,Fasn,Lipid synthesis,Fasn,0.07244060273117021,3062,13537
+Serpina3n_Cuprizone_snRNA_mouse,Elovl1,Lipid synthesis,Elovl1,0.0597500710508207,4948,13537
+Serpina3n_Cuprizone_snRNA_mouse,Elovl5,Lipid synthesis,Elovl5,0.0589838135235658,5070,13537
+Serpina3n_Cuprizone_snRNA_mouse,Elovl6,Lipid synthesis,Elovl6,0.0011684149910974493,12357,13537
+Serpina3n_Cuprizone_snRNA_mouse,Scd1,Lipid synthesis,Scd1,0.07654483311279243,2546,13537
+Serpina3n_Cuprizone_snRNA_mouse,Scd2,Lipid synthesis,Scd2,0.06847672106557834,3618,13537
+Serpina3n_Cuprizone_snRNA_mouse,Srebf1,Lipid synthesis,Srebf1,0.12421138325018237,289,13537
+Serpina3n_Cuprizone_snRNA_mouse,Mlxipl,Lipid synthesis,Mlxipl,0.15125019478896767,56,13537
+Serpina3n_Cuprizone_snRNA_mouse,Hmgcs1,Cholesterol synthesis,Hmgcs1,0.03233673702856675,9405,13537
+Serpina3n_Cuprizone_snRNA_mouse,Hmgcr,Cholesterol synthesis,Hmgcr,0.020439000860825562,10836,13537
+Serpina3n_Cuprizone_snRNA_mouse,Mvk,Cholesterol synthesis,Mvk,0.031464168117544274,9527,13537
+Serpina3n_Cuprizone_snRNA_mouse,Fdps,Cholesterol synthesis,Fdps,0.07677919112139471,2516,13537
+Serpina3n_Cuprizone_snRNA_mouse,Fdft1,Cholesterol synthesis,Fdft1,0.050785051351271454,6486,13537
+Serpina3n_Cuprizone_snRNA_mouse,Sqle,Cholesterol synthesis,Sqle,0.02075511711366865,10807,13537
+Serpina3n_Cuprizone_snRNA_mouse,Lss,Cholesterol synthesis,Lss,0.047008170586157326,7199,13537
+Serpina3n_Cuprizone_snRNA_mouse,Cyp51,Cholesterol synthesis,Cyp51,0.04088615300975604,8163,13537
+Serpina3n_Cuprizone_snRNA_mouse,Dhcr24,Cholesterol synthesis,Dhcr24,0.010369722051134888,11752,13537
+Serpina3n_Cuprizone_snRNA_mouse,Dhcr7,Cholesterol synthesis,Dhcr7,0.033855130453173364,9181,13537
+Serpina3n_Cuprizone_snRNA_mouse,Srebf2,Cholesterol synthesis,Srebf2,0.05211423617314589,6253,13537
+Serpina3n_Cuprizone_snRNA_mouse,Insig1,Cholesterol synthesis,Insig1,0.06162114009868649,4662,13537
+Serpina3n_Cuprizone_snRNA_mouse,Ldlr,Cholesterol / lipid transport,Ldlr,0.05140131387795996,6374,13537
+Serpina3n_Cuprizone_snRNA_mouse,Abca1,Cholesterol / lipid transport,Abca1,0.1067652727774453,645,13537
+Serpina3n_Cuprizone_snRNA_mouse,Abca2,Cholesterol / lipid transport,Abca2,0.05886093288686225,5096,13537
+Serpina3n_Cuprizone_snRNA_mouse,Abcg1,Cholesterol / lipid transport,Abcg1,0.0868917020215372,1590,13537
+Serpina3n_Cuprizone_snRNA_mouse,Apoe,Cholesterol / lipid transport,Apoe,0.17313492716251785,10,13537
+Serpina3n_Cuprizone_snRNA_mouse,Apod,Cholesterol / lipid transport,Apod,0.09595405770671221,1029,13537
+Serpina3n_Cuprizone_snRNA_mouse,Lpl,Cholesterol / lipid transport,Lpl,0.07691256765470462,2504,13537
+Serpina3n_Cuprizone_snRNA_mouse,Nr1h2,Cholesterol / lipid transport,Nr1h2,0.05865753681965072,5137,13537
+Serpina3n_Cuprizone_snRNA_mouse,Plin3,Cholesterol / lipid transport,Plin3,0.07228240771011446,3084,13537
+Serpina3n_Cuprizone_snRNA_mouse,Plin4,Cholesterol / lipid transport,Plin4,0.07555608984064419,2654,13537
+Serpina3n_Cuprizone_snRNA_mouse,Ugt8a,Myelin lipid synthesis,Ugt8a,0.06309363569321459,4437,13537
+Serpina3n_Cuprizone_snRNA_mouse,Gal3st1,Myelin lipid synthesis,Gal3st1,0.08978825752034214,1398,13537
+Serpina3n_Cuprizone_snRNA_mouse,Cers2,Myelin lipid synthesis,Cers2,0.0880837805222004,1512,13537
+Serpina3n_Cuprizone_snRNA_mouse,Sptlc1,Myelin lipid synthesis,Sptlc1,0.053376778412857435,6054,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pigt,Myelin lipid synthesis,Pigt,0.05428748135035681,5894,13537
+Serpina3n_Cuprizone_snRNA_mouse,Fa2h,Myelin lipid synthesis,Fa2h,0.081272790505756,2082,13537
+Serpina3n_Cuprizone_snRNA_mouse,Hif1a,Nutrient sensing / regulators,Hif1a,0.060700814479503366,4790,13537
+Serpina3n_Cuprizone_snRNA_mouse,Epas1,Nutrient sensing / regulators,Epas1,0.10145909475809373,822,13537
+Serpina3n_Cuprizone_snRNA_mouse,Prkaa1,Nutrient sensing / regulators,Prkaa1,0.07296626372014495,2994,13537
+Serpina3n_Cuprizone_snRNA_mouse,Prkaa2,Nutrient sensing / regulators,Prkaa2,0.01353496953998464,11519,13537
+Serpina3n_Cuprizone_snRNA_mouse,Mtor,Nutrient sensing / regulators,Mtor,0.043526432736195546,7765,13537
+Serpina3n_Cuprizone_snRNA_mouse,Rptor,Nutrient sensing / regulators,Rptor,0.03220986785997579,9423,13537
+Serpina3n_Cuprizone_snRNA_mouse,Tsc2,Nutrient sensing / regulators,Tsc2,0.04455776273898715,7601,13537
+Serpina3n_Cuprizone_snRNA_mouse,Ddit4,Nutrient sensing / regulators,Ddit4,0.07491921176925935,2735,13537
+Serpina3n_Cuprizone_snRNA_mouse,Txnip,Nutrient sensing / regulators,Txnip,0.09291115163018486,1196,13537
+Serpina3n_Cuprizone_snRNA_mouse,Sirt1,Nutrient sensing / regulators,Sirt1,0.0706007188046895,3308,13537
+Serpina3n_Cuprizone_snRNA_mouse,Sirt3,Nutrient sensing / regulators,Sirt3,0.07674304885087267,2518,13537
+Serpina3n_Cuprizone_snRNA_mouse,Ppara,Nutrient sensing / regulators,Ppara,0.0995885841565246,890,13537
+Serpina3n_Cuprizone_snRNA_mouse,Ppard,Nutrient sensing / regulators,Ppard,0.0967787947377497,991,13537
+Serpina3n_Cuprizone_snRNA_mouse,Pparg,Nutrient sensing / regulators,Pparg,0.0019105199362444978,12326,13537
+Serpina3n_Cuprizone_snRNA_mouse,Nfe2l2,Nutrient sensing / regulators,Nfe2l2,0.1416297043231021,110,13537
+Serpina3n_Cuprizone_snRNA_mouse,Serpina3n,context,Serpina3n,0.09086261276278185,1332,13537
+Ximerakis2019_aging_brain_scRNA,Hmgcl,Ketone body synthesis,Hmgcl,0.020100446408660513,2771,9724
+Ximerakis2019_aging_brain_scRNA,Bdh1,Ketone body synthesis,Bdh1,-0.02304102563838733,9445,9724
+Ximerakis2019_aging_brain_scRNA,Oxct1,Ketone body utilisation,Oxct1,0.024633860536033968,1713,9724
+Ximerakis2019_aging_brain_scRNA,Acat1,Ketone body utilisation,Acat1,0.030561252468334136,836,9724
+Ximerakis2019_aging_brain_scRNA,Acat2,Ketone body utilisation,Acat2,0.010846445077675562,5515,9724
+Ximerakis2019_aging_brain_scRNA,Acss2,Ketone body utilisation,Acss2,0.009796849684226177,5790,9724
+Ximerakis2019_aging_brain_scRNA,Slc16a1,Monocarboxylate transporters,Slc16a1,-0.0037326785515242474,8609,9724
+Ximerakis2019_aging_brain_scRNA,Slc16a7,Monocarboxylate transporters,Slc16a7,0.02143939572818188,2445,9724
+Ximerakis2019_aging_brain_scRNA,Slc16a3,Monocarboxylate transporters,Slc16a3,0.009698532701451292,5821,9724
+Ximerakis2019_aging_brain_scRNA,Slc16a6,Monocarboxylate transporters,Slc16a6,-0.006891822287349402,8880,9724
+Ximerakis2019_aging_brain_scRNA,Bsg,Monocarboxylate transporters,Bsg,-0.01552475434084237,9285,9724
+Ximerakis2019_aging_brain_scRNA,Slc2a1,Glucose transporters,Slc2a1,0.013350563525839689,4763,9724
+Ximerakis2019_aging_brain_scRNA,Slc2a8,Glucose transporters,Slc2a8,0.015417761574610665,4118,9724
+Ximerakis2019_aging_brain_scRNA,Hk1,Glycolysis,Hk1,0.01331196566556716,4776,9724
+Ximerakis2019_aging_brain_scRNA,Gpi1,Glycolysis,Gpi1,0.031030965859599805,793,9724
+Ximerakis2019_aging_brain_scRNA,Pfkl,Glycolysis,Pfkl,0.006953822603594713,6544,9724
+Ximerakis2019_aging_brain_scRNA,Pfkm,Glycolysis,Pfkm,-0.00505246230047496,8738,9724
+Ximerakis2019_aging_brain_scRNA,Pfkp,Glycolysis,Pfkp,-0.0022056440200845314,8445,9724
+Ximerakis2019_aging_brain_scRNA,Pfkfb3,Glycolysis,Pfkfb3,-0.011455965907363337,9139,9724
+Ximerakis2019_aging_brain_scRNA,Aldoa,Glycolysis,Aldoa,0.002745194839530298,7561,9724
+Ximerakis2019_aging_brain_scRNA,Aldoc,Glycolysis,Aldoc,-0.046499141735164534,9609,9724
+Ximerakis2019_aging_brain_scRNA,Tpi1,Glycolysis,Tpi1,0.026065701029815317,1453,9724
+Ximerakis2019_aging_brain_scRNA,Gapdh,Glycolysis,Gapdh,0.027837538155639614,1130,9724
+Ximerakis2019_aging_brain_scRNA,Pgk1,Glycolysis,Pgk1,0.027200624144390274,1233,9724
+Ximerakis2019_aging_brain_scRNA,Pgam1,Glycolysis,Pgam1,0.021280789921674707,2485,9724
+Ximerakis2019_aging_brain_scRNA,Eno1,Glycolysis,Eno1,0.015042405974258662,4216,9724
+Ximerakis2019_aging_brain_scRNA,Eno2,Glycolysis,Eno2,0.00808781770453326,6262,9724
+Ximerakis2019_aging_brain_scRNA,Pkm,Glycolysis,Pkm,0.0008085068963090222,7962,9724
+Ximerakis2019_aging_brain_scRNA,Ldha,Glycolysis,Ldha,0.013880548671662307,4577,9724
+Ximerakis2019_aging_brain_scRNA,Ldhb,Glycolysis,Ldhb,0.0003661760564826199,8043,9724
+Ximerakis2019_aging_brain_scRNA,Pdha1,Pyruvate fate,Pdha1,0.010876323541612784,5507,9724
+Ximerakis2019_aging_brain_scRNA,Pdhb,Pyruvate fate,Pdhb,0.0021847584797867027,7672,9724
+Ximerakis2019_aging_brain_scRNA,Pdk1,Pyruvate fate,Pdk1,0.021680079734434643,2393,9724
+Ximerakis2019_aging_brain_scRNA,Pdk2,Pyruvate fate,Pdk2,0.00962766036298399,5848,9724
+Ximerakis2019_aging_brain_scRNA,Pdk3,Pyruvate fate,Pdk3,0.0220358400534365,2301,9724
+Ximerakis2019_aging_brain_scRNA,Pdk4,Pyruvate fate,Pdk4,0.024842867364099477,1669,9724
+Ximerakis2019_aging_brain_scRNA,Pdp1,Pyruvate fate,Pdp1,0.019635689549884924,2909,9724
+Ximerakis2019_aging_brain_scRNA,Mpc1,Pyruvate fate,Mpc1,-0.046366339171069186,9606,9724
+Ximerakis2019_aging_brain_scRNA,Mpc2,Pyruvate fate,Mpc2,0.011814004118510866,5232,9724
+Ximerakis2019_aging_brain_scRNA,Pcx,Pyruvate fate,Pcx,0.018546246997666695,3224,9724
+Ximerakis2019_aging_brain_scRNA,G6pdx,Pentose phosphate pathway,G6pdx,0.029697298236849017,921,9724
+Ximerakis2019_aging_brain_scRNA,Pgd,Pentose phosphate pathway,Pgd,0.01765931443359547,3490,9724
+Ximerakis2019_aging_brain_scRNA,Tkt,Pentose phosphate pathway,Tkt,0.012654042159114667,4960,9724
+Ximerakis2019_aging_brain_scRNA,Taldo1,Pentose phosphate pathway,Taldo1,-0.017250117432561406,9336,9724
+Ximerakis2019_aging_brain_scRNA,Pygb,Glycogen,Pygb,0.027772821754353517,1145,9724
+Ximerakis2019_aging_brain_scRNA,Gbe1,Glycogen,Gbe1,0.011127859777887208,5433,9724
+Ximerakis2019_aging_brain_scRNA,Agl,Glycogen,Agl,0.01306447955539514,4854,9724
+Ximerakis2019_aging_brain_scRNA,Cs,TCA cycle,Cs,0.012613404272277433,4974,9724
+Ximerakis2019_aging_brain_scRNA,Aco2,TCA cycle,Aco2,0.0002808980331488871,8056,9724
+Ximerakis2019_aging_brain_scRNA,Idh2,TCA cycle,Idh2,0.030970674197007084,800,9724
+Ximerakis2019_aging_brain_scRNA,Idh3a,TCA cycle,Idh3a,0.027289919272211586,1214,9724
+Ximerakis2019_aging_brain_scRNA,Ogdh,TCA cycle,Ogdh,0.009386743752807764,5919,9724
+Ximerakis2019_aging_brain_scRNA,Dlst,TCA cycle,Dlst,0.017913502673899788,3407,9724
+Ximerakis2019_aging_brain_scRNA,Sucla2,TCA cycle,Sucla2,0.03937010869396522,268,9724
+Ximerakis2019_aging_brain_scRNA,Suclg1,TCA cycle,Suclg1,0.0216035703626244,2405,9724
+Ximerakis2019_aging_brain_scRNA,Sdha,TCA cycle,Sdha,0.01128742736568047,5378,9724
+Ximerakis2019_aging_brain_scRNA,Sdhb,TCA cycle,Sdhb,0.010385082653143841,5640,9724
+Ximerakis2019_aging_brain_scRNA,Fh1,TCA cycle,Fh1,0.027165289439309924,1241,9724
+Ximerakis2019_aging_brain_scRNA,Mdh1,TCA cycle,Mdh1,0.007795207378519985,6325,9724
+Ximerakis2019_aging_brain_scRNA,Mdh2,TCA cycle,Mdh2,0.01948995851202519,2955,9724
+Ximerakis2019_aging_brain_scRNA,Got1,Anaplerosis / amino acids,Got1,0.02283243567731535,2137,9724
+Ximerakis2019_aging_brain_scRNA,Got2,Anaplerosis / amino acids,Got2,0.011948786134604567,5184,9724
+Ximerakis2019_aging_brain_scRNA,Glud1,Anaplerosis / amino acids,Glud1,0.013518027864175724,4693,9724
+Ximerakis2019_aging_brain_scRNA,Gls,Anaplerosis / amino acids,Gls,0.017731562445549062,3466,9724
+Ximerakis2019_aging_brain_scRNA,Glul,Anaplerosis / amino acids,Glul,-0.1613509327737443,9724,9724
+Ximerakis2019_aging_brain_scRNA,Idh1,Anaplerosis / amino acids,Idh1,0.0023149499329702355,7650,9724
+Ximerakis2019_aging_brain_scRNA,Slc25a1,Anaplerosis / amino acids,Slc25a1,0.012447934749346147,5019,9724
+Ximerakis2019_aging_brain_scRNA,Slc25a11,Anaplerosis / amino acids,Slc25a11,0.005702741250248467,6860,9724
+Ximerakis2019_aging_brain_scRNA,Ndufa4,Oxidative phosphorylation,Ndufa4,-0.026583671046846676,9485,9724
+Ximerakis2019_aging_brain_scRNA,Ndufs1,Oxidative phosphorylation,Ndufs1,0.035363414166156217,428,9724
+Ximerakis2019_aging_brain_scRNA,Ndufv1,Oxidative phosphorylation,Ndufv1,0.0199408979830116,2821,9724
+Ximerakis2019_aging_brain_scRNA,Ndufb8,Oxidative phosphorylation,Ndufb8,-0.014868886044395487,9264,9724
+Ximerakis2019_aging_brain_scRNA,Uqcrc1,Oxidative phosphorylation,Uqcrc1,0.0033261604242188787,7425,9724
+Ximerakis2019_aging_brain_scRNA,Uqcrc2,Oxidative phosphorylation,Uqcrc2,0.02765955539591836,1161,9724
+Ximerakis2019_aging_brain_scRNA,Uqcrfs1,Oxidative phosphorylation,Uqcrfs1,0.009460452147878707,5899,9724
+Ximerakis2019_aging_brain_scRNA,Cycs,Oxidative phosphorylation,Cycs,-0.015462555219388727,9283,9724
+Ximerakis2019_aging_brain_scRNA,Cox4i1,Oxidative phosphorylation,Cox4i1,-0.07936660857080081,9689,9724
+Ximerakis2019_aging_brain_scRNA,Cox5a,Oxidative phosphorylation,Cox5a,-0.002914489808396668,8524,9724
+Ximerakis2019_aging_brain_scRNA,Cox6c,Oxidative phosphorylation,Cox6c,-0.0576257262968141,9641,9724
+Ximerakis2019_aging_brain_scRNA,Cox7c,Oxidative phosphorylation,Cox7c,-0.04552556927259996,9600,9724
+Ximerakis2019_aging_brain_scRNA,Atp5a1,Oxidative phosphorylation,Atp5a1,0.016142407255137745,3920,9724
+Ximerakis2019_aging_brain_scRNA,Atp5b,Oxidative phosphorylation,Atp5b,-0.007662077023789262,8945,9724
+Ximerakis2019_aging_brain_scRNA,Atp5o,Oxidative phosphorylation,Atp5o,0.0012826775028351143,7884,9724
+Ximerakis2019_aging_brain_scRNA,Tfam,Mitochondrial biogenesis / dynamics,Tfam,0.010112600190401848,5712,9724
+Ximerakis2019_aging_brain_scRNA,Nrf1,Mitochondrial biogenesis / dynamics,Nrf1,0.009912379769395564,5762,9724
+Ximerakis2019_aging_brain_scRNA,Opa1,Mitochondrial biogenesis / dynamics,Opa1,0.0026620494669709932,7578,9724
+Ximerakis2019_aging_brain_scRNA,Mfn2,Mitochondrial biogenesis / dynamics,Mfn2,0.02632879443438426,1399,9724
+Ximerakis2019_aging_brain_scRNA,Dnm1l,Mitochondrial biogenesis / dynamics,Dnm1l,0.03150053383319118,745,9724
+Ximerakis2019_aging_brain_scRNA,Pink1,Mitochondrial biogenesis / dynamics,Pink1,0.01344812036784369,4721,9724
+Ximerakis2019_aging_brain_scRNA,Slc27a1,Fatty acid uptake / activation,Slc27a1,0.03925770101909144,274,9724
+Ximerakis2019_aging_brain_scRNA,Fabp5,Fatty acid uptake / activation,Fabp5,-0.03992912416802359,9575,9724
+Ximerakis2019_aging_brain_scRNA,Fabp7,Fatty acid uptake / activation,Fabp7,-0.005937341643565673,8814,9724
+Ximerakis2019_aging_brain_scRNA,Acsl1,Fatty acid uptake / activation,Acsl1,0.034358412407849724,490,9724
+Ximerakis2019_aging_brain_scRNA,Acsl3,Fatty acid uptake / activation,Acsl3,-0.008082371921863746,8972,9724
+Ximerakis2019_aging_brain_scRNA,Acsl6,Fatty acid uptake / activation,Acsl6,0.009272477805116412,5947,9724
+Ximerakis2019_aging_brain_scRNA,Acsbg1,Fatty acid uptake / activation,Acsbg1,-0.024273599369853363,9462,9724
+Ximerakis2019_aging_brain_scRNA,Cpt1a,Fatty acid beta-oxidation,Cpt1a,0.0176537782587391,3492,9724
+Ximerakis2019_aging_brain_scRNA,Cpt1c,Fatty acid beta-oxidation,Cpt1c,-0.005305141796019798,8764,9724
+Ximerakis2019_aging_brain_scRNA,Cpt2,Fatty acid beta-oxidation,Cpt2,0.010020130686199644,5728,9724
+Ximerakis2019_aging_brain_scRNA,Slc25a20,Fatty acid beta-oxidation,Slc25a20,0.007305970680410719,6452,9724
+Ximerakis2019_aging_brain_scRNA,Acadm,Fatty acid beta-oxidation,Acadm,0.0031356000447552413,7475,9724
+Ximerakis2019_aging_brain_scRNA,Acadl,Fatty acid beta-oxidation,Acadl,0.026677815360650503,1328,9724
+Ximerakis2019_aging_brain_scRNA,Acadvl,Fatty acid beta-oxidation,Acadvl,0.002745805931127019,7560,9724
+Ximerakis2019_aging_brain_scRNA,Acads,Fatty acid beta-oxidation,Acads,0.01767123338150705,3485,9724
+Ximerakis2019_aging_brain_scRNA,Hadha,Fatty acid beta-oxidation,Hadha,0.020685183755596002,2627,9724
+Ximerakis2019_aging_brain_scRNA,Hadhb,Fatty acid beta-oxidation,Hadhb,0.030006758000839084,897,9724
+Ximerakis2019_aging_brain_scRNA,Echs1,Fatty acid beta-oxidation,Echs1,0.022591219693252697,2192,9724
+Ximerakis2019_aging_brain_scRNA,Acaa2,Fatty acid beta-oxidation,Acaa2,0.03232281489038721,665,9724
+Ximerakis2019_aging_brain_scRNA,Decr1,Fatty acid beta-oxidation,Decr1,0.006909555377638569,6560,9724
+Ximerakis2019_aging_brain_scRNA,Eci1,Fatty acid beta-oxidation,Eci1,0.026239400402226887,1421,9724
+Ximerakis2019_aging_brain_scRNA,Acox1,Fatty acid beta-oxidation,Acox1,0.023605478468189247,1929,9724
+Ximerakis2019_aging_brain_scRNA,Acly,Lipid synthesis,Acly,0.032357254517811455,663,9724
+Ximerakis2019_aging_brain_scRNA,Acaca,Lipid synthesis,Acaca,0.04824996541978925,104,9724
+Ximerakis2019_aging_brain_scRNA,Fasn,Lipid synthesis,Fasn,0.04450773708991894,151,9724
+Ximerakis2019_aging_brain_scRNA,Elovl1,Lipid synthesis,Elovl1,-0.01624722225987537,9305,9724
+Ximerakis2019_aging_brain_scRNA,Elovl5,Lipid synthesis,Elovl5,0.013931482455710553,4556,9724
+Ximerakis2019_aging_brain_scRNA,Elovl6,Lipid synthesis,Elovl6,-0.006602761917486602,8868,9724
+Ximerakis2019_aging_brain_scRNA,Scd1,Lipid synthesis,Scd1,0.012653363097404264,4961,9724
+Ximerakis2019_aging_brain_scRNA,Scd2,Lipid synthesis,Scd2,-0.0778232242604022,9685,9724
+Ximerakis2019_aging_brain_scRNA,Srebf1,Lipid synthesis,Srebf1,0.02001141061050022,2805,9724
+Ximerakis2019_aging_brain_scRNA,Hmgcs1,Cholesterol synthesis,Hmgcs1,-0.01153963618002693,9143,9724
+Ximerakis2019_aging_brain_scRNA,Hmgcr,Cholesterol synthesis,Hmgcr,0.0008179581156936536,7959,9724
+Ximerakis2019_aging_brain_scRNA,Mvk,Cholesterol synthesis,Mvk,0.000558878340405623,8002,9724
+Ximerakis2019_aging_brain_scRNA,Fdps,Cholesterol synthesis,Fdps,-0.004728750478819121,8706,9724
+Ximerakis2019_aging_brain_scRNA,Fdft1,Cholesterol synthesis,Fdft1,0.004875270630603744,7065,9724
+Ximerakis2019_aging_brain_scRNA,Sqle,Cholesterol synthesis,Sqle,0.010446877594724334,5623,9724
+Ximerakis2019_aging_brain_scRNA,Lss,Cholesterol synthesis,Lss,-0.010421878203840211,9096,9724
+Ximerakis2019_aging_brain_scRNA,Cyp51,Cholesterol synthesis,Cyp51,-0.0013709370291041622,8318,9724
+Ximerakis2019_aging_brain_scRNA,Dhcr24,Cholesterol synthesis,Dhcr24,-0.016020652759370473,9299,9724
+Ximerakis2019_aging_brain_scRNA,Dhcr7,Cholesterol synthesis,Dhcr7,-0.006413200183609114,8850,9724
+Ximerakis2019_aging_brain_scRNA,Srebf2,Cholesterol synthesis,Srebf2,0.03196150929653361,700,9724
+Ximerakis2019_aging_brain_scRNA,Insig1,Cholesterol synthesis,Insig1,-0.001958027459807132,8407,9724
+Ximerakis2019_aging_brain_scRNA,Ldlr,Cholesterol / lipid transport,Ldlr,0.005549779060411216,6901,9724
+Ximerakis2019_aging_brain_scRNA,Abca1,Cholesterol / lipid transport,Abca1,0.015539265108357495,4086,9724
+Ximerakis2019_aging_brain_scRNA,Abca2,Cholesterol / lipid transport,Abca2,0.00269189169321688,7572,9724
+Ximerakis2019_aging_brain_scRNA,Abcg1,Cholesterol / lipid transport,Abcg1,0.027154702219583653,1243,9724
+Ximerakis2019_aging_brain_scRNA,Apoe,Cholesterol / lipid transport,Apoe,-0.01402012200665207,9232,9724
+Ximerakis2019_aging_brain_scRNA,Apod,Cholesterol / lipid transport,Apod,0.06009186878514686,42,9724
+Ximerakis2019_aging_brain_scRNA,Nr1h2,Cholesterol / lipid transport,Nr1h2,0.006603713234166712,6638,9724
+Ximerakis2019_aging_brain_scRNA,Plin2,Cholesterol / lipid transport,Plin2,0.014254758056376084,4462,9724
+Ximerakis2019_aging_brain_scRNA,Plin3,Cholesterol / lipid transport,Plin3,0.042443225392023234,192,9724
+Ximerakis2019_aging_brain_scRNA,Plin4,Cholesterol / lipid transport,Plin4,0.003518622807301667,7382,9724
+Ximerakis2019_aging_brain_scRNA,Ugt8a,Myelin lipid synthesis,Ugt8a,-0.015075020123776449,9272,9724
+Ximerakis2019_aging_brain_scRNA,Gal3st1,Myelin lipid synthesis,Gal3st1,-0.0010589262698090234,8256,9724
+Ximerakis2019_aging_brain_scRNA,Cers2,Myelin lipid synthesis,Cers2,-0.0268357044334654,9488,9724
+Ximerakis2019_aging_brain_scRNA,Sptlc1,Myelin lipid synthesis,Sptlc1,0.0041036639611242405,7242,9724
+Ximerakis2019_aging_brain_scRNA,Pigt,Myelin lipid synthesis,Pigt,0.0032814228626262773,7437,9724
+Ximerakis2019_aging_brain_scRNA,Fa2h,Myelin lipid synthesis,Fa2h,-0.03467212794030885,9539,9724
+Ximerakis2019_aging_brain_scRNA,Hif1a,Nutrient sensing / regulators,Hif1a,0.011622554775207081,5290,9724
+Ximerakis2019_aging_brain_scRNA,Epas1,Nutrient sensing / regulators,Epas1,-0.013698461435408793,9221,9724
+Ximerakis2019_aging_brain_scRNA,Prkaa1,Nutrient sensing / regulators,Prkaa1,0.013367592814417224,4754,9724
+Ximerakis2019_aging_brain_scRNA,Prkaa2,Nutrient sensing / regulators,Prkaa2,0.008713938739349147,6102,9724
+Ximerakis2019_aging_brain_scRNA,Mtor,Nutrient sensing / regulators,Mtor,-0.005132635827480463,8745,9724
+Ximerakis2019_aging_brain_scRNA,Rptor,Nutrient sensing / regulators,Rptor,0.011034443995966097,5461,9724
+Ximerakis2019_aging_brain_scRNA,Tsc2,Nutrient sensing / regulators,Tsc2,0.007441226740218667,6413,9724
+Ximerakis2019_aging_brain_scRNA,Ddit4,Nutrient sensing / regulators,Ddit4,0.01435282830444899,4432,9724
+Ximerakis2019_aging_brain_scRNA,Txnip,Nutrient sensing / regulators,Txnip,0.043221774734540114,176,9724
+Ximerakis2019_aging_brain_scRNA,Sirt1,Nutrient sensing / regulators,Sirt1,0.03279914723539644,618,9724
+Ximerakis2019_aging_brain_scRNA,Sirt3,Nutrient sensing / regulators,Sirt3,0.024878564064683296,1666,9724
+Ximerakis2019_aging_brain_scRNA,Ppard,Nutrient sensing / regulators,Ppard,0.016753969444504763,3749,9724
+Ximerakis2019_aging_brain_scRNA,Nfe2l2,Nutrient sensing / regulators,Nfe2l2,0.03693455939289727,350,9724
+Ximerakis2019_aging_brain_scRNA,Serpina3n,context,Serpina3n,0.18357745215854562,1,9724
+Zhou2020_5XFAD_snRNA,Hmgcl,Ketone body synthesis,Hmgcl,-0.007050628450694219,6275,11527
+Zhou2020_5XFAD_snRNA,Bdh1,Ketone body synthesis,Bdh1,-0.01565869785956205,9753,11527
+Zhou2020_5XFAD_snRNA,Oxct1,Ketone body utilisation,Oxct1,-0.024550239234877067,11133,11527
+Zhou2020_5XFAD_snRNA,Acat1,Ketone body utilisation,Acat1,-0.01948445818893221,10571,11527
+Zhou2020_5XFAD_snRNA,Acat2,Ketone body utilisation,Acat2,-0.016756346327799824,10035,11527
+Zhou2020_5XFAD_snRNA,Acss1,Ketone body utilisation,Acss1,0.003929608495190717,1702,11527
+Zhou2020_5XFAD_snRNA,Acss2,Ketone body utilisation,Acss2,0.0016820772673365688,2377,11527
+Zhou2020_5XFAD_snRNA,Slc16a1,Monocarboxylate transporters,Slc16a1,0.007400225898723339,982,11527
+Zhou2020_5XFAD_snRNA,Slc16a7,Monocarboxylate transporters,Slc16a7,-0.010694940242366157,8012,11527
+Zhou2020_5XFAD_snRNA,Slc16a6,Monocarboxylate transporters,Slc16a6,0.0021650208941000454,2218,11527
+Zhou2020_5XFAD_snRNA,Bsg,Monocarboxylate transporters,Bsg,-0.011564334372736403,8343,11527
+Zhou2020_5XFAD_snRNA,Slc2a1,Glucose transporters,Slc2a1,-0.013576344077742922,9121,11527
+Zhou2020_5XFAD_snRNA,Slc2a3,Glucose transporters,Slc2a3,-0.012237029717590005,8615,11527
+Zhou2020_5XFAD_snRNA,Slc2a8,Glucose transporters,Slc2a8,-0.016681002066793033,10011,11527
+Zhou2020_5XFAD_snRNA,Hk1,Glycolysis,Hk1,-0.010189280709567386,7800,11527
+Zhou2020_5XFAD_snRNA,Gpi1,Glycolysis,Gpi1,-0.024586708125741607,11137,11527
+Zhou2020_5XFAD_snRNA,Pfkl,Glycolysis,Pfkl,-0.014967340982739505,9562,11527
+Zhou2020_5XFAD_snRNA,Pfkm,Glycolysis,Pfkm,-0.006993806338661077,6249,11527
+Zhou2020_5XFAD_snRNA,Pfkp,Glycolysis,Pfkp,-0.011964409066459776,8501,11527
+Zhou2020_5XFAD_snRNA,Pfkfb2,Glycolysis,Pfkfb2,-0.007253034401256214,6373,11527
+Zhou2020_5XFAD_snRNA,Pfkfb3,Glycolysis,Pfkfb3,-0.001966195728361525,3816,11527
+Zhou2020_5XFAD_snRNA,Aldoa,Glycolysis,Aldoa,-0.02814003429430369,11300,11527
+Zhou2020_5XFAD_snRNA,Aldoc,Glycolysis,Aldoc,-0.002905366682903422,4225,11527
+Zhou2020_5XFAD_snRNA,Tpi1,Glycolysis,Tpi1,-0.007567466461641645,6547,11527
+Zhou2020_5XFAD_snRNA,Gapdh,Glycolysis,Gapdh,-0.06272884356501851,11522,11527
+Zhou2020_5XFAD_snRNA,Pgk1,Glycolysis,Pgk1,-0.00729869540196841,6391,11527
+Zhou2020_5XFAD_snRNA,Pgam1,Glycolysis,Pgam1,-0.011702510530708409,8384,11527
+Zhou2020_5XFAD_snRNA,Eno1,Glycolysis,Eno1,-0.027836404618379797,11291,11527
+Zhou2020_5XFAD_snRNA,Eno2,Glycolysis,Eno2,-0.013966049583466814,9249,11527
+Zhou2020_5XFAD_snRNA,Pkm,Glycolysis,Pkm,-0.02256138580408648,10959,11527
+Zhou2020_5XFAD_snRNA,Ldha,Glycolysis,Ldha,-0.012198674574346549,8606,11527
+Zhou2020_5XFAD_snRNA,Ldhb,Glycolysis,Ldhb,-0.026385055991218757,11232,11527
+Zhou2020_5XFAD_snRNA,Pdha1,Pyruvate fate,Pdha1,-0.0014249094937189813,3598,11527
+Zhou2020_5XFAD_snRNA,Pdhb,Pyruvate fate,Pdhb,-0.012053270289008615,8536,11527
+Zhou2020_5XFAD_snRNA,Pdk1,Pyruvate fate,Pdk1,-0.011300962716982079,8245,11527
+Zhou2020_5XFAD_snRNA,Pdk2,Pyruvate fate,Pdk2,-0.01002581557635236,7729,11527
+Zhou2020_5XFAD_snRNA,Pdk3,Pyruvate fate,Pdk3,-0.00021540199978682843,3083,11527
+Zhou2020_5XFAD_snRNA,Pdk4,Pyruvate fate,Pdk4,-0.007744383393698303,6642,11527
+Zhou2020_5XFAD_snRNA,Pdp1,Pyruvate fate,Pdp1,-0.018625603719434242,10412,11527
+Zhou2020_5XFAD_snRNA,Mpc1,Pyruvate fate,Mpc1,-0.0005873719246520041,3234,11527
+Zhou2020_5XFAD_snRNA,Mpc2,Pyruvate fate,Mpc2,-0.015436506440649552,9683,11527
+Zhou2020_5XFAD_snRNA,Pcx,Pyruvate fate,Pcx,-0.008149834361008737,6845,11527
+Zhou2020_5XFAD_snRNA,Pck2,Pyruvate fate,Pck2,-0.010358515962340855,7875,11527
+Zhou2020_5XFAD_snRNA,G6pdx,Pentose phosphate pathway,G6pdx,-0.006734128980847891,6132,11527
+Zhou2020_5XFAD_snRNA,Pgd,Pentose phosphate pathway,Pgd,-0.011416382473218353,8281,11527
+Zhou2020_5XFAD_snRNA,Tkt,Pentose phosphate pathway,Tkt,-0.012093929781848423,8555,11527
+Zhou2020_5XFAD_snRNA,Taldo1,Pentose phosphate pathway,Taldo1,-0.01792396849357267,10275,11527
+Zhou2020_5XFAD_snRNA,Gys1,Glycogen,Gys1,-0.015448656455972234,9690,11527
+Zhou2020_5XFAD_snRNA,Pygb,Glycogen,Pygb,-0.020304934945190634,10703,11527
+Zhou2020_5XFAD_snRNA,Gbe1,Glycogen,Gbe1,-0.002270853114377243,3939,11527
+Zhou2020_5XFAD_snRNA,Agl,Glycogen,Agl,-0.0023874724588910665,4004,11527
+Zhou2020_5XFAD_snRNA,Cs,TCA cycle,Cs,-0.007416402761710077,6452,11527
+Zhou2020_5XFAD_snRNA,Aco2,TCA cycle,Aco2,-0.0076161444879720855,6572,11527
+Zhou2020_5XFAD_snRNA,Idh2,TCA cycle,Idh2,0.0007012605999103496,2726,11527
+Zhou2020_5XFAD_snRNA,Idh3a,TCA cycle,Idh3a,-0.0031757225752412394,4354,11527
+Zhou2020_5XFAD_snRNA,Ogdh,TCA cycle,Ogdh,-0.021891524746910994,10899,11527
+Zhou2020_5XFAD_snRNA,Dlst,TCA cycle,Dlst,-0.00978036018752669,7622,11527
+Zhou2020_5XFAD_snRNA,Sucla2,TCA cycle,Sucla2,-0.014175776855021095,9314,11527
+Zhou2020_5XFAD_snRNA,Suclg1,TCA cycle,Suclg1,-0.0071259005945358105,6315,11527
+Zhou2020_5XFAD_snRNA,Sdha,TCA cycle,Sdha,-0.014667730770275963,9464,11527
+Zhou2020_5XFAD_snRNA,Sdhb,TCA cycle,Sdhb,-0.01562504098811254,9744,11527
+Zhou2020_5XFAD_snRNA,Fh1,TCA cycle,Fh1,-0.006844439745153958,6181,11527
+Zhou2020_5XFAD_snRNA,Mdh1,TCA cycle,Mdh1,-0.01963791835548283,10596,11527
+Zhou2020_5XFAD_snRNA,Mdh2,TCA cycle,Mdh2,-0.0084204136101909,6987,11527
+Zhou2020_5XFAD_snRNA,Got1,Anaplerosis / amino acids,Got1,-0.016748416864755835,10031,11527
+Zhou2020_5XFAD_snRNA,Got2,Anaplerosis / amino acids,Got2,-0.021487434002409295,10869,11527
+Zhou2020_5XFAD_snRNA,Glud1,Anaplerosis / amino acids,Glud1,-0.012483395305420728,8714,11527
+Zhou2020_5XFAD_snRNA,Gls,Anaplerosis / amino acids,Gls,-0.0005812229079615303,3232,11527
+Zhou2020_5XFAD_snRNA,Glul,Anaplerosis / amino acids,Glul,-0.045330140577123056,11494,11527
+Zhou2020_5XFAD_snRNA,Idh1,Anaplerosis / amino acids,Idh1,-0.01761675433075284,10209,11527
+Zhou2020_5XFAD_snRNA,Slc25a1,Anaplerosis / amino acids,Slc25a1,-0.010624248496556738,7983,11527
+Zhou2020_5XFAD_snRNA,Slc25a11,Anaplerosis / amino acids,Slc25a11,-0.008521476969996632,7040,11527
+Zhou2020_5XFAD_snRNA,Ndufa4,Oxidative phosphorylation,Ndufa4,-0.0009365242073811781,3381,11527
+Zhou2020_5XFAD_snRNA,Ndufs1,Oxidative phosphorylation,Ndufs1,-0.00729148930017222,6387,11527
+Zhou2020_5XFAD_snRNA,Ndufv1,Oxidative phosphorylation,Ndufv1,-0.019598050515856776,10592,11527
+Zhou2020_5XFAD_snRNA,Ndufb8,Oxidative phosphorylation,Ndufb8,0.003605642378976234,1796,11527
+Zhou2020_5XFAD_snRNA,Uqcrc1,Oxidative phosphorylation,Uqcrc1,-0.023099982459559056,11007,11527
+Zhou2020_5XFAD_snRNA,Uqcrc2,Oxidative phosphorylation,Uqcrc2,-0.010461178429582382,7913,11527
+Zhou2020_5XFAD_snRNA,Uqcrfs1,Oxidative phosphorylation,Uqcrfs1,-0.022997304803287957,10996,11527
+Zhou2020_5XFAD_snRNA,Cycs,Oxidative phosphorylation,Cycs,-0.017703882451192882,10227,11527
+Zhou2020_5XFAD_snRNA,Cox4i1,Oxidative phosphorylation,Cox4i1,-0.0031847198849375923,4359,11527
+Zhou2020_5XFAD_snRNA,Cox5a,Oxidative phosphorylation,Cox5a,-0.019999364158621424,10660,11527
+Zhou2020_5XFAD_snRNA,Cox6c,Oxidative phosphorylation,Cox6c,-0.020884462832110786,10790,11527
+Zhou2020_5XFAD_snRNA,Cox7c,Oxidative phosphorylation,Cox7c,-0.011186955285202953,8206,11527
+Zhou2020_5XFAD_snRNA,Atp5a1,Oxidative phosphorylation,Atp5a1,-0.023414397313140246,11040,11527
+Zhou2020_5XFAD_snRNA,Atp5b,Oxidative phosphorylation,Atp5b,-0.011758333980519778,8418,11527
+Zhou2020_5XFAD_snRNA,Ppargc1a,Mitochondrial biogenesis / dynamics,Ppargc1a,-0.011783367798886064,8432,11527
+Zhou2020_5XFAD_snRNA,Tfam,Mitochondrial biogenesis / dynamics,Tfam,-0.007744683052164145,6643,11527
+Zhou2020_5XFAD_snRNA,Nrf1,Mitochondrial biogenesis / dynamics,Nrf1,0.004334109385182193,1593,11527
+Zhou2020_5XFAD_snRNA,Opa1,Mitochondrial biogenesis / dynamics,Opa1,-0.017250758062596665,10129,11527
+Zhou2020_5XFAD_snRNA,Mfn2,Mitochondrial biogenesis / dynamics,Mfn2,-0.007220586818416865,6357,11527
+Zhou2020_5XFAD_snRNA,Dnm1l,Mitochondrial biogenesis / dynamics,Dnm1l,-0.007945024022251957,6736,11527
+Zhou2020_5XFAD_snRNA,Pink1,Mitochondrial biogenesis / dynamics,Pink1,-0.015550565433748992,9724,11527
+Zhou2020_5XFAD_snRNA,Slc27a1,Fatty acid uptake / activation,Slc27a1,-0.009946613134525165,7688,11527
+Zhou2020_5XFAD_snRNA,Fabp5,Fatty acid uptake / activation,Fabp5,0.021866718478135788,154,11527
+Zhou2020_5XFAD_snRNA,Acsl1,Fatty acid uptake / activation,Acsl1,-0.007557240334239214,6543,11527
+Zhou2020_5XFAD_snRNA,Acsl3,Fatty acid uptake / activation,Acsl3,-0.03553571202154534,11450,11527
+Zhou2020_5XFAD_snRNA,Acsl6,Fatty acid uptake / activation,Acsl6,-0.01215278849341219,8583,11527
+Zhou2020_5XFAD_snRNA,Cpt1c,Fatty acid beta-oxidation,Cpt1c,-0.017533195692193988,10188,11527
+Zhou2020_5XFAD_snRNA,Slc25a20,Fatty acid beta-oxidation,Slc25a20,-0.013024685404410498,8924,11527
+Zhou2020_5XFAD_snRNA,Acadm,Fatty acid beta-oxidation,Acadm,0.0028062360704480564,2025,11527
+Zhou2020_5XFAD_snRNA,Acadl,Fatty acid beta-oxidation,Acadl,0.010651877185006533,578,11527
+Zhou2020_5XFAD_snRNA,Acadvl,Fatty acid beta-oxidation,Acadvl,0.003390836502747394,1862,11527
+Zhou2020_5XFAD_snRNA,Hadha,Fatty acid beta-oxidation,Hadha,0.004506026896333195,1559,11527
+Zhou2020_5XFAD_snRNA,Hadhb,Fatty acid beta-oxidation,Hadhb,0.010841717050381986,563,11527
+Zhou2020_5XFAD_snRNA,Echs1,Fatty acid beta-oxidation,Echs1,-0.0056795127134207386,5599,11527
+Zhou2020_5XFAD_snRNA,Decr1,Fatty acid beta-oxidation,Decr1,0.00011754012977017433,2951,11527
+Zhou2020_5XFAD_snRNA,Eci1,Fatty acid beta-oxidation,Eci1,-0.008205864953533154,6877,11527
+Zhou2020_5XFAD_snRNA,Acox1,Fatty acid beta-oxidation,Acox1,-0.006131685572294884,5814,11527
+Zhou2020_5XFAD_snRNA,Acly,Lipid synthesis,Acly,-0.014847988555068359,9527,11527
+Zhou2020_5XFAD_snRNA,Acaca,Lipid synthesis,Acaca,-0.0124597403939332,8704,11527
+Zhou2020_5XFAD_snRNA,Fasn,Lipid synthesis,Fasn,0.010092437296754471,631,11527
+Zhou2020_5XFAD_snRNA,Elovl1,Lipid synthesis,Elovl1,0.015726427180297604,273,11527
+Zhou2020_5XFAD_snRNA,Elovl5,Lipid synthesis,Elovl5,-0.027717501561794075,11284,11527
+Zhou2020_5XFAD_snRNA,Elovl6,Lipid synthesis,Elovl6,-0.0025370147351139703,4070,11527
+Zhou2020_5XFAD_snRNA,Scd1,Lipid synthesis,Scd1,-0.0034452807614492606,4492,11527
+Zhou2020_5XFAD_snRNA,Scd2,Lipid synthesis,Scd2,-0.017932180519030963,10276,11527
+Zhou2020_5XFAD_snRNA,Srebf1,Lipid synthesis,Srebf1,-0.0024544348745194097,4037,11527
+Zhou2020_5XFAD_snRNA,Hmgcs1,Cholesterol synthesis,Hmgcs1,-0.00962354565463828,7546,11527
+Zhou2020_5XFAD_snRNA,Hmgcr,Cholesterol synthesis,Hmgcr,-0.009087113896558899,7301,11527
+Zhou2020_5XFAD_snRNA,Mvk,Cholesterol synthesis,Mvk,0.0031839792974010916,1910,11527
+Zhou2020_5XFAD_snRNA,Fdps,Cholesterol synthesis,Fdps,-0.0005423862971347962,3216,11527
+Zhou2020_5XFAD_snRNA,Fdft1,Cholesterol synthesis,Fdft1,-0.005417763547752678,5462,11527
+Zhou2020_5XFAD_snRNA,Sqle,Cholesterol synthesis,Sqle,-0.001214704335171595,3499,11527
+Zhou2020_5XFAD_snRNA,Lss,Cholesterol synthesis,Lss,0.004397235768772541,1583,11527
+Zhou2020_5XFAD_snRNA,Cyp51,Cholesterol synthesis,Cyp51,0.008153717687694455,862,11527
+Zhou2020_5XFAD_snRNA,Dhcr24,Cholesterol synthesis,Dhcr24,-0.0031423380948552514,4332,11527
+Zhou2020_5XFAD_snRNA,Dhcr7,Cholesterol synthesis,Dhcr7,-0.005602287939394013,5558,11527
+Zhou2020_5XFAD_snRNA,Srebf2,Cholesterol synthesis,Srebf2,-0.006223002325861578,5856,11527
+Zhou2020_5XFAD_snRNA,Insig1,Cholesterol synthesis,Insig1,-0.009284330204206992,7394,11527
+Zhou2020_5XFAD_snRNA,Ldlr,Cholesterol / lipid transport,Ldlr,-0.00571526457710825,5624,11527
+Zhou2020_5XFAD_snRNA,Abca1,Cholesterol / lipid transport,Abca1,0.003187908027529481,1909,11527
+Zhou2020_5XFAD_snRNA,Abca2,Cholesterol / lipid transport,Abca2,0.012493919715318625,427,11527
+Zhou2020_5XFAD_snRNA,Abcg1,Cholesterol / lipid transport,Abcg1,-0.0048548575594165155,5190,11527
+Zhou2020_5XFAD_snRNA,Apoe,Cholesterol / lipid transport,Apoe,0.07983676965890503,14,11527
+Zhou2020_5XFAD_snRNA,Apod,Cholesterol / lipid transport,Apod,0.10670383460744763,8,11527
+Zhou2020_5XFAD_snRNA,Lpl,Cholesterol / lipid transport,Lpl,0.0025172436464212158,2110,11527
+Zhou2020_5XFAD_snRNA,Nr1h2,Cholesterol / lipid transport,Nr1h2,-0.009040797490271462,7281,11527
+Zhou2020_5XFAD_snRNA,Plin3,Cholesterol / lipid transport,Plin3,0.0015957493424298458,2414,11527
+Zhou2020_5XFAD_snRNA,Plin4,Cholesterol / lipid transport,Plin4,-0.012316131392902573,8654,11527
+Zhou2020_5XFAD_snRNA,Ugt8a,Myelin lipid synthesis,Ugt8a,-0.024536545862057394,11132,11527
+Zhou2020_5XFAD_snRNA,Gal3st1,Myelin lipid synthesis,Gal3st1,0.00226040122408707,2178,11527
+Zhou2020_5XFAD_snRNA,Cers2,Myelin lipid synthesis,Cers2,0.006399845688574108,1166,11527
+Zhou2020_5XFAD_snRNA,Sptlc1,Myelin lipid synthesis,Sptlc1,-0.002057350187269986,3862,11527
+Zhou2020_5XFAD_snRNA,Pigt,Myelin lipid synthesis,Pigt,-0.006303011853832175,5892,11527
+Zhou2020_5XFAD_snRNA,Fa2h,Myelin lipid synthesis,Fa2h,-0.029257108511895048,11339,11527
+Zhou2020_5XFAD_snRNA,Hif1a,Nutrient sensing / regulators,Hif1a,-0.015466404449793383,9700,11527
+Zhou2020_5XFAD_snRNA,Epas1,Nutrient sensing / regulators,Epas1,0.0005066902545623069,2797,11527
+Zhou2020_5XFAD_snRNA,Prkaa1,Nutrient sensing / regulators,Prkaa1,-0.0022680499422913013,3937,11527
+Zhou2020_5XFAD_snRNA,Prkaa2,Nutrient sensing / regulators,Prkaa2,-0.0009623533281893848,3389,11527
+Zhou2020_5XFAD_snRNA,Mtor,Nutrient sensing / regulators,Mtor,-0.020498567466431247,10727,11527
+Zhou2020_5XFAD_snRNA,Rptor,Nutrient sensing / regulators,Rptor,-0.003198082990518608,4368,11527
+Zhou2020_5XFAD_snRNA,Tsc2,Nutrient sensing / regulators,Tsc2,-0.0007291740109431114,3310,11527
+Zhou2020_5XFAD_snRNA,Ddit4,Nutrient sensing / regulators,Ddit4,-0.022527312589401587,10955,11527
+Zhou2020_5XFAD_snRNA,Txnip,Nutrient sensing / regulators,Txnip,0.005281290430002449,1371,11527
+Zhou2020_5XFAD_snRNA,Sirt1,Nutrient sensing / regulators,Sirt1,-0.00429169619478015,4912,11527
+Zhou2020_5XFAD_snRNA,Sirt3,Nutrient sensing / regulators,Sirt3,-0.014360973441037858,9376,11527
+Zhou2020_5XFAD_snRNA,Ppard,Nutrient sensing / regulators,Ppard,0.00108679346811597,2588,11527
+Zhou2020_5XFAD_snRNA,Pparg,Nutrient sensing / regulators,Pparg,-0.015286063264663967,9646,11527
+Zhou2020_5XFAD_snRNA,Nfe2l2,Nutrient sensing / regulators,Nfe2l2,0.009573610094737391,678,11527
+Zhou2020_5XFAD_snRNA,Serpina3n,context,Serpina3n,0.23994471036767628,1,11527
