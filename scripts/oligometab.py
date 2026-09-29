@@ -308,6 +308,7 @@ def pathway_scores(adata, sets: Optional[Dict[str, List[str]]] = None, min_genes
 
 def coexpression_with_anchor(adata, anchor: str, genes: Sequence[str], high_q: float = 0.75, min_pos: int = 20) -> pd.DataFrame:
     """Inside one population: detection of each gene in anchor+ vs anchor- cells, Fisher p, Spearman rho with the anchor."""
+    genes = [g for g in dict.fromkeys(genes) if g != anchor]          # unique, anchor excluded
     df = expr_df(adata, [anchor] + list(genes))
     if anchor not in df.columns or (df[anchor] > 0).sum() < min_pos:
         return pd.DataFrame()

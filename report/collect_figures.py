@@ -22,6 +22,7 @@ SPATIAL = ROOT / "notebooks/analysis/analysis_spatial_metabolism.ipynb"
 PUBLIC = ROOT / "notebooks/analysis/analysis_public_datasets_metabolism.ipynb"
 KETONE = ROOT / "notebooks/analysis/analysis_ketone_metabolism.ipynb"
 EAEK = ROOT / "notebooks/analysis/analysis_xenium_eae_ketone.ipynb"
+MYEL = ROOT / "notebooks/analysis/analysis_xenium_eae_myeloid.ipynb"
 
 FIGURES = {
     # in-house spatial notebook
@@ -62,6 +63,14 @@ FIGURES = {
     "eae5k_myeloid_fc.png": (EAEK, 'save("myeloid_EAE_vs_control", de_my)', 1),
     "eae5k_neighbourhoods.png": (EAEK, 'NB = pd.DataFrame(rows); save("neighbourhoods", NB)', 0),
     "eae5k_map_peak.png": (EAEK, 'sc.pl.spatial(sub, color=genes, spot_size=20, cmap="magma", vmax="p99", ncols=4', 0),
+    # EAE myeloid notebook
+    "myeloid_composition_lesion.png": (MYEL, 'heat(ld_frac.T, "EAE: composition of the myeloid compartment', 1),
+    "myeloid_pathway_scores.png": (MYEL, 'heat(S, "Myeloid populations: mean pathway score', 0),
+    "myeloid_vs_microglia.png": (MYEL, 'vs = paired_vs_reference(eae_my, focus, "sample_name", "population", pops, "Microglia")', 0),
+    "myeloid_hcar2_corr.png": (MYEL, 'heat(sel.T, "Spearman correlation with Hcar2 inside each myeloid population"', -1),
+    "myeloid_plin2_lesion.png": (MYEL, 'for gname in ["Hcar2", "Nlrp3", "Slc16a3", "Cpt1a", "Plin2", "Hk2"]:', 4),
+    "myeloid_neighbourhoods_c4b.png": (MYEL, 'NB = pd.DataFrame(rows); save("neighbourhoods", NB)', 1),
+    "myeloid_map.png": (MYEL, 'sc.pl.spatial(sub, color=["myeloid population"]', 0),
 }
 
 

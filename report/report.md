@@ -146,6 +146,40 @@ The panel has no committed ketone enzyme, so this rests on *Bdh1*, the MCT trans
 <figcaption>Neighbour-fraction ratios (30 µm) around DA vs homeostatic and *C4b*-high vs *C4b*-negative oligodendrocytes for ketogenic-competent astrocytes, MCT4⁺ astrocytes, *Hcar2*⁺ / *Nlrp3*⁺ myeloid cells and MCT1⁺ endothelium.</figcaption>
 </figure>
 
+## 6d. The myeloid populations
+
+Control myeloid tissue is 60 % homeostatic microglia; EAE re-populates it in a fixed order (infiltrating cells, macrophages and proliferating microglia at onset; macrophages at peak I, efflux cells at peak II, foam cells at peak III; an LXR-type "Activated Mic_Mac 2" state in remission and chronic disease), with macrophages making up 29 % of myeloid cells at the lesion core. Each population has its own metabolism: macrophages are hypoxic-glycolytic lactate exporters, foam cells are the only fatty-acid-oxidising population on top of maximal lipid storage, Activated Mic_Mac 2 handles lipid through *Lpl* / *Abca1*, infiltrating cells are glycolytic sensors (*Hcar2*, *Nlrp3*, *Ffar2*), APCs alone synthesise cholesterol. None make ketone bodies (*Bdh1* ≤ 7 %, *Ppara* ≤ 2 %); they carry MCT4 and the BHB sensors. The *Hcar2*⁺ phenotype is one phenotype everywhere, *Cd36*⁺ *Tnf*⁺ *Ccl2*⁺ *Cst7*⁺ with homeostatic identity retained and *Gpnmb* / *Igf1* / *Ccr2* depleted; microglia entering a lesion lose *Hcar2* and gain *Plin2*, MCT4 and *Cpt1a*, and microglial *Hcar2* is an onset / first-peak signal. Around *C4b*-high oligodendrocytes, Activated Mic_Mac 2, APCs and homeostatic microglia are enriched (2–3×, lesion-matched) but foam and efflux cells are not.
+
+<figure markdown="1">
+![](figures/myeloid_composition_lesion.png)
+<figcaption>Composition of the myeloid compartment by lesion distance in EAE (fraction of myeloid cells in each bin).</figcaption>
+</figure>
+
+<figure markdown="1">
+![](figures/myeloid_pathway_scores.png)
+<figcaption>Mean pathway score per myeloid population.</figcaption>
+</figure>
+
+<figure markdown="1">
+![](figures/myeloid_vs_microglia.png)
+<figcaption>Each population versus homeostatic microglia of the same EAE sample: log2 fold change of the metabolic focus genes; * paired Wilcoxon p < 0.05.</figcaption>
+</figure>
+
+<figure markdown="1">
+![](figures/myeloid_hcar2_corr.png)
+<figcaption>Spearman correlation with *Hcar2* inside each myeloid population.</figcaption>
+</figure>
+
+<figure markdown="1">
+![](figures/myeloid_plin2_lesion.png)
+<figcaption>*Plin2* by myeloid population and lesion distance.</figcaption>
+</figure>
+
+<figure markdown="1">
+![](figures/myeloid_neighbourhoods_c4b.png)
+<figcaption>Myeloid populations within 30 µm of *C4b*-high versus *C4b*-negative oligodendrocytes (ratio, raw and lesion-distance-matched).</figcaption>
+</figure>
+
 ## 7. Spatial partners of *C4b*-high oligodendrocytes (Xenium EAE)
 
 *Hcar2*⁺ cells (median ratio 1.7), *Hcar2*⁺ myeloid cells (1.8), *Slc16a3*⁺ astrocytes (2.3), *Hk2*⁺ (1.8), *Pdk1*⁺ (1.3) and *Plin2*⁺ (1.4) cells are enriched within 30 µm of *C4b*-high compared with *C4b*-negative oligodendrocytes in 87 samples (paired Wilcoxon p < 10⁻⁵); *Slc2a1*⁺ cells are not. The enrichment survives matching for lesion distance (1.2–1.75) and restriction to non-lesion tissue (1.3–2.2).
@@ -193,4 +227,4 @@ Whole-section glycolysis, TCA and OXPHOS scores rise slightly with age (p ≈ 0.
 
 ## 11. Where everything lives
 
-Repository `oligoMetab` (GitHub, `christoffermattssonlangseth/oligoMetab`): executed notebooks (spatial, public, ketone, EAE ketone) under `notebooks/analysis/`, sources under `notebooks/src/`, the gene panel and helpers in `scripts/oligometab.py`, summary tables in `results/`, and plain-language documentation in `docs/` (`metabolism_findings.md`, `gene_panel.md`, `notebooks.md`, `public_datasets.md`). Data are the OligoC4b objects on the group's analysis machine.
+Repository `oligoMetab` (GitHub, `christoffermattssonlangseth/oligoMetab`): executed notebooks (spatial, public, ketone, EAE ketone, EAE myeloid) under `notebooks/analysis/`, sources under `notebooks/src/`, the gene panel and helpers in `scripts/oligometab.py`, summary tables in `results/`, and plain-language documentation in `docs/` (`metabolism_findings.md`, `gene_panel.md`, `notebooks.md`, `public_datasets.md`). Data are the OligoC4b objects on the group's analysis machine.
