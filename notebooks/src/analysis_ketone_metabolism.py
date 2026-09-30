@@ -173,7 +173,7 @@ if ad_eae is not None:
     tidy = ld.melt(id_vars=["bin", "population"], var_name="gene", value_name="mean_expr")
     g = sns.relplot(data=tidy, x="bin", y="mean_expr", hue="population", col="gene", col_wrap=4, kind="line", marker="o", height=2.4, aspect=1.2, facet_kws={"sharey": False})
     for ax in g.axes.flat:
-        ax.tick_params(axis="x", rotation=45)
+        plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
     g.set_titles("{col_name}"); plt.show()
     # C4b co-expression with the ketone genes in DA oligodendrocytes
     dao = ad_eae[ad_eae.obs["cell_type"] == "DA Oligodendrocytes"].copy()

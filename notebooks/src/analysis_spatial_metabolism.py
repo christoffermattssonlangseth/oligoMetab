@@ -290,7 +290,7 @@ if ad_eae is not None:
     tidy = pbs.melt(id_vars=["sample_name", "cell_type", "condition", "model", "n_cells"], value_vars=list(P_eae.columns), var_name="pathway", value_name="score")
     g = sns.catplot(data=tidy, x="cell_type", y="score", hue="condition", col="pathway", col_wrap=2, kind="box", sharey=False, height=3.2, aspect=2.4, showfliers=False, order=cts)
     for ax in g.axes.flat:
-        ax.tick_params(axis="x", rotation=45)
+        plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
     plt.show()
     del sub
 
@@ -321,7 +321,7 @@ if ad_eae is not None:
     ld = pd.concat(ld_rows)
     g = sns.relplot(data=ld, x="bin", y="score", hue="population", col="pathway", col_wrap=4, kind="line", marker="o", height=2.4, aspect=1.2, facet_kws={"sharey": False})
     for ax in g.axes.flat:
-        ax.tick_params(axis="x", rotation=45)
+        plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
     g.set_titles("{col_name}"); plt.show()
     # every cell type separately: cell type x lesion-distance bin, one heatmap per pathway (value = mean score minus the >500 µm value of that cell type)
     s_all = ad_eae[m_eae]

@@ -233,9 +233,9 @@ n = my.obs.groupby(["sample_name", "population"], observed=True).size().rename("
 pb = pb.merge(n, on=["sample_name", "population"]).query("n_cells >= 20").merge(meta[["course", "model", "frac_lesion"]], left_on="sample_name", right_index=True)
 course_tab = pb.groupby(["population", "course"], observed=True)[["Hcar2", "Nlrp3", "Slc16a3", "Cpt1a", "Plin2", "Cd36", "Lpl", "Hk2", "Ldha"]].mean().round(3); save("pseudobulk_by_course", course_tab)
 tidy = pb[pb.population.isin(["Microglia", "Activate Mic_Mac 1", "Activated Mic_Mac 2", "Macrophages", "Foamy Mic_Mac", "Myeloid cells"])].melt(id_vars=["sample_name", "population", "condition", "course", "model", "frac_lesion", "n_cells"], value_vars=["Hcar2", "Nlrp3", "Slc16a3", "Cpt1a", "Plin2", "Hk2"], var_name="gene", value_name="mean_expr")
-g = sns.catplot(data=tidy, x="course", y="mean_expr", hue="population", col="gene", col_wrap=3, kind="point", order=order_c, dodge=0.5, errorbar=("ci", 95), linestyle="none", height=3.2, aspect=1.3, sharey=False)
+g = sns.catplot(data=tidy, x="course", y="mean_expr", hue="population", col="gene", col_wrap=3, kind="point", order=order_c, dodge=0.5, errorbar=("ci", 95), linestyle="none", height=3.4, aspect=1.7, sharey=False)
 for ax in g.axes.flat:
-    ax.tick_params(axis="x", rotation=45)
+    plt.setp(ax.get_xticklabels(), rotation=90, fontsize=8)
 g.set_titles("{col_name}"); plt.show()
 rows = []
 for p in MYELOID:

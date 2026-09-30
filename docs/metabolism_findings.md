@@ -68,7 +68,7 @@ Whole-section glycolysis, TCA and OXPHOS scores rise slightly with age (r ≈ 0.
 
 ## 8c. Ketone handling in Xenium EAE with the genes on the 5K panel (`analysis_xenium_eae_ketone.ipynb`)
 
-The collaborators' central question, answered with *Bdh1*, MCT1 / MCT4 / SMCT2, *Hcar2* / *Ffar3* / *Ffar2* / *Nlrp3*, the β-oxidation chain and the PPARα / FGF21 axis (no committed ketone enzyme is on the panel). 107 samples, 27 cell types.
+The central question of the project, answered with *Bdh1*, MCT1 / MCT4 / SMCT2, *Hcar2* / *Ffar3* / *Ffar2* / *Nlrp3*, the β-oxidation chain and the PPARα / FGF21 axis (no committed ketone enzyme is on the panel). 107 samples, 27 cell types.
 
 - **Baseline ketogenic competence is astrocytic.** *Bdh1* in 51 % of control astrocytes (45 % of newly formed oligodendrocytes, 16 % of mature oligodendrocytes, 8 % of microglia), the highest β-oxidation chain and *Ppara* / *Ppargc1a*, and the highest fatty-acid-supply score (0.31; oligodendrocytes 0, neurons −0.27). *Bdh1*⁺ cells of every type are 1.3–3.8× enriched for β-oxidation genes and *Ppara* / *Ppargc1a*, not for MCT4 or *Hcar2*: *Bdh1* sits on the ketogenic side. MCT1 is oligodendroglial / endothelial / astrocytic, MCT4 microglial, *Hcar2* and *Nlrp3* myeloid; SMCT2, *Ffar2* / *Ffar3*, *Fgf21*, *Klb* at the floor.
 - **EAE dismantles rather than induces ketogenesis.** *Bdh1* falls toward lesions in every cell type (astrocytes −0.33, DA astrocytes −0.49), *Acss2* falls in 13 cell types, *Ppargc1a* in 10, *Ppara* in 5, the astrocytic β-oxidation chain thins toward lesions; only oligodendrocytes gain a little *Bdh1* (+0.2 log2) and myeloid cells / DA oligodendrocytes gain *Cpt1a* / *Cpt2*. RR > chronic for every effect.
